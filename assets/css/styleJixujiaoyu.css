@@ -1,0 +1,51 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend,
+input, textarea, p, blockquote, th, td,figure {
+    margin: 0;
+    padding: 0;
+}
+.font_yahei{
+    font-family: "Microsoft YaHei";
+}
+.container_1200{
+    width:1200px;
+    margin:auto;
+}
+.shortcut{
+    background: #4c5cd4;
+    height:30px;
+}
+.shortcut_content{
+    height:30px;
+    line-height:30px;
+}
+.shortcut_content a{
+    color: #a9b3ff;
+    font-size: 14px;
+    padding-right:  10px;
+    cursor:  pointer;
+}
+.shortcut_content img
+{
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+.shortcut_content_left{
+    float: left;
+}
+.shortcut_content_right{
+    float: right;
+}
+.logomore{
+    background: #222222;
+}
+.logomore_content{
+    padding-top:20px;
+    height: 140px;
+}
+.logomore_content_left img{
+    float: left;
+}
+.cityName{
+    float: left;
+}
