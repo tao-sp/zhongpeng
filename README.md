@@ -1,3 +1,3 @@
 # zhongpeng
-  # zhongpeng
-    # plugins
+  -  zhongpeng
+    -  plugins
