@@ -1,4 +1,12 @@
 # zhongpeng
   -  zhongpeng
   
-    -  plugins
+    -  assets
+    
+      --  images
+      
+      --  css
+      
+      --  js
+      
+      --  plugins
