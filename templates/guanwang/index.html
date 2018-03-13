@@ -7,34 +7,191 @@
     <meta name="keywords" content="中鹏教育">
     <meta name="description" content="中鹏教育">
     <link type="image/x-icon" rel="icon" href="http://kc.gdzp.org/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/idangerous.swiper-2.css"/>
     <link rel="stylesheet" href="../../assets/css/common.css?t=201803121421"/>
     <link rel="stylesheet" href="./statics/css/main.min.css"/>
     <title>中鹏教育</title>
+    <!--[if lt IE 9]>
+        <script src="../../assets/js/iehtml5.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header class="g-header">
         <div class="mid1200 clearfix">
             <h1 class="fl h-logo">中鹏教育</h1>
-            <nav class="g-nav fr">
-                <ul class="clearfix">
-                    <li><a href="">首页</a></li>
-                    <li><a href="">业务体系</a></li>
-                    <li><a href="">资讯中心</a></li>
-                    <li><a href="">联系我们</a></li>
-                    <li><a href="">关于中鹏</a></li>
-                    <li><a href="">加入我们</a></li>
-                </ul>
-                <div class="g-sub-nav">
-                    <div class="g-sub-nav-item">
-                        <ul>
-                            <li>关于我们</li>
-                            <li>企业文化</li>
-                            <li>核心团队</li>
+            <nav class="g-nav fr" id="g-nav">
+                <ul class="clearfix g-nav-list">
+                    <li class="g-nav-item">
+                        <a href="">首页</a>
+                    </li>
+                    <li class="g-nav-item">
+                        <a href="">业务体系</a>
+                    </li>
+                    <li class="g-nav-item">
+                        <a href="">资讯中心</a>
+                    </li>
+                    <li class="g-nav-item">
+                        <a href="">联系我们</a>
+                    </li>
+                    <li class="g-nav-item">
+                        <a href="">关于中鹏</a>
+                        <ul class="g-sub-nav-item">
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">企业文化</a></li>
+                            <li><a href="">核心团队</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                    <li class="g-nav-item">
+                        <a href="">加入我们</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
+    <div class="g-main">
+        <!-- banner广告 -->
+        <!--<div class="swiper-container g-banner-1" id="g-banner-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a target="_blank" href="javascript:void(0)">
+                            <img src="./statics/images/2.jpg?t=001" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a target="_blank" href="javascript:void(0)">
+                            <img src="./statics/images/2.jpg?t=001" alt=""/>
+                        </a>
+                    </div>'
+                    <div class="swiper-slide">
+                        <a target="_blank" href="javascript:void(0)">
+                            <img src="./statics/images/2.jpg?t=001" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination g-banner-1-pagination"></div>
+                <div class="swiper-button-prev g-banner-1-left"></div>
+                <div class="swiper-button-next g-banner-1-right"></div>
+            </div>-->
+
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li class=""><i class="icon"></i><span>1</span></li>
+                    <li class=""><i class="icon"></i><span>2</span></li>
+                    <li class=""><i class="icon"></i><span>3</span></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <div class="tempWrap" style="overflow:hidden; position:relative; ">
+                    <ul style="width: 2250px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -747.574px;">
+                        <li style="float: left;">
+                            <a href="#" target="_blank">
+                                <img src="./statics/images/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                        <li style="float: left;">
+                            <a href="#" target="_blank">
+                                <img src="./statics/images/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                        <li style="float: left;">
+                            <a href="#" target="_blank">
+                                <img src="./statics/images/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+        <!-- banner广告结束 -->
+        <!--<div class="g-business">
+            <div class="mid1200">
+                <h3>业务体系</h3>
+                <p class="sub-tit">
+                    创建中国成人职业教育领军品牌 & 中国艺术设计职业教育领军品牌
+                </p>
+                <div class="line"></div>
+
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <div class="layer"></div>
+                            <div class="desc"><img src="./statics/images/4.png?t=001" alt=""/></div>
+                            <div class="img-yard-icon">
+                                <img src="./statics/images/8.png?t=001" alt=""/>
+                            </div>
+                            <div class="img-yard-desc">
+                                <img src="./statics/images/12.png?t=001" alt=""/>
+                            </div>
+                            <h3>继续教育学院</h3>
+
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <i class="icon"></i>
+                                        <div class="right">
+                                            <h4>2D科系</h4>
+                                            <p class="major">
+                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon"></i>
+                                        <div class="right">
+                                            <h4>2D科系</h4>
+                                            <p class="major">
+                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon"></i>
+                                        <div class="right">
+                                            <h4>2D科系</h4>
+                                            <p class="major">
+                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
+                                            </p>
+                                        </div>
+                                    </li><li>
+                                    <i class="icon"></i>
+                                    <div class="right">
+                                        <h4>2D科系</h4>
+                                        <p class="major">
+                                            <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                    <li>
+                                        <i class="icon"></i>
+                                        <div class="right">
+                                            <h4>2D科系</h4>
+                                            <p class="major">
+                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <!--<script src="../../assets/js/idangerous.swiper-2.js"></script>-->
+        <script src="../../assets/js/jquery.SuperSlide.js"></script>
+    <script src="./statics/js/index.js"></script>
 </body>
 </html>
