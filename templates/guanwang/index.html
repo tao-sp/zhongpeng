@@ -7,191 +7,484 @@
     <meta name="keywords" content="中鹏教育">
     <meta name="description" content="中鹏教育">
     <link type="image/x-icon" rel="icon" href="http://kc.gdzp.org/favicon.ico" />
-    <link rel="stylesheet" href="../../assets/css/idangerous.swiper-2.css"/>
     <link rel="stylesheet" href="../../assets/css/common.css?t=201803121421"/>
-    <link rel="stylesheet" href="./statics/css/main.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/guanwang/main.min.css"/>
     <title>中鹏教育</title>
     <!--[if lt IE 9]>
         <script src="../../assets/js/iehtml5.js"></script>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <![endif]-->
-</head>
-<body>
-    <header class="g-header">
-        <div class="mid1200 clearfix">
-            <h1 class="fl h-logo">中鹏教育</h1>
-            <nav class="g-nav fr" id="g-nav">
-                <ul class="clearfix g-nav-list">
-                    <li class="g-nav-item">
-                        <a href="">首页</a>
-                    </li>
-                    <li class="g-nav-item">
-                        <a href="">业务体系</a>
-                    </li>
-                    <li class="g-nav-item">
-                        <a href="">资讯中心</a>
-                    </li>
-                    <li class="g-nav-item">
-                        <a href="">联系我们</a>
-                    </li>
-                    <li class="g-nav-item">
-                        <a href="">关于中鹏</a>
-                        <ul class="g-sub-nav-item">
-                            <li><a href="">关于我们</a></li>
-                            <li><a href="">企业文化</a></li>
-                            <li><a href="">核心团队</a></li>
-                        </ul>
-                    </li>
-                    <li class="g-nav-item">
-                        <a href="">加入我们</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="g-main">
-        <!-- banner广告 -->
-        <!--<div class="swiper-container g-banner-1" id="g-banner-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a target="_blank" href="javascript:void(0)">
-                            <img src="./statics/images/2.jpg?t=001" alt=""/>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="javascript:void(0)">
-                            <img src="./statics/images/2.jpg?t=001" alt=""/>
-                        </a>
-                    </div>'
-                    <div class="swiper-slide">
-                        <a target="_blank" href="javascript:void(0)">
-                            <img src="./statics/images/2.jpg?t=001" alt=""/>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-pagination g-banner-1-pagination"></div>
-                <div class="swiper-button-prev g-banner-1-left"></div>
-                <div class="swiper-button-next g-banner-1-right"></div>
-            </div>-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../../assets/css/guanwang/hack.min.css">
+    <![endif]-->
 
+    </head>
+    <body class="g-body">
+        <header class="g-header" id="g-nav">
+            <div class="mid1200 clearfix">
+                <h1 class="fl h-logo">中鹏教育</h1>
+                <nav class="g-nav fr" id="g-nav">
+                    <ul class="clearfix g-nav-list">
+                        <li class="g-nav-item">
+                            <a href="">首页</a>
+                        </li>
+                        <li class="g-nav-item">
+                            <a href="">业务体系</a>
+                        </li>
+                        <li class="g-nav-item">
+                            <a href="">资讯中心</a>
+                        </li>
+                        <li class="g-nav-item">
+                            <a href="">联系我们</a>
+                        </li>
+                        <li class="g-nav-item">
+                            <a href="">关于中鹏</a>
+                            <ul class="g-sub-nav-item">
+                                <li><a href="">关于我们</a></li>
+                                <li><a href="">企业文化</a></li>
+                                <li><a href="">核心团队</a></li>
+                            </ul>
+                        </li>
+                        <li class="g-nav-item">
+                            <a href="">加入我们</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="g-main">
+            <!-- banner广告 -->
         <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../../assets/images/guanwang/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../../assets/images/guanwang/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../../assets/images/guanwang/2.jpg?t=001" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+            </div>
             <div class="hd">
                 <ul>
-                    <li class=""><i class="icon"></i><span>1</span></li>
-                    <li class=""><i class="icon"></i><span>2</span></li>
-                    <li class=""><i class="icon"></i><span>3</span></li>
+                    <li class=""><i class="icon"></i></li>
+                    <li class=""><i class="icon"></i></li>
+                    <li class=""><i class="icon"></i></li>
                 </ul>
             </div>
-            <div class="bd">
-                <div class="tempWrap" style="overflow:hidden; position:relative; ">
-                    <ul style="width: 2250px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -747.574px;">
-                        <li style="float: left;">
-                            <a href="#" target="_blank">
-                                <img src="./statics/images/2.jpg?t=001" alt=""/>
-                            </a>
-                        </li>
-                        <li style="float: left;">
-                            <a href="#" target="_blank">
-                                <img src="./statics/images/2.jpg?t=001" alt=""/>
-                            </a>
-                        </li>
-                        <li style="float: left;">
-                            <a href="#" target="_blank">
-                                <img src="./statics/images/2.jpg?t=001" alt=""/>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
-
-            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-            <a class="prev" href="javascript:void(0)"></a>
-            <a class="next" href="javascript:void(0)"></a>
-
         </div>
         <!-- banner广告结束 -->
-        <!--<div class="g-business">
+        <div class="g-business" id="g-business">
             <div class="mid1200">
-                <h3>业务体系</h3>
-                <p class="sub-tit">
-                    创建中国成人职业教育领军品牌 & 中国艺术设计职业教育领军品牌
-                </p>
-                <div class="line"></div>
-
-                <div class="wrapper">
-                    <ul>
-                        <li>
-                            <div class="layer"></div>
-                            <div class="desc"><img src="./statics/images/4.png?t=001" alt=""/></div>
-                            <div class="img-yard-icon">
-                                <img src="./statics/images/8.png?t=001" alt=""/>
+                <div class="business-header">
+                    <h2 class="tit">业务体系</h2>
+                    <p class="sub-tit">创建中国成人职业教育领军品牌 & 中国艺术设计职业教育领军品牌</p>
+                    <div class="line"></div>
+                </div>
+                <div class="business-contain">
+                    <ul class="cat-list clearfix">
+                        <li class="cat-list-item cat-list-item-1 on">
+                            <div class="initial-show" style="display: none;">
+                                <div class="layer"></div>
+                                <div class="category">
+                                    <img src="../../assets/images/guanwang/4.png?t=002" alt=""/>
+                                </div>
+                                <h3 class="cat-name">设计艺术学院</h3>
                             </div>
-                            <div class="img-yard-desc">
-                                <img src="./statics/images/12.png?t=001" alt=""/>
-                            </div>
-                            <h3>继续教育学院</h3>
-
-                            <div class="content">
-                                <ol>
-                                    <li>
-                                        <i class="icon"></i>
-                                        <div class="right">
-                                            <h4>2D科系</h4>
-                                            <p class="major">
-                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="icon"></i>
-                                        <div class="right">
-                                            <h4>2D科系</h4>
-                                            <p class="major">
-                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="icon"></i>
-                                        <div class="right">
-                                            <h4>2D科系</h4>
-                                            <p class="major">
-                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
-                                            </p>
-                                        </div>
-                                    </li><li>
-                                    <i class="icon"></i>
-                                    <div class="right">
-                                        <h4>2D科系</h4>
-                                        <p class="major">
-                                            <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
-                                        </p>
-                                    </div>
-                                </li>
-                                    <li>
-                                        <i class="icon"></i>
-                                        <div class="right">
-                                            <h4>2D科系</h4>
-                                            <p class="major">
-                                                <span>美术</span>、<span>平面设计</span>、<span>UI设计</span>、<span>插画</span>
-                                            </p>
-                                        </div>
-                                    </li>
-
-                                </ol>
+                            <div class="business-cat-content">
+                                <div class="inner-wrapper">
+                                    <div class="top-right-corn"></div>
+                                    <div class="bot-right-corn"></div>
+                                    <ol class="bus-cat-cont-list">
+                                        <li class="item-1">
+                                            <i class="icon"><img src="../../assets/images/guanwang/30.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4 ><a href="">2D科系</a></h4>
+                                                <p class="major">
+                                                    <a>美术</a>、<a>平面设计</a>、<a>UI设计</a>、<a>插画</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/31.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">3D科系</a></h4>
+                                                <p class="major">
+                                                    <a>室内设计</a>、<a>珠宝设计</a>、<a>工业设计</a>、<a>建筑</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/32.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">时尚科系</a></h4>
+                                                <p class="major">
+                                                    <a>服装设计</a>、<a>形象设计</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/33.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">摄影科系</a></h4>
+                                                <p class="major">
+                                                    <a>摄影</a>、<a>数码影视</a>、<a>影视后期</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/34.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">相关科系</a></h4>
+                                                <p class="major">
+                                                    <a>网络营销</a>、<a>工程预算</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="" class="more">查看更多</a>
+                                </div>
                             </div>
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="cat-list-item cat-list-item-2">
+                            <div class="initial-show">
+                                <div class="layer"></div>
+                                <div class="category">
+                                    <img src="../../assets/images/guanwang/5.png?t=002" alt=""/>
+                                </div>
+                                <h3 class="cat-name">继续教育学院</h3>
+                            </div>
+                            <div class="business-cat-content" style="display: none;">
+                                <div class="inner-wrapper">
+                                    <div class="top-right-corn"></div>
+                                    <div class="bot-right-corn"></div>
+                                    <ol class="bus-cat-cont-list">
+                                        <li class="item-1">
+                                            <i class="icon"><img src="../../assets/images/guanwang/44.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4 ><a href="">华南师范大学</a></h4>
+                                                <p class="major">
+                                                    <a>艺术设计</a>、<a>教育管理</a>、<a>人力资源管理</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/44.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">广东开发大学</a></h4>
+                                                <p class="major">
+                                                    <a>法学</a>、<a>信息安全</a>、<a>文化产业管理</a>、<a>标准化工程</a>、<a>电子商务</a>、<a>会展策划与管理</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/44.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">湘潭大学</a></h4>
+                                                <p class="major">
+                                                    <a>金融学</a>、<a>汉语言文学</a>、<a>英语</a>、<a>经济学</a>、<a>旅游管理</a>、<a>工商管理</a>、<a>会计学</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/44.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">中国石油大学</a></h4>
+                                                <p class="major">
+                                                    <a>石油工程</a>、<a>机械设计制造及其自动化</a>、<a>土木工程</a>、<a>会计学</a>、<a>计算机科学与技术</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="" class="more">查看更多</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cat-list-item cat-list-item-3">
+                            <div class="initial-show">
+                                <div class="layer"></div>
+                                <div class="category">
+                                    <img src="../../assets/images/guanwang/6.png?t=002" alt=""/>
+                                </div>
+                                <h3 class="cat-name">管理学院</h3>
+                            </div>
+                            <div class="business-cat-content" style="display: none;">
+                                <div class="inner-wrapper">
+                                    <div class="top-right-corn"></div>
+                                    <div class="bot-right-corn"></div>
+                                    <ol class="bus-cat-cont-list">
+                                        <li class="item-1">
+                                            <i class="icon"><img src="../../assets/images/guanwang/35.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4 ><a href="">企业人力资源管理师</a></h4>
+                                                <p class="major">
+                                                    <a>美术</a>、<a>平面设计</a>、<a>UI设计</a>、<a>插画</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/36.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">劳动关系协调师</a></h4>
+                                                <p class="major">
+                                                    <a>室内设计</a>、<a>珠宝设计</a>、<a>工业设计</a>、<a>建筑</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/37.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">采购师</a></h4>
+                                                <p class="major">
+                                                    <a>服装设计</a>、<a>形象设计</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/38.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">心理咨询师</a></h4>
+                                                <p class="major">
+                                                    <a>摄影</a>、<a>数码影视</a>、<a>影视后期</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="" class="more">查看更多</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cat-list-item cat-list-item-4">
+                            <div class="initial-show" >
+                                <div class="layer"></div>
+                                <div class="category">
+                                    <img src="../../assets/images/guanwang/7.png?t=002" alt=""/>
+                                </div>
+                                <h3 class="cat-name">设计艺术学院</h3>
+                            </div>
+                            <div class="business-cat-content" style="display: none;">
+                                <div class="inner-wrapper">
+                                    <div class="top-right-corn"></div>
+                                    <div class="bot-right-corn"></div>
+                                    <ol class="bus-cat-cont-list">
+                                        <li class="item-1">
+                                            <i class="icon"><img src="../../assets/images/guanwang/39.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">网页设计</a></h4>
+                                                <p class="major">
+                                                    <a>美术</a>、<a>平面设计</a>、<a>UI设计</a>、<a>插画</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/40.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">CPDA</a></h4>
+                                                <p class="major">
+                                                    <a>室内设计</a>、<a>珠宝设计</a>、<a>工业设计</a>、<a>建筑</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/41.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">数据科学</a></h4>
+                                                <p class="major">
+                                                    <a>服装设计</a>、<a>形象设计</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/42.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">PHP</a></h4>
+                                                <p class="major">
+                                                    <a>摄影</a>、<a>数码影视</a>、<a>影视后期</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon"><img src="../../assets/images/guanwang/43.png" alt=""/></i>
+                                            <div class="right">
+                                                <h4><a href="">Python</a></h4>
+                                                <p class="major">
+                                                    <a>网络营销</a>、<a>工程预算</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="" class="more">查看更多</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>-->
+        </div>
+
+        <div class="g-abuot-us">
+            <div class="mid1200 about-us-in">
+                <div class="left">
+                    <img src="../../assets/images/guanwang/13.png" alt=""/>
+                </div>
+                <div class="right">
+                    <h2 class="tit"><img src="../../assets/images/guanwang/14.png" alt=""/></h2>
+                    <div class="outline">
+                        <p class="sub-tit">致力于打造有影响力的中鹏品牌</p>
+                        <p class="english-tit">WE ARE COMMITTED TO BULIDING AN INFLUENTIAL BRAND</p>
+                    </div>
+                    <p class="desc">公司目前主要业务涉足教育培训、互联网科技、投融资并购，同时控股数家合资公司，形成了以培训为主体，以课程研发、人才培养、产学互动为一体的商业模式，同时通过对广东职业教育培训行业和相关产业的并购整合，将逐步实现覆盖职业教育培训全产业一体化，打造广东乃至全国有影响力的中鹏品牌。</p>
+                    <a href="" class="more">查看更多</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="information-category" id="g-information-category">
+            <div class="mid1200 info-cat-in">
+                <h2 class="tit"><img src="../../assets/images/guanwang/15.png" alt=""/></h2>
+                <ul class="info-list clearfix">
+                    <li>
+                        <div class="initial-show">
+                            <p class="news-tit-wrapper">
+                                <span class="index">01</span>
+                                <span class="news-tit">2018年年度大会暨校企共建协.</span>
+                            </p>
+                            <p class="outline">2017年12月15日下午，经过深圳市商业美术设计促进会的积极筹备以及在深圳市中鹏教育科技股份有限公司。</p>
+                        </div>
+
+                            <div class="info-content">
+                                <p class="content-tit">2018年年度大会暨校企共建协</p>
+                                <p class="date"><span class="year">2018</span>/<span class="month">03</span>/<span>13</span></p>
+                                <p class="content">为加强文化人才队伍建设，加速发展深圳文化创意产业，助力深圳设计之都、时尚之都、文明之都的创新建设。</p>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="initial-show">
+                            <p class="news-tit-wrapper">
+                                <span class="index">01</span>
+                                <span class="news-tit">2018年年度大会暨校企共建协.</span>
+                            </p>
+                            <p class="outline">2017年12月15日下午，经过深圳市商业美术设计促进会的积极筹备以及在深圳市中鹏教育科技股份有限公司。</p>
+                        </div>
+                        <div class="info-content">
+                            <p class="content-tit">2018年年度大会暨校企共建协</p>
+                            <p class="date"><span class="year">2018</span>/<span class="month">03</span>/<span>13</span></p>
+                            <p class="content">为加强文化人才队伍建设，加速发展深圳文化创意产业，助力深圳设计之都、时尚之都、文明之都的创新建设。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="initial-show">
+                            <p class="news-tit-wrapper">
+                                <span class="index">01</span>
+                                <span class="news-tit">2018年年度大会暨校企共建协.</span>
+                            </p>
+                            <p class="outline">2017年12月15日下午，经过深圳市商业美术设计促进会的积极筹备以及在深圳市中鹏教育科技股份有限公司。</p>
+                        </div>
+                        <div class="info-content">
+                            <p class="content-tit">2018年年度大会暨校企共建协</p>
+                            <p class="date"><span class="year">2018</span>/<span class="month">03</span>/<span>13</span></p>
+                            <p class="content">为加强文化人才队伍建设，加速发展深圳文化创意产业，助力深圳设计之都、时尚之都、文明之都的创新建设。</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="more">查看更多</a>
+            </div>
+        </div>
+
+        <div class="cooperation">
+            <div class="mid1200">
+                <div class="cooperation-header">
+                    <h2 class="tit">合作伙伴</h2>
+                    <p class="sub-tit">COOPERATION PARTNER</p>
+                    <div class="line"></div>
+                </div>
+                <div class="cooperation-content">
+                    <ul class="clearfix cooperation-partner-list">
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="g-footer">
+        <div class="mid1200">
+            <div class="footer-top clearfix">
+                <div class="fl left">
+                    <p class="footer-nav">
+                        <a href="">关于我们</a>
+                        <span>/</span><a href="">企业文化</a>
+                        <span>/</span><a href="">法律声明</a>
+                        <span>/</span><a href="">申请合作</a>
+                        <span>/</span><a href="">联系我们</a>
+                        <span>/</span><a href="">加入我们</a>
+                    </p>
+                    <ul class="footer-link clearfix" >
+                        <li class="first">
+                            <i class="icon"><img src="../../assets/images/guanwang/f-1.png" alt=""/></i>
+                            <p class="link-item">
+                                <span class="tit">地址</span>
+                                <em class="cont">广东省深圳市龙岗校区吉祥地铁站b出口湖广通大厦4楼</em>
+                            </p>
+                        </li>
+                        <li class="underline">
+                            <i class="icon"><img src="../../assets/images/guanwang/f-2.png" alt=""/></i>
+                            <p class="link-item">
+                                <span class="tit">邮编</span>
+                                <em class="cont">100048</em>
+                            </p>
+                        </li>
+                        <li class="underline">
+                            <i class="icon"><img src="../../assets/images/guanwang/f-3.png" alt=""/></i>
+                            <p class="link-item">
+                                <span class="tit">联系号码</span>
+                                <em class="cont">400-930-6618</em>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fr right">
+                    <div class="weixin">
+                        <img src="../../assets/images/guanwang/f-4.png" alt=""/>
+                    </div>
+                    <p class="weixin-desc">关注中鹏</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">Copyright ©2001-2018 WENDU Corporation All Rights ReservedXXXXX有限公司 版权所有</p>
+                <p class="licensing"><span>XXX出版许可:XXXXXX100085号</span> <em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span></p>
+                <ol class="advantage">
+                    <li><a href=""><img src="../../assets/images/guanwang/f-5.png" alt=""/></a></li>
+                    <li><a href=""><img src="../../assets/images/guanwang/f-6.png" alt=""/></a></li>
+                </ol>
+            </div>
+        </div>
     </div>
 
     <script src="../../assets/js/jquery-1.11.3.min.js"></script>
-    <!--<script src="../../assets/js/idangerous.swiper-2.js"></script>-->
-        <script src="../../assets/js/jquery.SuperSlide.js"></script>
-    <script src="./statics/js/index.js"></script>
+    <script src="../../assets/js/jquery.SuperSlide.js"></script>
+    <script src="../../assets/js/guanwang/index.js"></script>
 </body>
 </html>
