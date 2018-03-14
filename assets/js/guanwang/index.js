@@ -4,15 +4,23 @@
 (function() {
     var oNav = $('#g-nav'),
         oNavLi = oNav.find('.g-nav-item'),
-        oSubNav = oNav.find('.g-nav-item .g-sub-nav-item');
+        oSubNav = oNav.find('.g-nav-item .g-sub-nav-item'),
+        lastOn = 0;
+
+    oNavLi.each(function() {
+        if($(this).hasClass('on')){
+            lastOn = $(this).index();
+        }
+    });
     oSubNav.hide();
     oNavLi.on(
         {
             mouseenter: function() {
-                $(this).addClass('on').find('.g-sub-nav-item').stop().slideDown(300);
+                $(this).addClass('on').find('.g-sub-nav-item').stop().slideDown(300).end().siblings().removeClass('on');
             },
             mouseleave: function() {
                 $(this).removeClass('on').find('.g-sub-nav-item').stop().slideUp(1);
+                oNavLi.eq(lastOn).addClass('on');
             }
         }
     );
