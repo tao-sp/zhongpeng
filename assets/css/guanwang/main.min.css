@@ -71,7 +71,6 @@
   background-color: #ed9336;
 }
 .g-footer {
-  margin-top: 83px;
   background-color: #313131;
 }
 .g-footer .footer-top {
@@ -258,11 +257,136 @@
   background-color: #ed9336;
   color: #fff;
 }
+/*右侧悬浮窗*/
+.float-ad {
+  position: fixed;
+  right: 0;
+  top: 10%;
+  z-index: 99999;
+  width: 70px;
+}
+.float-ad .float-interaction {
+  width: 100%;
+}
+.float-ad .float-interaction .interac-item {
+  position: relative;
+  z-index: 99999;
+  margin-top: 4px;
+}
+.float-ad .float-interaction .interac-item .link {
+  display: block;
+  background-color: #636363;
+  padding-top: 4px;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.float-ad .float-interaction .interac-item .link .icon,
+.float-ad .float-interaction .interac-item .link span {
+  display: block;
+  width: 100%;
+  height: 43px;
+}
+.float-ad .float-interaction .interac-item .link .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.float-ad .float-interaction .interac-item .link .icon-1 {
+  background-image: url('../../images/guanwang/float-1.png');
+}
+.float-ad .float-interaction .interac-item .link .icon-2 {
+  background-image: url('../../images/guanwang/float-2.png');
+}
+.float-ad .float-interaction .interac-item .link .icon-3 {
+  background-image: url('../../images/guanwang/float-3.png');
+}
+.float-ad .float-interaction .interac-item .link .icon-4 {
+  background-image: url('../../images/guanwang/float-4.png');
+}
+.float-ad .float-interaction .interac-item .link span {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+.float-ad .float-interaction .interac-item .link.on {
+  background-color: #ed9336;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper {
+  position: absolute;
+  right: 70px;
+  top: 0;
+  z-index: auto;
+  width: 213px;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm {
+  padding: 11px 24px 0 18px;
+  width: 161px;
+  height: 179px;
+  background: url('../../images/guanwang/float-5.png') no-repeat center;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group {
+  position: relative;
+  z-index: auto;
+  margin-top: 11px;
+  width: 160px;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #898989;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 40px;
+  text-align: left;
+  color: #bfbfbf;
+  text-indent: 6px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: auto;
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 42px;
+  text-align: left;
+  color: #bfbfbf;
+  text-indent: 7px;
+}
+.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .submit {
+  margin: 26px auto 0;
+  display: block;
+  width: 106px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #ed9336;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.g-main {
+  margin-bottom: 83px;
+}
 .slideBox {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100%;
 }
 .slideBox .hd {
   position: absolute;
@@ -858,126 +982,118 @@
   color: #fff;
   background-color: #ed9336;
 }
-/*资讯中心右侧悬浮窗*/
-.float-ad {
-  position: fixed;
-  right: 0;
-  top: 10%;
-  z-index: 99999;
-  width: 70px;
-}
-.float-ad .float-interaction {
-  width: 100%;
-}
-.float-ad .float-interaction .interac-item {
+/*官网--加入我们--页面样式*/
+.j-main .j-banner-in {
   position: relative;
-  z-index: 99999;
-  margin-top: 4px;
+  z-index: 1;
+  height: 500px;
 }
-.float-ad .float-interaction .interac-item .link {
-  display: block;
-  background-color: #636363;
-  padding-top: 4px;
-  width: 70px;
-  height: 70px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-.float-ad .float-interaction .interac-item .link .icon,
-.float-ad .float-interaction .interac-item .link span {
-  display: block;
-  width: 100%;
-  height: 43px;
-}
-.float-ad .float-interaction .interac-item .link .icon {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.float-ad .float-interaction .interac-item .link .icon-1 {
-  background-image: url('../../images/guanwang/float-1.png');
-}
-.float-ad .float-interaction .interac-item .link .icon-2 {
-  background-image: url('../../images/guanwang/float-2.png');
-}
-.float-ad .float-interaction .interac-item .link .icon-3 {
-  background-image: url('../../images/guanwang/float-3.png');
-}
-.float-ad .float-interaction .interac-item .link .icon-4 {
-  background-image: url('../../images/guanwang/float-4.png');
-}
-.float-ad .float-interaction .interac-item .link span {
-  font-size: 14px;
-  font-family: "Microsoft YaHei";
-  font-weight: normal;
-  line-height: 14px;
-  text-align: center;
-  color: #fff;
-}
-.float-ad .float-interaction .interac-item .link.on {
-  background-color: #ed9336;
-}
-.float-ad .float-interaction .interac-item .float-frm-wrapper {
+.j-main .j-banner-in .pos-abs-img {
   position: absolute;
-  right: 70px;
   top: 0;
-  z-index: auto;
-  width: 213px;
+  left: -360px;
+  z-index: 2;
+  width: 1920px;
 }
-.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm {
-  padding: 11px 24px 0 18px;
-  width: 161px;
-  height: 179px;
-  background: url('../../images/guanwang/float-5.png') no-repeat center;
+.j-main .j-content {
+  background: url('../../images/guanwang/joinus-3.png') no-repeat center top / cover;
 }
-.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group {
+.j-main .j-content .j-content-in {
   position: relative;
-  z-index: auto;
-  margin-top: 11px;
-  width: 160px;
+  z-index: 4;
+  padding-top: 67px;
 }
-.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #898989;
-  font-size: 14px;
-  font-family: "Microsoft YaHei";
-  font-weight: normal;
-  line-height: 40px;
-  text-align: left;
-  color: #bfbfbf;
-  text-indent: 6px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .form-group span {
+.j-main .j-content .j-content-in .connect-img {
   position: absolute;
   left: 0;
-  top: 0;
-  z-index: auto;
-  width: 100%;
-  height: 42px;
+  top: -197px;
+  z-index: 5;
+  width: 348px;
+}
+.j-main .j-content .j-content-in .employ-wrapper {
+  margin-left: 400px;
+  width: 800px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 56px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit {
+  padding: 0 33px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list {
+  font-size: 0;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list span,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list span,
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .apply,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .apply {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .job-name,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .job-name {
+  width: 176px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .num,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .num {
+  width: 94px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .edu,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .edu {
+  width: 117px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .salary,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .salary {
+  width: 129px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .release-time,
+.j-main .j-content .j-content-in .employ-wrapper ul .tit .list .release-time {
+  width: 142px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item {
+  background-color: rgba(255, 255, 255, 0.13);
+  cursor: pointer;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list span {
+  font-size: 14px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .list .apply {
+  display: inline-block;
+  border: 1px solid #ed9336;
+  width: 70px;
+  height: 25px;
   font-size: 14px;
   font-family: "Microsoft YaHei";
   font-weight: normal;
-  line-height: 42px;
-  text-align: left;
-  color: #bfbfbf;
-  text-indent: 7px;
-}
-.float-ad .float-interaction .interac-item .float-frm-wrapper .float-frm .submit {
-  margin: 26px auto 0;
-  display: block;
-  width: 106px;
-  height: 30px;
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-  line-height: 30px;
+  line-height: 27px;
   text-align: center;
+  color: #ed9336;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .desc {
+  border-top: 1px solid #494949;
+  padding-top: 19px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
   color: #fff;
-  background-color: #ed9336;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .desc .part {
+  padding-bottom: 36px;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .item .desc .part h3 {
+  text-align: left;
+}
+.j-main .j-content .j-content-in .employ-wrapper ul .exhibition {
+  background-color: rgba(255, 255, 255, 0.05);
 }
