@@ -59,7 +59,7 @@
   box-shadow: @arguments;
 }
 
-
+/*官网--首页-- 页面样式*/
 .g-header{
   position: fixed;
   z-index: 99999;
@@ -224,10 +224,6 @@
   }
 }
 
-
-
-
-
 .g-scroll-header{
   position: fixed;
   z-index: 99999;
@@ -281,6 +277,7 @@
     }
   }
 }
+
 .slideBox{
   position: relative;
   z-index: 1;
@@ -669,5 +666,239 @@
       }
     }
 
+  }
+}
+
+
+/*官网--资讯中心-- 页面样式*/
+.info-cat-contain{
+  .info-cat-in{
+    position: relative;
+    z-index: 4;
+    .info-tabs-bar{
+      position: absolute;
+      left: 0;
+      top: -30px;
+      z-index: 4;
+      background-color: #fff;
+      .box-shadow-j(@hoff:0;@voff:10px;@blur:10px;@w:-5px;@col:rgba(0,0,0,0.2));
+      .line{
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        bottom: 0;
+        width: 400px;
+        height: 3px;
+        background: #b5b5b6;
+      }
+      .info-tabs {
+        li{
+          float: left;
+          width: 400px;
+          font-size:0;
+          text-align: center;
+          .icon,.tab-item{
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .icon{
+            width: 21px;
+            height: 21px;
+            background-repeat:no-repeat;
+            background-position: center center;
+          }
+          .icon-1{
+            background-image: url('@{images}/zxzz-2.png');
+          }
+          .icon-2{
+            background-image: url('@{images}/zxzz-3.png');
+          }
+          .icon-3{
+            background-image: url('@{images}/zxzz-4.png');
+          }
+          .tab-item{
+            margin-left:10px;
+            .title(@size:16px;@fw:normal;@lh:60px;@al:left;);
+          }
+          cursor: pointer;
+
+        }
+      }
+    }
+
+    .info-tabs-dropdown{
+        padding-top:32px;
+        .info-tab-content{
+          margin-left:-(1200-335*3)/2px;
+            .info-content{
+              margin-top: 74px;
+              margin-left:(1200-335*3)/2px;
+              float: left;
+              padding:20px 35px 0 35px;
+              width: 335-70px;
+              height: 206-20px;
+              .title(@size:14px;@fw:normal;@lh:25px;@al:left;);
+              background-color: #fff;
+              .transition(@prop:top;);
+              .content-tit{
+                font-size:18px;
+                color: #333;
+              }
+              .content{
+                margin-top: 33px;
+                color: #666;
+              }
+
+              &:hover{
+                border:1px solid #ed9336;
+                width: 333-70px;
+                height: 204-20px;
+                .box-shadow-j(@hoff:4px;@voff:4px;@blur:10px;@w:0;@col:rgba(237,147,54,0.35));
+                .content-tit{
+                  font-size:18px;
+                  color: #ed9336;
+                }
+              }
+            }
+        }
+    }
+
+    .info-pagination{
+      margin-top: 40px;
+      ul{
+        width: 100%;
+        font-size:0;
+        text-align: center;
+        li{
+          margin: 0 3px;
+          display: inline-block;
+          vertical-align: middle;
+          border:1px solid #dcdddd;
+          width: 38px;
+          height: 38px;
+          .title(@size:14px;@fw:normal;@co:#999;@lh:40px;);
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .on{
+          width: 40px;
+          height: 40px;
+          color: #fff;
+          background-color: #ed9336;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+/*资讯中心右侧悬浮窗*/
+.float-ad{
+  position: fixed;
+  right:0;
+  top: 10%;
+  z-index: 99999;
+  width: 70px;
+
+  .float-interaction{
+    width: 100%;
+    .interac-item{
+      position: relative;
+      z-index: 99999;
+      margin-top: 4px;
+      .link{
+        display: block;
+        background-color: #636363;
+        padding-top: 4px;
+        width: 70px;
+        height: 70px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+
+        .icon,span{
+          display: block;
+          width: 100%;
+          height: 43px;
+        }
+        .icon{
+          background-repeat:no-repeat;
+          background-position: center;
+        }
+        .icon-1{
+          background-image: url('@{images}/float-1.png');
+        }
+        .icon-2{
+          background-image: url('@{images}/float-2.png');
+        }
+        .icon-3{
+          background-image: url('@{images}/float-3.png');
+        }
+        .icon-4{
+          background-image: url('@{images}/float-4.png');
+        }
+        span{
+          .title(@size:14px;@fw:normal;@co:#fff;@lh:14px;);
+        }
+      }
+
+      .link.on{
+        background-color: #ed9336;
+      }
+      .float-frm-wrapper{
+        position: absolute;
+        right:70px;
+        top: 0;
+        z-index: auto;
+        width: 213px;
+        .float-frm{
+          padding:11px 24px 0 18px;
+          width: 203 - 24 - 18px;
+          height: 190-11px;
+          background: url('@{images}/float-5.png') no-repeat center;
+
+          .form-group{
+            position: relative;
+            z-index: auto;
+            margin-top: 11px;
+            width: 160px;
+            input{
+              width: 100%;
+              height: 40px;
+              border:1px solid #898989;
+              .title(@size:14px;@fw:normal;@co:#bfbfbf;@lh:40px;@al:left;);
+              text-indent:6px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+            }
+            span{
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: auto;
+              width: 100%;
+              height: 42px;
+              .title(@size:14px;@fw:normal;@co:#bfbfbf;@lh:42px;@al:left;);
+              text-indent:7px;
+            }
+          }
+          .submit{
+            margin:26px auto 0;
+            .a(@w:106px;@h:30px;@fs:16px;@lh:30px;@col:#fff);
+            background-color: #ed9336;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+
+    }
   }
 }
