@@ -17,7 +17,6 @@ $(function() {
 
     })();
 
-
     /*表单的placeholder属性处理*/
     (function(){
         //判断是否支持placeholder
@@ -56,53 +55,6 @@ $(function() {
 
         }
     })();
-
-    /*悬浮窗函数*/
-
-    (function() {
-        var oFloat = $('#float-ad'),
-            oLinks = oFloat.find('.float-interaction .interac-item'),
-            oForm = oFloat.find('.float-frm-wrapper');
-        oForm.hide();
-
-        oLinks.on({
-            mouseenter: function(){
-                var index = $(this).index();
-                if(index === 0){
-                    oForm.show();
-                }
-                $(this).find('.link').addClass('on').end().siblings().children('.link').removeClass('on');
-            },
-            mouseleave:function(){
-                var index = $(this).index();
-                if(index === 0){
-                    oForm.hide();
-                }
-                $(this).find('.link').removeClass('on');
-            }
-        }
-        );
-
-    })();
-
-    /*回到顶部函数；当点击跳转链接后，回到页面顶部位置 */
-    (function() {
-        $("#backTop").click(function() {
-            $('body,html').animate({
-                    scrollTop: 0
-                },
-                1000);
-            return false;
-        });
-    })();
-
-
-
-
-
-
-
-
 });
 
 
