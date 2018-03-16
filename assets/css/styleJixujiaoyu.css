@@ -141,17 +141,20 @@ input, textarea, p, blockquote, th, td,figure {
 }
 .nav_active:after{
     content: "";
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 12px solid #1b1c1d;
+    height: 20px;
+    width: 60px;
+    /* border-left: 6px solid transparent; */
+    /* border-right: 6px solid transparent; */
+    /* border-bottom: 12px solid #1b1c1d; */
     position: absolute;
-    bottom:-20px;
+    bottom: -18px;
     left:42px;
 }
 .nav_drop_down{
     text-align:  center;
     background: #38393a;
     height:162px;
+    display: none;
 }
 .nav_drop_down img{
     width:126px;
@@ -284,6 +287,8 @@ input, textarea, p, blockquote, th, td,figure {
     float: left;
 }
 .education_head div{
+    cursor:  pointer;
+    z-index:  999;
     color: #666666;
     float: right;
     border:1px solid #b5b5b6;
@@ -345,8 +350,8 @@ input, textarea, p, blockquote, th, td,figure {
 .slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
 .slideBox .hd ul li.on{ background:#f00; color:#fff; }
 .slideBox .bd{ position:relative; height:100%; z-index:0;   }
-.slideBox .bd li{ zoom:1; vertical-align:middle; }
-.slideBox .bd img{width: 100%;height: 586px;display:block;}
+.slideBox .bd li{font-size:  0;zoom:1;vertical-align:middle;}
+.slideBox .bd img{width: 100%;height: 586px;display:block;vertical-align:  top;}
 
 /* 下面是前/后按钮代码，如果不需要删除即可 */
 .slideBox .prev,
@@ -376,7 +381,7 @@ input, textarea, p, blockquote, th, td,figure {
     display:block;
     width: 23px;
     height: 41px;
-    float:right;
+    float: right;
     margin-right: 26px;
     overflow:hidden;
     cursor:pointer;
@@ -545,6 +550,7 @@ input, textarea, p, blockquote, th, td,figure {
     float: left;
 }
 .view_details div:nth-child(2){
+    cursor:  pointer;
     width: 72px;
     padding-left:28px;
     float: left;
@@ -585,7 +591,7 @@ input, textarea, p, blockquote, th, td,figure {
     background-position: 123px;
 }
 .news_calendar{
-    z-index: -1;
+    z-index: 1;
     width: 398px;
     height:582px;
     background: url("../images/jixujiaoyu/bg2.png") no-repeat;
@@ -1129,26 +1135,27 @@ input, textarea, p, blockquote, th, td,figure {
 
 .campus_map{
     position:  relative;
-    width:100%;
-    height:766px;
+    width:1200px;
+    height: 568px;
+    margin-bottom: 140px;
 }
 #campus_map{
-    width:100%;
-    height:766px;
+    width:1200px;
+    height:566px;
 }
 
 /*
 地图样式*/
 /* 本例子css */
-.slideTxtBox2{position: relative;width: 1200px;text-align:left;margin: auto;bottom: 200px;}
-.slideTxtBox2 .hd{height: 32px;line-height: 32px;}
-.slideTxtBox2 .hd ul{padding-right: 200px;padding-left: 22px;background: #fff;float:left;height: 32px;}
-.slideTxtBox2 .hd ul li{float:left;padding:0 15px;cursor:pointer;list-style-type:  none;}
+.slideTxtBox2{position:  absolute;width: 963px;text-align:left;bottom: 54px;left: 112px;}
+.slideTxtBox2 .hd{height: 40px;line-height: 40px;}
+.slideTxtBox2 .hd ul{padding-right: 200px;padding-left: 22px;background: #fff;float:left;height: 40px;}
+.slideTxtBox2 .hd ul li{font-size:  18px;float:left;padding:0 15px;cursor:pointer;list-style-type:  none;}
 .slideTxtBox2.bd ul li a {cursor:  pointer;color: #999;text-decoration: none;}
-.slideTxtBox2 .hd ul li.on{height:30px;border-top: 2px solid #4c5cd4;}
-.slideTxtBox2 .bd ul{background: #333333;zoom:1;}
-.slideTxtBox2 .bd{background: #333333;}
-.slideTxtBox2 .bd li{font-size:  14px;color: #999999;overflow:  hidden;width: 400px;line-height: 29px;list-style-type:  none;float:  left;position:  relative;}
+.slideTxtBox2 .hd ul li.on{height: 38px;border-top: 2px solid #4c5cd4;}
+.slideTxtBox2 .bd ul{padding: 23px;background: #333333;zoom:1;}
+.slideTxtBox2 .bd{overflow:  hidden;background: #333333;}
+.slideTxtBox2 .bd li{font-size:  14px;color: #999999;overflow:  hidden;width: 470px;list-style-type:  none;float:  left;position:  relative;}
 
 /* 下面是前/后按钮代码，如果不需要删除即可 */
 .slideTxtBox2 .arrow{  position:absolute; right:10px; top:0; }
@@ -1160,4 +1167,110 @@ input, textarea, p, blockquote, th, td,figure {
 .slideTxtBox2 .bd ul li:hover > a{
     color: #ffffff;
     text-decoration: underline;
+}
+.slideTxtBox2 .bd ul li img{
+    float: left;
+}
+.slideTxtBox2 .bd ul li div{
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+}
+.slideTxtBox2 .bd ul li div p{line-height: 29px;}
+
+.map_btn .map_btn_prev,.map_btn .map_btn_next{
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../images/jixujiaoyu/left_right_small.png) 0 0 no-repeat;
+}
+.map_btn .map_btn_prev{
+    margin-right: 0;
+    background-position: -40px 0;
+}
+.map_btn .map_btn_next{
+
+
+}
+
+.map_btn .map_btn_prev_active{
+    background-position: -40px -40px;
+
+}
+.map_btn .map_btn_next_active{
+
+    background-position: 0 -40px;
+}
+.map_btn{
+    position: absolute;
+    top: 0;
+    left: 879px;
+}
+.swidth_more{
+    width:360px;
+    height:600px;
+    background: #333333;
+}
+
+.swidth_more div{
+    text-align:  center;
+    line-height:  49px;
+    margin: 276px 116px;
+    width:168px;
+    height:49px;
+    color: #ffffff;
+    font-size:18px;
+    background: url("../images/jixujiaoyu/bg1.png") no-repeat;
+    cursor: pointer;
+}
+
+
+
+/* 本例子css */
+.picScroll-left3{width: 925px;overflow:hidden;position:relative;}
+.picScroll-left3 .hd{overflow:hidden;height: 60px;padding:0 10px;right: 60px;}
+.picScroll-left3 .hd .prev,.picScroll-left3 .hd .next{
+    display:block;
+    width: 50px;
+    height: 50px;
+    float:right;
+    margin-right:5px;
+    margin-top:10px;
+    overflow:hidden;
+    cursor:pointer;
+    background:url("../images/jixujiaoyu/left_right.png") 0 0 no-repeat;
+}
+.picScroll-left3 .hd .next{
+    background-position: -50px 0;
+}
+.picScroll-left3 .hd .next:hover{background-position: -50px -50px;}
+.picScroll-left3 .hd .prev:hover{background-position: 0 -50px;}
+.picScroll-left3 .hd .prevStop{ background-position:-60px 0; }
+.picScroll-left3 .hd .nextStop{ background-position:-60px -50px; }
+.picScroll-left3 .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.picScroll-left3 .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer;   }
+.picScroll-left3 .hd ul li.on{ background-position:0 0; }
+.picScroll-left3 .bd{padding: 10px;}
+.picScroll-left3 .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left3 .bd ul li{width: 276px;height: 213px;margin:0 8px;float:left;_display:inline;overflow:hidden;text-align:center;}
+.picScroll-left3 .bd ul li .pic{ text-align:center; }
+.picScroll-left3 .bd ul li .pic img{width: 267px;height: 213px;display:block;padding:2px;}
+.picScroll-left3 .bd ul li .pic a:hover img{
+    zoom: 1.2;}
+.picScroll-left3 .bd ul li .title{ line-height:24px;   }
+
+
+.examination{
+    line-height: 36px;
+    color: #999999;
+    margin-left: 69px;
+}
+.examination span {
+    background: #fdd9ba;
+    padding: 0px 10px;
+    margin: 10px;
 }
