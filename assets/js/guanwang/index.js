@@ -78,19 +78,54 @@ $(function() {
                 mouseenter: function(){
                     var index = $(this).index();
                     if(index === 0){
-                        oForm.show(500);
+                        oForm.stop().show(500);
                     }
                     $(this).find('.link').addClass('on').end().siblings().children('.link').removeClass('on');
                 },
                 mouseleave:function(){
                     var index = $(this).index();
                     if(index === 0){
-                        oForm.hide(500);
+                        oForm.stop().hide(500);
                     }
                     $(this).find('.link').removeClass('on');
                 }
             }
         );
+
+        /*表单的placeholder属性处理*/
+        (function(){
+            //判断是否支持placeholder
+            function isPlaceholer(){
+                return "placeholder" in document.createElement('input');
+            }
+            //不支持的代码
+            if(!isPlaceholer()){
+                var oGroup = $('.form-group');
+                oGroup.each(function() {
+                    var oSpan = $(this).children('span'),
+                        oIpt = $(this).children('input[placeholder]'),
+                        initVal = oIpt.attr('placeholder');
+                    oSpan.show();
+
+                    if(oIpt.val()!== ""){
+                        oSpan.hide();
+                    }else{
+                        oSpan.show();
+                    }
+                    oSpan.on('click',function() {
+                        $(this).hide();
+                        oIpt.val('').focus();
+                    });
+                    oIpt.blur(function() {
+                        if(oIpt.val()!== ""){
+                            oSpan.hide();
+                        }else{
+                            oSpan.show();
+                        }
+                    });
+                });
+            }
+        })();
 
     })();
 
