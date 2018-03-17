@@ -29,8 +29,8 @@ $(function() {
 
     /*首页最顶部的轮播*/
     (function() {
-        if($(".slideBox").length){
-            $(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,trigger:"click"});
+        if($(".index-slideBox").length){
+            $(".index-slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,trigger:"click"});
         }
     })();
 
