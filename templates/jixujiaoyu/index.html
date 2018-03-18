@@ -51,7 +51,7 @@
                    继续教育学院
                </div>
                 <div class="cityName">
-                    城市：深圳
+                    城市：<span id="map_location">深圳市</span>
                     <img src="../../assets/images/jixujiaoyu/citychoose.png">
                 </div>
             </div>
@@ -78,16 +78,16 @@
 
         <!--导航开始-->
         <ul class="nav">
-            <li>首页</li>
-            <li>课程中心</li>
-            <li>自学考试</li>
-            <li>成人高考</li>
-            <li>网络教育</li>
-            <li>开放教育</li>
-            <li>学员天地</li>
-            <li>问题交流</li>
-            <li>资料下载</li>
-            <li>关于中鹏</li>
+            <li><a>首页</a></li>
+            <li><a>课程中心</a></li>
+            <li><a>自学考试</a></li>
+            <li><a>成人高考</a></li>
+            <li><a>网络教育</a></li>
+            <li><a>开放教育</a></li>
+            <li><a>学员天地</a></li>
+            <li><a>问题交流</a></li>
+            <li><a>资料下载</a></li>
+            <li><a>关于中鹏</a></li>
             <div class="clear"></div>
         </ul>
         <!--导航结束-->
@@ -1603,6 +1603,15 @@
         var p = marker.getPosition();       //获取marker的位置
         alert("marker的位置是" + p.lng + "," + p.lat);
     }
+
+    function myFun(result){
+        var cityName = result.name;
+        map.setCenter(cityName);
+        //alert("当前定位城市:"+cityName);
+        $("#map_location").text(cityName)
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
 </script>
 
 

@@ -166,6 +166,7 @@ input, textarea, p, blockquote, th, td,figure {
     float: left;
     padding: 11px;
     text-align: center;
+    cursor: pointer;
 }
 .nav_drop_down_list div{
     font-size:14px;
