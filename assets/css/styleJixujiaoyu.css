@@ -1864,3 +1864,43 @@ input, textarea, p, blockquote, th, td,figure {
     width:95px;
     height:68px;
 }
+
+
+/*悬浮开始*/
+#floating{
+    position: fixed;
+    right: 0;
+    top: -46px;
+    z-index: 9999;
+}
+#floating .floating-link{
+    position: absolute;
+    left: 5px;
+    z-index: auto;
+    width: 92%;
+    height: 55px;
+}
+#floating .floating-link:hover{
+    background-color: #000;
+    background: rgba(0,0,0,0.5);
+}
+#floating .floating-link1{
+    top: 155px;
+    height: 55px;
+}
+#floating .floating-link2{
+    top: 215px;
+}
+#floating .floating-link3{
+    top: 275px;
+}
+#floating .floating-link4{
+    top: 335px;
+}
+#floating .floating-link5{
+    top: 395px;
+}
+#floating .floating-link6{
+    top: 455px;
+}
+/*悬浮结束*/
