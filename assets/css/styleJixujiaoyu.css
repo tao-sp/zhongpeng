@@ -190,6 +190,12 @@ input, textarea, p, blockquote, th, td,figure {
     color: #999999;
     box-shadow:3px 3px 3px #999;
 }
+.wiperinfo_list:hover{
+     background: #000;
+ }
+.wiperinfo_list:hover > .wiperinfo_img img {
+    filter:none;
+}
 .wiperinfo_active{
     background: #000;
 }
@@ -485,6 +491,7 @@ input, textarea, p, blockquote, th, td,figure {
     background: #4c5cd4;
     padding:10px 20px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .hot_subject{
     margin-top: 70px;
@@ -742,6 +749,7 @@ input, textarea, p, blockquote, th, td,figure {
     width:100%;
     background: url("../images/jixujiaoyu/bg7.png") no-repeat 100%;
     height: 260px;
+    margin-top:40px;
 }
 .file_download .education_head{
     padding-top:80px;
@@ -752,7 +760,7 @@ input, textarea, p, blockquote, th, td,figure {
 
 /* 本例子css */
 .slideTxtBox1{width: 885px;text-align:left;}
-.slideTxtBox1 .hd{height:30px;line-height:30px;padding: 0 10px 0 20px;position:relative;bottom: 36px;}
+.slideTxtBox1 .hd{height:30px;line-height:30px;padding: 0 10px 0 20px;position:relative;bottom: 70px;}
 .slideTxtBox1 .hd ul{float:left;position:absolute;left: 180px;top:-1px;height:32px;}
 .slideTxtBox1 .hd ul li{float:left;padding:0 15px;cursor:pointer;list-style-type:  none;}
 .slideTxtBox1 .bd ul li a {cursor:  pointer;color: #999;text-decoration: none;}
