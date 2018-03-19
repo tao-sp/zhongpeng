@@ -1608,7 +1608,7 @@ input, textarea, p, blockquote, th, td,figure {
     color: #4c5cd4;
     cursor: pointer;
     position: absolute;
-    bottom: 21px;
+    bottom: 10px;
     right:43px;
 }
 .answer_icon{
@@ -1912,3 +1912,145 @@ input, textarea, p, blockquote, th, td,figure {
     top: 455px;
 }
 /*悬浮结束*/
+
+
+/*条件详情开始*/
+.crumbs span{
+    position: absolute;
+    right:330px;
+}
+.crumbs span a{
+    margin:0 10px;
+    cursor: pointer;
+}
+.crumbs_relative{
+    position: relative;
+}
+.crumbs_active{
+    font-size: 15px;
+    color: #333;
+}
+/*条件详情结束*/
+
+
+/* 搜索问题开始*/
+
+
+/* 本例子css */
+.slideTxtBox4{width: 1200px;text-align:left;}
+.slideTxtBox4 .hd{width: 838px;background: #e5e5e5;height: 40px;line-height: 40px;padding: 0 10px 0 20px;}
+.slideTxtBox4 .hd ul{float:left;height: 40px;}
+.slideTxtBox4 .hd ul li{float:left;padding: 0 30px;cursor:pointer;list-style-type:  none;}
+.slideTxtBox4 .bd ul li a img{width:100%;}
+.slideTxtBox4 .hd ul li.on{height: 39px;border-bottom: 2px solid #4c5cd4;}
+.slideTxtBox4 .bd ul{zoom:1;}
+.slideTxtBox4 .bd{
+    width:868px;
+}
+.slideTxtBox4 .bd li{overflow:  hidden;width: 868px;height: 106px;line-height: 24px;list-style-type:  none;float:  left;position:  relative;}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideTxtBox4 .arrow{  position:absolute; right:10px; top:0; }
+.slideTxtBox4 .arrow a{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+    cursor:pointer; background:url("../images/jixujiaoyu/arrow.png") 0 0 no-repeat; }
+.slideTxtBox4 .arrow .next{ background-position:0 -50px;  }
+.slideTxtBox4 .arrow .prevStop{ background-position:-60px 0; }
+.slideTxtBox4 .arrow .nextStop{ background-position:-60px -50px; }
+
+
+.slideTxtBox4 .bd .img_lists li{
+    padding: 24px 0 !important;
+}
+
+
+.slideTxtBox4 .bd .course_lists li div{
+width: 688px;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee{
+    width: 116px;
+    margin-right:  0;
+    margin-top: 20px;
+}
+
+.slideTxtBox4 .bd .course_lists li .course_fee .course_fee_top{
+    background: url("../images/jixujiaoyu/course_fee.png") no-repeat;
+    float: none;
+    width: 114px;
+    height: 64px;
+    margin-left:  0;
+    text-align: center;
+    color: #fa6937;
+    font-size:13px;
+    line-height: 45px;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee .course_fee_top b{
+    font-size:24px;
+    margin: 0px 2px;
+}
+
+.slideTxtBox4 .bd .course_lists li .course_fee label{
+    cursor:  pointer;
+    width:112px;
+    display: block;
+    height:35px;
+    line-height: 37px;
+    border:1px solid #333333;
+    border-radius: 6px;
+    text-align: center;
+    margin:3px auto;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee .bluelabel{
+    background: #3b50ee;
+    border-color: #3b50ee;
+    color: white;
+    margin-top: 12px;
+}
+
+.margin_less{
+    margin-top:27px;
+}
+.subject_icon {
+    background-color: #7382f1;
+    background-image: url(../images/jixujiaoyu/subject.png);
+}
+.question_icon{
+    background-color: #f99a70;
+    background-image: url(../images/jixujiaoyu/qustion.png);
+}
+.new_notes_icon{
+    background-color: #58b8fb;
+}
+
+.course_lists{width: 868px;height: 194px;}
+
+.slideTxtBox4 .bd .course_lists li {
+    height: 194px;
+}
+.no_result{
+    width:330px;
+    height:270px;
+    margin: auto;
+    padding-left: 33px;
+    margin-top: 225px;
+    color: #666666;
+    font-size:18px;
+    text-align: center;
+}
+.no_result img{
+    display: block;
+    margin: 0 auto 35px;
+}
+.no_result h5{font-size: 15px;font-weight: normal;margin: 22px auto 28px;}
+.no_result a{
+    cursor:  pointer;
+    padding: 7px 26px;
+    border: 1px solid #333333;
+    border-radius:  6px;
+}
+.no_result .blue_consult{
+     background: #3b50ee;
+     border-color: #3b50ee;
+     color: #ffffff;
+     margin-right:  13px;
+}
+/*搜索问题结束*/
