@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>继续教育学院首页</title>
+    <title>首页--继续教育学院</title>
     <link href="favicon.ico" rel="shortcut icon">
     <meta name="description" content="这里是对网站的描述">
     <meta name="renderer" content="webkit">
@@ -16,12 +16,7 @@
     <script src="../../assets/js/jquery-1.11.3.min.js"></script>
     <script src="../../assets/js/jquery.SuperSlide.js"></script>
     <script src="../../assets/plugins/jalendar/jalendar.js"></script>
-     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZpXTKGoufXAqiOE1Qbi3y3BPgrY0OVPs"></script>
-    <script type="text/javascript">
-        $(function () {
-
-        });
-    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZpXTKGoufXAqiOE1Qbi3y3BPgrY0OVPs"></script>
 </head>
 <body class="font_yahei" style="overflow-x: hidden">
 
@@ -56,7 +51,7 @@
                    继续教育学院
                </div>
                 <div class="cityName">
-                    城市：深圳
+                    城市：<span id="map_location">深圳市</span>
                     <img src="../../assets/images/jixujiaoyu/citychoose.png">
                 </div>
             </div>
@@ -83,16 +78,16 @@
 
         <!--导航开始-->
         <ul class="nav">
-            <li>首页</li>
-            <li>课程中心</li>
-            <li>自学考试</li>
-            <li>成人高考</li>
-            <li>网络教育</li>
-            <li>开放教育</li>
-            <li>学员天地</li>
-            <li>问题交流</li>
-            <li>资料下载</li>
-            <li>关于中鹏</li>
+            <li><a>首页</a></li>
+            <li><a>课程中心</a></li>
+            <li><a>自学考试</a></li>
+            <li><a>成人高考</a></li>
+            <li><a>网络教育</a></li>
+            <li><a>开放教育</a></li>
+            <li><a>学员天地</a></li>
+            <li><a>问题交流</a></li>
+            <li><a>资料下载</a></li>
+            <li><a>关于中鹏</a></li>
             <div class="clear"></div>
         </ul>
         <!--导航结束-->
@@ -151,7 +146,7 @@
 
 </div>
 <div class="wiperinfo container_1200">
-        <div class="wiperinfo_list wiperinfo_active">
+        <div class="wiperinfo_list">
             <div class="wiperinfo_img">
                 <img src="../../assets/images/jixujiaoyu/blue_grant.png">
 
@@ -346,7 +341,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/lunbo2.png" /></a></div>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/lunbo1.png" /></a></div>
                         <div class="title">
                             <a href="#" target="_blank">大学</a>
                         </div>
@@ -409,7 +404,7 @@
 
         <div class="slideTxtBox">
             <div class="hd">
-                <ul><li>教育</li><li>培训</li><li>出国</li></ul>
+                <ul><li>经济管理类</li><li>计算机类</li><li>建筑工程系</li><li>语言法律系</li><li>化工类</li><li>艺术类</li><li>教育与护理类</li></ul>
             </div>
             <div class="bd">
                 <ul>
@@ -1084,16 +1079,16 @@
                     <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
                 </li>
                 <li>
-                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate2.png" /></a></div>
                 </li>
                 <li>
-                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate3.png" /></a></div>
                 </li>
                 <li>
-                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate4.png" /></a></div>
                 </li>
                 <li>
-                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate3.png" /></a></div>
                 </li>
                 <li>
                     <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
@@ -1490,7 +1485,19 @@
 
 <!--底部结束-->
 
+<!--悬浮开始-->
 
+<div class="floating" id="floating">
+    <img src="../../assets/images/jixujiaoyu/contract.png?t=001" alt="">
+    <a class="floating-link1 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link2 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link3 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link4 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link5 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link6 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+</div>
+
+<!--悬浮结束-->
 
 
 
@@ -1608,6 +1615,15 @@
         var p = marker.getPosition();       //获取marker的位置
         alert("marker的位置是" + p.lng + "," + p.lat);
     }
+
+    function myFun(result){
+        var cityName = result.name;
+        map.setCenter(cityName);
+        //alert("当前定位城市:"+cityName);
+        $("#map_location").text(cityName)
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
 </script>
 
 

@@ -3,6 +3,9 @@ input, textarea, p, blockquote, th, td,figure {
     margin: 0;
     padding: 0;
 }
+li{
+    list-style: none;
+}
 .clear{
     clear: both;
 }
@@ -13,6 +16,8 @@ input, textarea, p, blockquote, th, td,figure {
     width:1200px;
     margin: 0 auto;
 }
+
+/*首页----[继续教育学院]开始*/
 .shortcut{
     background: #4c5cd4;
     height:30px;
@@ -155,6 +160,10 @@ input, textarea, p, blockquote, th, td,figure {
     background: #38393a;
     height:162px;
     display: none;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 168px;
 }
 .nav_drop_down img{
     width:126px;
@@ -164,6 +173,7 @@ input, textarea, p, blockquote, th, td,figure {
     float: left;
     padding: 11px;
     text-align: center;
+    cursor: pointer;
 }
 .nav_drop_down_list div{
     font-size:14px;
@@ -187,6 +197,12 @@ input, textarea, p, blockquote, th, td,figure {
     color: #999999;
     box-shadow:3px 3px 3px #999;
 }
+.wiperinfo_list:hover{
+     background: #000;
+ }
+.wiperinfo_list:hover > .wiperinfo_img img {
+    filter:none;
+}
 .wiperinfo_active{
     background: #000;
 }
@@ -205,10 +221,20 @@ input, textarea, p, blockquote, th, td,figure {
 }
 .wiperinfo_img img {
     padding-top: 34px;
-    filter:url('../images/jixujiaoyu/gray.svg#grayscale');
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: gray;
 }
 .wiperinfo_active img {
     filter:none;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
 }
 .wiperimg{
     overflow:  hidden;
@@ -397,7 +423,17 @@ input, textarea, p, blockquote, th, td,figure {
 .picScroll-left .bd ul{ overflow:hidden; zoom:1; }
 .picScroll-left .bd ul li{margin:0;float:left;_display:inline;/* overflow:hidden; */text-align:center;}
 .picScroll-left .bd ul li .pic{ text-align:center; }
-.picScroll-left .bd ul li .pic img{ width:400px; height:600px; display:block;    filter:url('../images/jixujiaoyu/gray.svg#grayscale');  }
+.picScroll-left .bd ul li .pic img{
+    width:400px;
+    height:600px;
+    display:block;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: gray;
+}
 .picScroll-left .bd ul li .pic a:hover img{ border-color:#999; }
 .picScroll-left .bd ul li .title{
     width:376px;
@@ -418,6 +454,11 @@ input, textarea, p, blockquote, th, td,figure {
 .picScroll-left .bd ul li:hover{
     position: relative;bottom: 40px;
     filter:none;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
 }
 
 .picScroll-left .bd ul li:hover > .pic img{
@@ -482,6 +523,7 @@ input, textarea, p, blockquote, th, td,figure {
     background: #4c5cd4;
     padding:10px 20px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .hot_subject{
     margin-top: 70px;
@@ -719,6 +761,7 @@ input, textarea, p, blockquote, th, td,figure {
     background: #ce8b66;
 }
 .answer_more{
+    cursor: pointer;
     width:82px;
     height:37px;
     -webkit-border-radius: 6px;
@@ -738,6 +781,7 @@ input, textarea, p, blockquote, th, td,figure {
     width:100%;
     background: url("../images/jixujiaoyu/bg7.png") no-repeat 100%;
     height: 260px;
+    margin-top:40px;
 }
 .file_download .education_head{
     padding-top:80px;
@@ -748,7 +792,7 @@ input, textarea, p, blockquote, th, td,figure {
 
 /* 本例子css */
 .slideTxtBox1{width: 885px;text-align:left;}
-.slideTxtBox1 .hd{height:30px;line-height:30px;padding: 0 10px 0 20px;position:relative;bottom: 36px;}
+.slideTxtBox1 .hd{height:30px;line-height:30px;padding: 0 10px 0 20px;position:relative;bottom: 70px;}
 .slideTxtBox1 .hd ul{float:left;position:absolute;left: 180px;top:-1px;height:32px;}
 .slideTxtBox1 .hd ul li{float:left;padding:0 15px;cursor:pointer;list-style-type:  none;}
 .slideTxtBox1 .bd ul li a {cursor:  pointer;color: #999;text-decoration: none;}
@@ -963,6 +1007,7 @@ input, textarea, p, blockquote, th, td,figure {
     display: inline-block;
     font-size: 16px;
     color: #666;
+    text-decoration:  none;
 }
 .g-footer .footer-top .left .footer-nav span {
     margin: 0 16px;
@@ -1007,6 +1052,7 @@ input, textarea, p, blockquote, th, td,figure {
     margin-top: 4px;
     display: block;
     line-height: 18px;
+    font-style:  normal;
 }
 .g-footer .footer-top .left .footer-link .first {
     width: 352px;
@@ -1274,3 +1320,946 @@ input, textarea, p, blockquote, th, td,figure {
     padding: 0px 10px;
     margin: 10px;
 }
+
+
+/*首页----[继续教育学院]结束*/
+
+
+/*毕业留影----[继续教育学院]开始*/
+
+.crumbs{
+    margin-top: 50px;
+    font-size:15px;
+    color: #999999;
+    padding-bottom:  8px;
+    border-bottom:1px solid #999999;
+}
+.content_left{
+    width:900px;
+    float: left;
+}
+.content_right{
+    width:300px;
+    float: left;
+}
+.nav_title div{
+    padding-left: 52px;
+    background-color: #87cbfa;
+    height:40px;
+    line-height: 40px;
+    font-size:18px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+}
+.student_icon{
+    background-image: url("../images/jixujiaoyu/user.png");
+}
+.nav_title li{
+    position: relative;
+    list-style-type: none;
+    height: 47px;
+    line-height:  47px;
+    background:  #ffffff;
+    font-size:15px;
+    color: #666666;
+    margin:15px;
+    padding-left:  15px;
+    cursor: pointer;
+}
+.nav_title{
+    background: #f7f7f7;
+    padding-bottom: 1px;
+    margin-bottom:  11px;
+}
+.nav_title_active{
+    border-left:4px solid #999999;
+    color: #4a59cd !important;
+}
+.nav_title li img{
+    position: absolute;
+    right:23px;
+    top:11px;
+}
+
+.nav_rank div{
+    padding-left: 52px;
+    height:40px;
+    line-height: 40px;
+    font-size:18px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+}
+.rank_icon{
+    background-color: #f99a70;
+    background-image: url("../images/jixujiaoyu/qustion.png");
+}
+.nav_rank li{
+    position: relative;
+    list-style-type: none;
+    font-size: 15px;
+    color: #666666;
+    margin: 15px;
+    cursor: pointer;
+}
+.nav_rank li span{margin-right: 11px;padding: 1px 6px;border-radius: 4px;}
+.nav_rank li:nth-child(2) span{
+    background: #eeacac;
+    color: #ffffff;
+}
+.nav_rank li:nth-child(3) span{
+    background: #ecbc9b;
+    color: #ffffff;
+}
+.nav_rank li:nth-child(4) span{
+    background: #bec2f0;
+    color: #ffffff;
+}
+.nav_rank li:nth-child(11) span{
+    margin-right: 3px;
+}
+.nav_rank{
+    background: #f7f7f7;
+    padding-bottom: 1px;
+    margin-bottom: 11px;
+}
+.content{
+    margin-top:48px;
+}
+.advertisement{
+    width:100%;
+    margin-bottom: 6px;
+}
+.advertisement img{
+    width:100%;
+}
+.img_box div{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    color: #999999;
+    height: 30px;
+    line-height: 30px;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.7)!important;
+    filter:Alpha(opacity=70);
+    background:#000;
+}
+.img_box div span{
+    left:27px;
+    position: absolute;
+    font-size: 15px;
+    color: #999999;
+    height: 30px;
+    line-height: 30px;
+    bottom: 0;
+}
+.img_box{
+    cursor:  pointer;
+    margin: 0 90px 50px 0;
+    position:  relative;
+    width:358px;
+    height:220px;
+    float: left;
+}
+.img_box img{
+    width:358px;
+    height:220px;
+}
+.page_helper ul li{
+    cursor:  pointer;
+    padding: 4px 9px;
+    margin: 0 3px;
+    float: left;
+    list-style:none;
+    border: 1px solid #c8c8c8;
+    border-radius:  4px;
+}
+.page_current{
+    background: #356bcf;
+    color: #fff !important;
+    border-color: #356bcf;
+}
+.page_helper{
+    font-size:14px;
+    color: #bfbfbf;
+    margin-top: 56px;
+    margin-bottom: 63px;
+}
+.page_helper span{margin-left: 14px;}
+.page_helper input{
+    width: 35px;
+    height: 26px;
+    border-radius:  4px;
+    border: 1px solid #c8c8c8;
+}
+.page_helper button{
+    background:  #ffffff;
+    width: 35px;
+    cursor:  pointer;
+    height: 28px;
+    border-radius:  4px;
+    border: 1px solid #c8c8c8;
+}
+.page_helper .pages{
+    color: #000000;
+}
+
+
+
+/*毕业留影----[继续教育学院]结束*/
+
+
+
+/*学院活动----[继续教育学院]开始*/
+.img_lists{
+    margin-right: 32px;
+}
+.img_lists li{
+    padding:  46px 0;
+    list-style-type:none;
+    height: 155px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.img_lists li img{
+    height: 155px;
+    width:247px;
+    float: left;
+}
+.img_lists li div{
+    float: left;
+    width: 577px;
+    overflow: hidden;
+    margin: 0 13px 0 25px;
+}
+.img_lists li div h3{
+    font-size:18px;
+    color: #333333;
+    margin-bottom: 22px;
+}
+.img_lists li div p{
+    font-size:14px;
+    color: #666666;
+    line-height: 24px;
+}
+
+/*学院活动----[继续教育学院]结束*/
+
+/*学院新闻----[继续教育学院]开始*/
+
+.notes_icon {
+    background-color: #7382f1;
+    background-image: url("../images/jixujiaoyu/notes.png");
+}
+.news_icon{
+    background-image: url(../images/jixujiaoyu/newsicon.png);
+}
+
+/*学院新闻----[继续教育学院]结束*/
+
+
+/*政策与招生----[继续教育学院]开始*/
+.policy_icon{
+    background-image: url(../images/jixujiaoyu/star.png);
+}
+.article_title{
+    text-align: center;
+    border-bottom:  1px solid #cccccc;
+    margin-right: 32px;
+}
+.article_title h3{
+    font-size:18px;
+    color: #333333;
+    margin-bottom: 3px;
+}
+.article_title p{
+    font-size:14px;
+    color: #999999;
+    margin-bottom: 40px;
+}
+.article_content{
+    margin-right: 32px;
+}
+/*政策与招生----[继续教育学院]结束*/
+
+/*疑问解答----[继续教育学院]开始*/
+.qustion_search{
+    position:  relative;
+    height:50px;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 32px;
+}
+.qustion_search input{
+    font-size:  14px;
+    right: 84px;
+    position:  absolute;
+    height:35px;
+    width: 313px;
+    padding-left:  10px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid #4c5cd4;
+    border-top-left-radius: 6px;
+}
+
+.qustion_search button{
+    line-height: 33px;
+    width: 78px;
+    font-size: 18px;
+    cursor:  pointer;
+    position:  absolute;
+    background: #4c5cd4;
+    border: 1px solid #4c5cd4;
+    border-top-right-radius:  6px;
+    border-bottom-right-radius:  6px;
+    height: 37px;
+    right: 2px;
+    font-family: "Microsoft YaHei";
+    color: #fefefe;
+}
+.qustion_lists li{
+    position: relative;
+    height: 107px;
+    overflow:  hidden;
+}
+.qustion_lists li h3{
+  font-size: 18px;
+  margin-bottom: 26px;
+  color: #333333;
+}
+
+.qustion_lists li p{
+    font-size: 14px;
+    color: #666666;
+    line-height:  30px;
+}
+.qustion_lists li a{
+    font-size: 14px;
+    color: #4c5cd4;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right:43px;
+}
+.answer_icon{
+    background-image: url("../images/jixujiaoyu/light.png");
+}
+
+/*疑问解答----[继续教育学院]结束*/
+
+/*人力资源----[继续教育学院]开始*/
+.apply_icon{
+    background-image: url("../images/jixujiaoyu/notes.png");
+}
+/*人力资源----[继续教育学院]结束*/
+
+
+/*历史真题----[继续教育学院]开始*/
+.history_exam{
+    width: 866px;
+    border-collapse:collapse;
+}
+.history_exam thead tr th{
+}
+.history_exam thead tr{
+    text-align: left;
+    height: 39px;
+    font-size:  15px;
+    color: #333333;
+    line-height:  39px;
+    background: #e9e9e9;
+}
+.history_exam thead tr th:nth-child(1) {
+    padding-left: 38px;
+}
+.history_exam tbody tr{
+    color: #666666;
+    font-size: 15px;
+    line-height: 62px;
+    height:62px;
+    border-bottom: 1px solid #cccccc;
+}
+.history_exam tbody tr td span{
+    cursor:  pointer;
+    padding: 4px 12px;
+    color: #fefdfd;
+    font-size: 14px;
+    background: #4c5cd4;
+    border-radius: 4px;
+}
+.history_exam tbody tr td:nth-child(1) {
+   padding-left: 38px;
+}
+
+.history_exam tbody tr:nth-child(1) td:nth-child(1) {
+  background: url("../images/jixujiaoyu/fire.png") 8px 20px no-repeat;
+}
+.bordernone{
+    border-bottom: none;
+}
+.exam_icon{
+    background-image: url("../images/jixujiaoyu/zhenti.png");
+}
+/*历史真题----[继续教育学院]结束*/
+
+
+/*合作院校----[继续教育学院]开始*/
+
+.marginbottom{
+    margin-top: 0px !important;
+}
+.school_box .school_img_box div{
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    color: #e2e2e2;
+    height: 40px;
+    line-height: 40px;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.6)!important;
+    filter:Alpha(opacity=60);
+    background:#000;
+}
+.school_box .school_img_box:hover >  span{
+    display: block;
+}
+.school_box .school_img_box span{
+    z-index: 8;
+    display: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    height: 175px;
+    line-height: 175px;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.3)!important;
+    filter:Alpha(opacity=30);
+    background:#000;
+}
+.school_box .school_img_box span a{
+    cursor:  pointer;
+    border-radius: 6px;
+    border:1px solid #ffffff;
+    padding: 5px 31px 5px 12px;
+    background: url("../images/jixujiaoyu/more.png") 116px 8px no-repeat;
+}
+.school_box .school_img_box{
+    margin: 0 37px 28px 0;
+    position:  relative;
+    width: 272px;
+    height: 175px;
+    float: left;
+}
+.school_box .school_img_box img{
+    width: 272px;
+    height: 175px;
+}
+.school_box .school_img_box:nth-child(4n){
+    margin-right: 0 !important;
+}
+.school_box{
+    margin-top: 41px;
+}
+.page_center{
+    width:855px;
+    margin:63px auto;
+}
+
+/*合作院校----[继续教育学院]结束*/
+
+
+/*播放效果----[继续教育学院]开始*/
+.blackbg{
+    padding-bottom: 68px;
+    padding-top: 33px;
+    background: #222222;
+}
+.whitecolor{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.video_play{
+    width:753px;
+    height:492px;
+    float: left;
+}
+.video_play video{
+    width:100%;
+    height:492px;
+}
+.video_info{
+    margin-left: 51px;
+    width:343px;
+    height: 438px;
+    border:1px solid #999999;
+    float: left;
+    padding: 27px 25px;
+}
+.video_info .video_info_header img{
+    width: 79px;
+    height: 55px;
+    float: left;
+}
+.video_info .video_info_header div{
+    width: 248px;
+    float: left;
+    color: #a9a9a9;
+    font-size: 15px;
+    margin-left: 16px;
+}
+.video_info .video_info_header div b{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.video_info .video_info_header{
+    height:98px;
+    width:100%;
+    border-bottom: 1px dotted #cecece;
+}
+.recollections{
+    margin: 36px 0;
+    padding-left:  32px;
+    font-size:12px;
+    color: #999999;
+    background: url("../images/jixujiaoyu/recollections.png") 15px 2px no-repeat;
+}
+.recollections b{
+    font-size:18px;
+    color: #999999;
+    margin: 0 16px;
+}
+.video_info p{
+    color: #666666;
+    font-size:15px;
+    text-indent: 2em;
+}
+.video_img_box div{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    color: #999999;
+    height: 30px;
+    line-height: 30px;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.7)!important;
+    filter:Alpha(opacity=70);
+    background:#000;
+}
+.video_img_box div span{
+    position: absolute;
+    font-size: 15px;
+    color: #999999;
+    height: 30px;
+    line-height: 30px;
+    bottom: 0;
+    left:8px;
+}
+.video_img_box{
+    cursor:  pointer;
+    margin: 0 32px 50px 0;
+    position:  relative;
+    width:259px;
+    height:167px;
+    float: left;
+}
+.video_img_box img{
+    width:259px;
+    height:167px;
+}
+.video_playing{
+    border: 6px solid #4c5cd4;
+    box-shadow: 0px 4px 4px #afafaf;
+    border-radius:  8px;
+}
+/*播放效果----[继续教育学院]结束*/
+
+
+
+.whiteheart_icon{
+    background-image: url("../images/jixujiaoyu/whiteheart.png");
+    background-color: #f3986f;
+}
+.p_img{
+    margin-top: 7px;
+    margin-left: 12px;
+    font-size:15px;
+    color: #666666;
+    display: block;
+    float: left;
+}
+.p_img p{
+    font-size:16px;
+    margin-top: 10px;
+}
+.nav_rank li img{
+    float: left;
+    width:95px;
+    height:68px;
+}
+
+
+/*悬浮开始*/
+#floating{
+    position: fixed;
+    right: 0;
+    top: -46px;
+    z-index: 9999;
+}
+#floating .floating-link{
+    position: absolute;
+    left: 5px;
+    z-index: auto;
+    width: 92%;
+    height: 55px;
+}
+#floating .floating-link:hover{
+    background-color: #000;
+    background: rgba(0,0,0,0.5);
+}
+#floating .floating-link1{
+    top: 155px;
+    height: 55px;
+}
+#floating .floating-link2{
+    top: 215px;
+}
+#floating .floating-link3{
+    top: 275px;
+}
+#floating .floating-link4{
+    top: 335px;
+}
+#floating .floating-link5{
+    top: 395px;
+}
+#floating .floating-link6{
+    top: 455px;
+}
+/*悬浮结束*/
+
+
+/*条件详情开始*/
+.crumbs span{
+    position: absolute;
+    right:330px;
+}
+.crumbs span a{
+    margin:0 10px;
+    cursor: pointer;
+}
+.crumbs_relative{
+    position: relative;
+}
+.crumbs_active{
+    font-size: 15px;
+    color: #333;
+}
+/*条件详情结束*/
+
+
+/* 搜索问题开始*/
+
+
+/* 本例子css */
+.slideTxtBox4{width: 1200px;text-align:left;}
+.slideTxtBox4 .hd{width: 838px;background: #e5e5e5;height: 40px;line-height: 40px;padding: 0 10px 0 20px;}
+.slideTxtBox4 .hd ul{float:left;height: 40px;}
+.slideTxtBox4 .hd ul li{float:left;padding: 0 30px;cursor:pointer;list-style-type:  none;}
+.slideTxtBox4 .bd ul li a img{width:100%;}
+.slideTxtBox4 .hd ul li.on{height: 39px;border-bottom: 2px solid #4c5cd4;}
+.slideTxtBox4 .bd ul{zoom:1;}
+.slideTxtBox4 .bd{
+    width:868px;
+}
+.slideTxtBox4 .bd li{overflow:  hidden;width: 868px;height: 106px;line-height: 24px;list-style-type:  none;float:  left;position:  relative;}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideTxtBox4 .arrow{  position:absolute; right:10px; top:0; }
+.slideTxtBox4 .arrow a{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+    cursor:pointer; background:url("../images/jixujiaoyu/arrow.png") 0 0 no-repeat; }
+.slideTxtBox4 .arrow .next{ background-position:0 -50px;  }
+.slideTxtBox4 .arrow .prevStop{ background-position:-60px 0; }
+.slideTxtBox4 .arrow .nextStop{ background-position:-60px -50px; }
+
+
+.slideTxtBox4 .bd .img_lists li{
+    padding: 24px 0 !important;
+}
+
+
+.slideTxtBox4 .bd .course_lists li div{
+width: 688px;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee{
+    width: 116px;
+    margin-right:  0;
+    margin-top: 20px;
+}
+
+.slideTxtBox4 .bd .course_lists li .course_fee .course_fee_top{
+    background: url("../images/jixujiaoyu/course_fee.png") no-repeat;
+    float: none;
+    width: 114px;
+    height: 64px;
+    margin-left:  0;
+    text-align: center;
+    color: #fa6937;
+    font-size:13px;
+    line-height: 45px;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee .course_fee_top b{
+    font-size:24px;
+    margin: 0px 2px;
+}
+
+.slideTxtBox4 .bd .course_lists li .course_fee label{
+    cursor:  pointer;
+    width:112px;
+    display: block;
+    height:35px;
+    line-height: 37px;
+    border:1px solid #333333;
+    border-radius: 6px;
+    text-align: center;
+    margin:3px auto;
+}
+.slideTxtBox4 .bd .course_lists li .course_fee .bluelabel{
+    background: #3b50ee;
+    border-color: #3b50ee;
+    color: white;
+    margin-top: 12px;
+}
+
+.margin_less{
+    margin-top:27px;
+}
+.subject_icon {
+    background-color: #7382f1;
+    background-image: url(../images/jixujiaoyu/subject.png);
+}
+.question_icon{
+    background-color: #f99a70;
+    background-image: url(../images/jixujiaoyu/qustion.png);
+}
+.new_notes_icon{
+    background-color: #58b8fb;
+}
+
+.course_lists{width: 868px;height: 194px;}
+
+.slideTxtBox4 .bd .course_lists li {
+    height: 194px;
+}
+.no_result{
+    width:330px;
+    height:270px;
+    margin: auto;
+    padding-left: 33px;
+    margin-top: 225px;
+    color: #666666;
+    font-size:18px;
+    text-align: center;
+}
+.no_result img{
+    display: block;
+    margin: 0 auto 35px;
+}
+.no_result h5{font-size: 15px;font-weight: normal;margin: 22px auto 28px;}
+.no_result a{
+    cursor:  pointer;
+    padding: 7px 26px;
+    border: 1px solid #333333;
+    border-radius:  6px;
+}
+.no_result .blue_consult{
+     background: #3b50ee;
+     border-color: #3b50ee;
+     color: #ffffff;
+     margin-right:  13px;
+}
+/*搜索问题结束*/
+
+/*课程中心开始*/
+
+/* 轮播css */
+.slideBox1{width: 100%;overflow:hidden;position:relative;}
+.slideBox1 .hd{height: 13px;overflow:hidden;position:absolute;right: 48%;bottom:5px;z-index:1;}
+.slideBox1 .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox1 .hd ul li{border-radius:  25px;float:left;margin-right: 6px;width: 11px;height: 11px;line-height: 11px;text-align:center;background:#fff;cursor:pointer;}
+.slideBox1 .hd ul li.on{ background:#fe6455; color:#fff; }
+.slideBox1 .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox1 .bd li{ zoom:1; vertical-align:middle; }
+.slideBox1 .bd img{width: 100%;display:block;}
+
+
+.screen{
+    margin-bottom: 27px;
+}
+.screen li{
+    font-size:15px;
+    color: #666666;
+    line-height: 36px;
+}
+.screen li a{
+
+cursor:  pointer;
+
+padding: 2px 14px;
+}
+.screen li a:hover,.screen_active{
+
+background: #4c5cd4;
+
+color: #ffffff;
+
+border-radius:  5px;
+}
+.sort{
+    height: 40px;
+    background: #e5e5e5;
+    font-size:18px;
+    color: #333333;
+    line-height:  40px;
+    padding-left: 14px;
+    margin-bottom: 42px;
+}
+.sort a{
+    cursor: pointer;
+}
+.sort span{
+     background-image:url("../images/jixujiaoyu/up_down.png");
+     background-repeat: no-repeat;
+     padding: 0 18px;
+     margin-left:  22px;
+     background-position-x: right;
+     cursor: pointer;
+ }
+.sort span:hover,.sort a:hover,.sort_active,.sort_active1,.sort_active2{
+    color: #4c5cd4;
+}
+.sort_active1{
+   background-position-y: -22px;
+}
+.sort_active2{
+    background-position-y: -47px;
+}
+.ranking_icon{
+    background-image: url("../images/jixujiaoyu/paihang.png");
+    background-color: #7382f1;
+}
+.left_less{
+    margin-left:5px;
+    margin-top: 14px;
+}
+.history_record_icon{
+    background-image: url("../images/jixujiaoyu/historyrecord.png");
+    background-color: #f99a70;
+}
+
+/*课程中心结束*/
+
+/*课程介绍开始*/
+.course_info img{
+    width:385px;
+    height:268px;
+    float: left;
+}
+.course_info div{
+    float: left;
+    width: 466px;
+    padding: 0 20px;
+    color: #333333;
+}
+.course_info div h3{
+    font-size: 18px;
+}
+.course_info div p{
+    font-size: 15px;
+    line-height:30px;
+}
+.course_info div label{
+    font-size: 23px;
+    color: #fa6937;
+    display: block;
+    margin: 19px 0;
+}
+.course_info div label span{
+    font-size: 37px;
+    color: #fa6937;
+    font-weight: bold;
+}
+
+.course_info div a{
+    margin: 0 12px;
+    border:1px solid #333333;
+    border-radius: 5px;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    display: block;
+    width:112px;
+    height:35px;
+    line-height:35px;
+    text-align: center;
+}
+ 
+.course_info div a:hover{
+    color: #ffffff;
+    background: #3b50ee;
+    border-color: #3b50ee;
+}
+.class_detail{
+    background: #e9e9e9;
+    margin: 26px 40px 26px 0;
+    height:40px;
+    padding-left: 14px;
+    line-height:40px;
+    font-size: 15px;
+    color: #333333;
+}
+.course_detail{
+    color: #333;
+    margin-right: 40px;
+    margin-bottom: 76px;
+}
+.course_detail h3{
+    font-size: 18px;
+}
+.course_detail b{
+    font-size: 15px;
+    margin: 5px 0;
+    line-height: 24px;
+    float: left;
+    width:84px;
+}
+.course_detail p{
+    font-size: 15px;
+    margin: 5px 0;
+    line-height: 24px;
+    float: left;
+    width: 772px;
+}
+.class_detail_lists div{
+    width: 272px;
+    float: left;
+    font-size: 15px;
+    color: #333333;
+    margin-right: 22px;
+}
+.class_detail_lists div img{
+    width: 272px;
+    height:190px;
+}
+.class_detail_lists div:nth-child(3n){
+    margin-right: 0!important;
+}
+/*课程介绍结束*/
+
