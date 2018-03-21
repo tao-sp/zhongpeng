@@ -1687,4 +1687,97 @@
 }
 
 
+/*官网--资讯中心详情页--页面样式*/
+
+.zxxq-main{
+  padding-top:80px;
+  .info-cat-in{
+    margin-top: 80px;
+    .header{
+      h1{
+        .title(@size:30px;@fw:normal;@lh:30px;);
+      }
+      .time{
+        margin:15px auto 10px;
+        .title(@size:14px;@fw:normal;@lh:14px;);
+      }
+    }
+    .content{
+      .title(@size:14px;@co:#666;@fw:normal;@lh:25px;@al:left);
+      text-indent:2em;
+      p{
+        margin-top: 25px;
+      }
+      img {
+        display: block;
+        margin: 50px auto 40px;
+        width:auto;
+      }
+    }
+    .bootom{
+      margin-top: 50px;
+      margin-bottom: 66px;
+      width: 100%;
+      ul{
+        li{
+          float: left;
+          width: 50%;
+          height: 96px;
+          .title(@size:16px;@fw:normal;@lh:96px;@al:right;);
+          background-color: #f5f5f5;
+          cursor: pointer;
+          .article-tit{
+            .icon,span{
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .icon{
+              width: 70px;
+              height: 96px;
+              background-repeat:no-repeat;
+            }
+          }
+          &:hover{
+            background: #999;
+            color: #fff;
+            color: rgba(255,255,255,0.8);
+          }
+        }
+        .prev{
+          text-align: left;
+          .article-tit{
+            .icon{
+              background-image: url('@{images}/zxxq-001.png');
+              background-position: 30px center;
+            }
+          }
+          &:hover{
+            .article-tit{
+              .icon{
+                background-image: url('@{images}/zxxq-003.png');
+              }
+            }
+          }
+        }
+        .next{
+          text-align: right;
+          .article-tit{
+            .icon{
+              background-image: url('@{images}/zxxq-002.png');
+              background-position: 16px center;
+            }
+          }
+        }
+        &:hover{
+          .article-tit{
+            .icon{
+              background-image: url('@{images}/zxxq-004.png');
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 

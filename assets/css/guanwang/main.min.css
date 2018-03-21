@@ -1853,3 +1853,97 @@
 .a-main .ab-contact-us .campus-details-wrapper ul .item-5 .campus-details li span {
   width: 306px;
 }
+/*官网--资讯中心详情页--页面样式*/
+.zxxq-main {
+  padding-top: 80px;
+}
+.zxxq-main .info-cat-in {
+  margin-top: 80px;
+}
+.zxxq-main .info-cat-in .header h1 {
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+}
+.zxxq-main .info-cat-in .header .time {
+  margin: 15px auto 10px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 14px;
+  text-align: center;
+  color: #333;
+}
+.zxxq-main .info-cat-in .content {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #666;
+  text-indent: 2em;
+}
+.zxxq-main .info-cat-in .content p {
+  margin-top: 25px;
+}
+.zxxq-main .info-cat-in .content img {
+  display: block;
+  margin: 50px auto 40px;
+  width: auto;
+}
+.zxxq-main .info-cat-in .bootom {
+  margin-top: 50px;
+  margin-bottom: 66px;
+  width: 100%;
+}
+.zxxq-main .info-cat-in .bootom ul li {
+  float: left;
+  width: 50%;
+  height: 96px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 96px;
+  text-align: right;
+  color: #333;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.zxxq-main .info-cat-in .bootom ul li .article-tit .icon,
+.zxxq-main .info-cat-in .bootom ul li .article-tit span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.zxxq-main .info-cat-in .bootom ul li .article-tit .icon {
+  width: 70px;
+  height: 96px;
+  background-repeat: no-repeat;
+}
+.zxxq-main .info-cat-in .bootom ul li:hover {
+  background: #999;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+}
+.zxxq-main .info-cat-in .bootom ul .prev {
+  text-align: left;
+}
+.zxxq-main .info-cat-in .bootom ul .prev .article-tit .icon {
+  background-image: url('../../images/guanwang/zxxq-001.png');
+  background-position: 30px center;
+}
+.zxxq-main .info-cat-in .bootom ul .prev:hover .article-tit .icon {
+  background-image: url('../../images/guanwang/zxxq-003.png');
+}
+.zxxq-main .info-cat-in .bootom ul .next {
+  text-align: right;
+}
+.zxxq-main .info-cat-in .bootom ul .next .article-tit .icon {
+  background-image: url('../../images/guanwang/zxxq-002.png');
+  background-position: 16px center;
+}
+.zxxq-main .info-cat-in .bootom ul:hover .article-tit .icon {
+  background-image: url('../../images/guanwang/zxxq-004.png');
+}
