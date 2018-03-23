@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>首页--管理学院</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <meta name="description" content="这里是对网站的描述">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../../assets/css/styleGuanli.css">
+    <link rel="stylesheet" href="../../assets/plugins/jalendar/jalendar.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../assets/js/jquery.SuperSlide.js"></script>
+    <script src="../../assets/plugins/jalendar/jalendar.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZpXTKGoufXAqiOE1Qbi3y3BPgrY0OVPs"></script>
+</head>
+<body class="font_yahei" style="overflow-x: hidden">
+
+<!--头部1开始-->
+
+<div class="shortcut">
+    <div class="container_1200 shortcut_content">
+        <div class="shortcut_content_left">
+            <a>艺术学院</a>
+            <a>继续教育学员</a>
+            <a>灵蜥学院</a>
+        </div>
+        <div class="shortcut_content_right">
+            <a><img src="../../assets/images/jixujiaoyu/wechat1.png">关注中鹏</a>
+            <a><img src="../../assets/images/jixujiaoyu/consultation1.png">咨询群</a>
+        </div>
+    </div>
+</div>
+
+<!--头部1结束-->
+
+<!--头部2开始-->
+
+<div class="logomore">
+    <div class="container_1200 logomore_content">
+
+        <!--logo开始-->
+        <div class="logomore_content_left">
+            <img class="logomore_content_left_img" src="../../assets/images/jixujiaoyu/blacklogo.png">
+            <div class="names">
+                <div class="collegeName">
+                    管理学院
+                </div>
+                <div class="cityName">
+                    城市：<span id="map_location">深圳市</span>
+                    <img src="../../assets/images/jixujiaoyu/citychoose.png">
+                </div>
+            </div>
+        </div>
+        <div class="logomore_content_right">
+            <div class="search">
+                <input type="text" placeholder="搜索课程、通知、疑问疑答">
+                <img src="../../assets/images/jixujiaoyu/search.png">
+            </div>
+            <div class="hotline">
+                <img src="../../assets/images/jixujiaoyu/redhotline.png">
+                <div class="hotline_content">
+                    <div class="hotline_content_name">
+                        全国统一服务热线
+                    </div>
+                    <div class="hotline_content_number">
+                        400-930-6618
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--logo结束-->
+
+        <!--导航开始-->
+        <ul class="nav">
+            <li><a>首页</a></li>
+            <li><a>课程中心</a></li>
+            <li><a>自学考试</a></li>
+            <li><a>成人高考</a></li>
+            <li><a>网络教育</a></li>
+            <li><a>开放教育</a></li>
+            <li><a>学员天地</a></li>
+            <li><a>问题交流</a></li>
+            <li><a>资料下载</a></li>
+            <li><a>关于中鹏</a></li>
+            <div class="clear"></div>
+        </ul>
+        <!--导航结束-->
+
+    </div>
+</div>
+
+
+<div class="nav_drop_down" id="nav1">
+    <div id="nav_drop_down_lists">
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+            <div>自考</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+            <div>成人高考</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+            <div>远程教育</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+            <div>本科</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!--头部2结束-->
+
+<!--轮播开始-->
+<div class="wiperimg">
+
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img src="../../assets/images/jixujiaoyu/banner.png" /></a></li>
+                <li><a href="#"><img src="../../assets/images/jixujiaoyu/banner.png" /></a></li>
+                <li><a href="#"><img src="../../assets/images/jixujiaoyu/banner.png" /></a></li>
+            </ul>
+        </div>
+
+        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+
+    </div>
+
+    <script id="jsID" type="text/javascript">
+        var ary = location.href.split("&");
+        jQuery(".slideBox").slide( { mainCell:".bd ul", effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4],delayTime:ary[5],mouseOverStop:ary[6],pnLoop:ary[7] });
+    </script>
+
+
+</div>
+<div class="wiperinfo container_1200">
+    <div class="wiperinfo_list borderline">
+        <img src="../../assets/images/jixujiaoyu/gonggao.png">
+        <div>
+        <b>三月活动</b>
+        <p>惊喜3月礼不断，中鹏巨惠等你来</p>
+        </div>
+
+    </div>
+    <div class="wiperinfo_list">
+        <div>
+            <b>三月活动</b>
+            <p>惊喜3月礼不断，中鹏巨惠等你来</p>
+        </div>
+    </div>
+    <div></div>
+    <div class="clear"></div>
+</div>
+
+<!--轮播结束-->
+
+
+
+<!--总有你想要的课程开始-->
+<div id="swidth" style="width: 1200px;overflow: visible;margin: auto;">
+    <div class="education">
+        <div class="answer_title">
+            <h3><b>总</b>有你想要的课程</h3>
+            <span>HERE IS ALWAYS THE COURSE YOU WANT </span>
+        </div>
+
+
+
+        <div class="picScroll-left" style="position: relative;left: -305px;">
+
+            <div class="bd">
+                <ul class="picList"  >
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum1.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">企业人力资源管理师</a>
+
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum2.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">劳动关系协调师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum3.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">采购师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum4.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">心理咨询师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum3.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">采购师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum2.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">劳动关系协调师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum1.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">企业人力资源管理师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum2.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">劳动关系协调师</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/curriculum4.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">心理咨询师</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="hd">
+                <ul></ul>
+                <!-- <span class="pageState"></span>-->
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6,trigger:"click"});
+        </script>
+
+
+
+    </div>
+
+</div>
+<!--总有你想要的课程结束-->
+<hr class="hrline">
+
+<!--近期课程开始-->
+<div class="container_1200 positionre">
+    <div class="redbg">
+
+    </div>
+    <div class="redbg1">
+
+    </div>
+
+
+    <div class="recent_courses">
+        <div>
+            <h3>近期课程</h3>
+            <p>THERE IS ALWAYS THE COURSE YOU WANT</p>
+        </div>
+        <a class="result_inquiry"><img src="../../assets/images/jixujiaoyu/result.png"> 成绩查询</a>
+        <a class="result_inquiry"><img src="../../assets/images/jixujiaoyu/certificate.png"> 证书查询</a>
+
+
+    </div>
+
+    <div class="picScroll-left6">
+        <div class="hd">
+            <a class="next"></a>
+            <a class="prev"></a>
+        </div>
+        <div class="bd">
+            <ul class="picList">
+                <li>
+                    <div class="pic">
+                        <img src="../../assets/images/jixujiaoyu/kc1.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../../assets/images/jixujiaoyu/kc2.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                        </a></div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/kc1.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../../assets/images/jixujiaoyu/kc2.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                        </a></div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../../assets/images/jixujiaoyu/kc1.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../../assets/images/jixujiaoyu/kc2.png" />
+                            <div class="course_info">
+
+                                <h3>人力资源二级实践班</h3>
+                                <p>艺术设计专业培养具备艺术设计学教学和研究等方面的知识和能力，能在艺术设计教育、研究、设计、出版和文博等单位从事艺术设计学教学、研究、编辑等方面工作的专门人才。
+                                </p>
+                                <a class="check_immediately">立即查看</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script id="jsID6" type="text/javascript">
+        jQuery(".picScroll-left6").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:2});
+    </script>
+
+
+    <!--公告开始-->
+    <div class="notice">
+        <div class="notice_title">
+           <h3>公告通知</h3>
+            <p>THE ANNOUNCEMENT TO INFORM</p>
+        </div>
+        <ul class="notice_lists">
+
+            <li class="tz"><span>通知</span>2018年02月26，人力资一级证书开考</li>
+            <li class="tz"><span>通知</span>2018年02月26，人力资一级证书开考</li>
+            <li class="gg"><span>公告</span>2018年02月26，人力资一级证书开考</li>
+            <li class="gg"><span>公告</span>2018年02月26，人力资一级证书开考</li>
+            <div class="clear"></div>
+
+        </ul>
+
+
+    <div class="clear"></div>
+    </div>
+    <!--公告结束-->
+</div>
+<!--近期课程结束-->
+
+<!--课程全方位配套服务开始-->
+
+<div class="service">
+
+    <div class="wiperinfo1 container_1200">
+        <div class="wiperinfo_list1">
+            <div class="wiperinfo_img1">
+                <img src="../../assets/images/jixujiaoyu/red_grant.png">
+
+            </div>
+            <div class="wiperinfo_name1">
+                助学金计划<br>
+                Financial aid
+            </div>
+        </div>
+        <div class="wiperinfo_list1">
+            <div class="wiperinfo_img1">
+                <img src="../../assets/images/jixujiaoyu/red_stages.png">
+            </div>
+            <div class="wiperinfo_name1">
+                分期付款优惠<br>
+                Installment credit
+            </div>
+        </div>
+        <div class="wiperinfo_list1">
+            <div class="wiperinfo_img1">
+                <img src="../../assets/images/jixujiaoyu/red_loan.png">
+            </div>
+            <div class="wiperinfo_name1">
+                0利率贷款优惠<br>
+                Interest rate loans
+            </div>
+        </div>
+        <div class="wiperinfo_list_block1">
+            <div class="learn_more1">了解更多优惠</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+    <div class="education">
+        <div class="service_title">
+            <h3><b>课</b>程全方位配套服务</h3>
+            <span>THE COURSE IS FULL OF SUPPORTING SERVICES </span>
+        </div>
+    </div>
+
+
+    <ul class="container_1200">
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve1.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve2.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve3.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve4.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve5.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve6.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve7.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <li>
+            <img src="../../assets/images/jixujiaoyu/serve8.png">
+            <h3>咨询服务</h3>
+            <p>职业规划师专业课程咨询规划服务</p>
+        </li>
+        <div class="clear"></div>
+    </ul>
+
+</div>
+
+
+<!--课程全方位配套服务结束-->
+
+
+
+
+<!--线上试听开始-->
+<div class="online_audition">
+
+    <div class="education container_1200">
+        <div class="education_head">
+            <h2>线上试听<span>ONLINE AUDITION</span></h2>
+            <h1 class="clear"></h1>
+        </div>
+
+        <ul>
+            <li>
+                <img src="../../assets/images/jixujiaoyu/curriculum1.png">
+                <div class="online_audition_play" ><img src="../../assets/images/jixujiaoyu/play.png"></div>
+             <p>企业人力资源管理师</p>
+            </li>
+            <li>
+                <img src="../../assets/images/jixujiaoyu/curriculum2.png">
+                <div class="online_audition_play" ><img src="../../assets/images/jixujiaoyu/play.png"></div>
+                <p> 劳动关系协调师</p>
+            </li>
+            <li>
+                <img src="../../assets/images/jixujiaoyu/curriculum3.png">
+                <div class="online_audition_play" ><img src="../../assets/images/jixujiaoyu/play.png"></div>
+                <p> 采购师</p>
+            </li>
+            <li>
+                <img src="../../assets/images/jixujiaoyu/curriculum4.png">
+                <div class="online_audition_play" ><img src="../../assets/images/jixujiaoyu/play.png"></div>
+                <p>  心理咨询师</p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+
+
+
+
+
+    </div>
+
+</div>
+
+<!--线上试听结束-->
+
+
+
+<!--问题解答开始-->
+
+<div class="question_answer container_1200">
+    <ul class="question_answer_ul1">
+        <div class="question_answer_1">
+            <img src="../../assets/images/jixujiaoyu/question_answer.png">
+            <a>更多问题</a>
+        </div>
+
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+
+        <div class="clear"></div>
+
+
+    </ul>
+    <ul class="question_answer_ul2">
+        <div class="question_answer_2">
+            <img src="../../assets/images/jixujiaoyu/dl.png">
+            资料下载
+            <a>更多 > </a>
+        </div>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+
+    </ul>
+    <ul class="question_answer_ul2">
+        <div class="question_answer_2">
+            <img src="../../assets/images/jixujiaoyu/ns.png">
+            学院新闻
+            <a>更多 > </a>
+        </div>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+        <li>学习三段习三段习三段五步法五步步是什么? </li>
+
+    </ul>
+    <div class="clear"></div>
+
+
+</div>
+
+<!--问题解答结束-->
+
+
+<!--往期学员开始-->
+<div class="hot_subject">
+    <div class="education container_1200">
+        <div class="education_head">
+            <h2>往期学员<span>PAST PARTICIPANTS</span> </h2>
+            <div><img src="../../assets/images/jixujiaoyu/liuyan.png">猎聘留言</div>
+            <h1 class="clear"></h1>
+        </div>
+
+
+        <div class="slideTxtBox">
+            <div class="hd">
+                <ul><li>毕业留影</li><li>学员活动</li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><img src="../../assets/images/jixujiaoyu/student1.png"> </li>
+                    <li><img src="../../assets/images/jixujiaoyu/student2.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student3.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student4.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student5.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student6.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student7.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student8.png"></li>
+                    <div class="clear"></div>
+                </ul>
+                <ul>
+                    <li><img src="../../assets/images/jixujiaoyu/student1.png"> </li>
+                    <li><img src="../../assets/images/jixujiaoyu/student2.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student3.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student4.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student5.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student6.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student7.png"></li>
+                    <li><img src="../../assets/images/jixujiaoyu/student8.png"></li>
+                    <div class="clear"></div>
+                </ul>
+
+            </div>
+        </div>
+
+        <script id="jsID1" type="text/javascript">
+            var ary = location.href.split("&");
+            jQuery(".slideTxtBox").slide( { effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4],delayTime:ary[5],pnLoop:ary[6] });
+        </script>
+
+
+
+    </div>
+</div>
+<!--往期学员结束-->
+
+<hr class="hrline">
+
+
+<!--行业讲师开始-->
+    <div class="education marginone container_1200" >
+        <div class="teacher_title">
+            <h3><b>行</b>业讲师为您亲自传授独家秘笈</h3>
+            <span>INDUSTRY LECTURERS TEACH YOU THE SECRET SAUCE IN PERSON </span>
+        </div>
+
+
+
+        <div class="picScroll-left4" >
+
+            <div class="bd">
+                <ul class="picList"  >
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher1.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher2.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher3.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                           <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher4.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher3.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher2.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/teacher1.png" /></a></div>
+                        <div class="title">
+                            <a href="#" target="_blank">王老师</a>
+                        </div>
+                        <div class="title_active">
+                            <h3>王老师</h3>
+                            <div><img src="../../assets/images/jixujiaoyu/icon2.png">人力资源总监</div>
+                            <div><img src="../../assets/images/jixujiaoyu/icon1.png">获得XXXXXXXXX荣誉</div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="hd">
+                <a class="next"></a>
+                <a class="prev"></a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(".picScroll-left4").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,trigger:"click"});
+        </script>
+
+
+
+    </div>
+
+<!--行业讲师结束-->
+
+
+
+<!--舒适的教学环境开始-->
+<div class="environment">
+    <div class="education container_1200">
+        <div class="answer_title">
+            <h3><b>舒</b>适的教学环境</h3>
+            <span>COMFORTABLE TEACHING ENVIRONMENT</span>
+        </div>
+
+        <ul>
+            <li><img src="../../assets/images/jixujiaoyu/environment1.png"> </li>
+            <li><img src="../../assets/images/jixujiaoyu/environment2.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment3.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment4.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment5.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment6.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment7.png"></li>
+            <li><img src="../../assets/images/jixujiaoyu/environment8.png"></li>
+            <div class="clear"></div>
+        </ul>
+
+
+
+
+
+
+    </div>
+</div>
+<!--舒适的教学环境结束-->
+
+
+
+<!--中鹏荣誉开始-->
+<div class="education container_1200">
+    <div class="education_head">
+        <h2>企业荣誉<span>ENTERPRISE HONOR</span></h2>
+        <h1 class="clear"></h1>
+    </div>
+
+
+
+    <div class="picScroll-left1">
+        <div class="hd">
+            <a class="next"></a>
+            <a class="prev"></a>
+        </div>
+        <div class="bd">
+            <ul class="picList">
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate2.png" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate3.png" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate4.png" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate3.png" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="#" target="_blank"><img src="../../assets/images/jixujiaoyu/certificate1.png" /></a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script id="jsID3" type="text/javascript">
+        jQuery(".picScroll-left1").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4});
+    </script>
+
+
+
+
+</div>
+
+
+
+<!--中鹏荣誉结束-->
+
+<!--校区分布开始-->
+
+<div class="campus_map container_1200">
+    <div id="campus_map"></div>
+
+
+
+
+
+
+    <div class="slideTxtBox2">
+
+        <h3>校区分布</h3>
+        <div class="hd">
+            <ul><li>深圳</li><li>广州</li><li>东莞</li></ul>
+        </div>
+        <div class="bd">
+            <ul class="style-4">
+                <li class="map_active">
+                    <div>
+                        <p><b>福田分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png"> 深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png"> 400-930-6618</p>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div>
+                        <p><b>龙岗校区</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <li>
+
+                    <div>
+                        <p><b>南山分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+
+                <li>
+
+                    <div>
+                        <p><b>宝安分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <li>
+
+                    <div>
+                        <p><b>广州分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <div class="clear"></div>
+            </ul>
+            <ul class="style-4">
+
+                <li>
+
+                    <div>
+                        <p><b>广州分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <div class="clear"></div>
+            </ul>
+            <ul class="style-4">
+
+                <li>
+                    <div>
+                        <p><b>福田分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div>
+                        <p><b>龙岗校区</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p>400-930-6618</p>
+                    </div>
+                </li>
+
+                <li>
+
+                    <div>
+                        <p><b>南山分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+
+                <li>
+
+                    <div>
+                        <p><b>宝安分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p><b>广州分校</b></p>
+                        <p><img src="../../assets/images/jixujiaoyu/address.png">深圳市福田区上步中路深勘大厦19楼</p>
+                        <p><img src="../../assets/images/jixujiaoyu/phone.png">400-930-6618</p>
+                    </div>
+                </li>
+
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script id="jsID5" type="text/javascript">
+        var ary = location.href.split("&");
+        jQuery(".slideTxtBox2").slide( { effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4],delayTime:ary[5],pnLoop:ary[6] });
+    </script>
+
+
+</div>
+
+<!--校区分布结束-->
+
+
+<!--合作伙伴开始-->
+
+<div class="container_1200">
+
+    <div class="cooperation">
+        <div class="cooperation-header">
+            <h2 class="tit">合作伙伴</h2>
+            <p class="sub-tit">COOPERATION PARTNER</p>
+            <div class="line"></div>
+        </div>
+        <div class="cooperation-content">
+            <ul class="cooperation-partner-list">
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/16.jpg" alt=""/></a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <ul class="link">
+        <li>
+            友情链接：
+        </li>
+        <li>
+            在职自考网
+        </li>
+        <li>
+            设计之窗
+        </li>
+        <li>
+            深圳大学继续教育学院
+        </li>
+        <div class="clear"></div>
+    </ul>
+
+</div>
+
+<!--合作伙伴结束-->
+
+<!--底部开始-->
+
+<div class="g-footer">
+    <div class="container_1200">
+        <div class="footer-top clearfix">
+            <div class="fl left">
+                <p class="footer-nav">
+                    <a href="">关于我们</a>
+                    <span>/</span><a href="">企业文化</a>
+                    <span>/</span><a href="">法律声明</a>
+                    <span>/</span><a href="">申请合作</a>
+                    <span>/</span><a href="">联系我们</a>
+                    <span>/</span><a href="">加入我们</a>
+                </p>
+                <ul class="footer-link clearfix" >
+                    <li class="first">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-1.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">地址</span>
+                            <em class="cont">广东省深圳市龙岗校区吉祥地铁站b出口湖广通大厦4楼</em>
+                        </p>
+                    </li>
+                    <li class="underline">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-2.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">邮编</span>
+                            <em class="cont">100048</em>
+                        </p>
+                    </li>
+                    <li class="underline">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-3.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">联系号码</span>
+                            <em class="cont">400-930-6618</em>
+                        </p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="fr right">
+                <div class="weixin">
+                    <img src="../../assets/images/guanwang/f-4.png" alt=""/>
+                </div>
+                <p class="weixin-desc">关注中鹏</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">Copyright ©2001-2018 WENDU Corporation All Rights ReservedXXXXX有限公司 版权所有</p>
+            <p class="licensing"><span>XXX出版许可:XXXXXX100085号</span> <em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span></p>
+            <ol class="advantage">
+                <li><a href=""><img src="../../assets/images/guanwang/f-5.png" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/f-6.png" alt=""/></a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--底部结束-->
+
+<!--悬浮开始-->
+
+<div class="floating" id="floating">
+    <img src="../../assets/images/jixujiaoyu/contract1.png?t=001" alt="">
+    <a class="floating-link1 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link2 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link3 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link4 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link5 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+    <a class="floating-link6 floating-link" target="_blank" href="javascript:void(0)"  lim_company="796416"></a>
+</div>
+
+<!--悬浮结束-->
+
+
+
+<script>
+
+    window.onload = function() {
+
+        $('#myId5').jalendar({
+
+            color: '#c7ceff',
+            lang: 'CN' // Format: English — 'EN', Türkçe — 'TR'
+        });
+
+        var obj = $(".nav_drop_down_list");
+        $("#nav_drop_down_lists").css("width",obj.length*148);
+
+       /* var objs = $(".slideTxtBox2 .bd ul");
+        for (var i = 0;i<objs.length;i++){
+            var len = objs[i].children.length-2;
+            $(objs[i]).css("width",len*470);
+        }*/
+
+
+        $(".slideTxtBox2 .hd ul li").hover(function () {
+            map.clearOverlays();
+            var point = new BMap.Point(113.302124,23.140507); //将标注点转化成地图上的点
+            var marker = new BMap.Marker(point); //将点转化成标注点
+            map.addOverlay(marker);
+            map.centerAndZoom(new BMap.Point(113.302124,23.140507), 22);  // 设置中心点
+        })
+
+
+
+
+
+        /*鼠标划过导航事件*/
+        $(".logomore .logomore_content .nav li").hover(function () {
+            $("#nav1").stop(true, false).slideToggle("slow");
+            $(".nav_active").removeClass("nav_active");
+            $(this).addClass("nav_active");
+        })
+        $(".logomore .logomore_content .nav li").mouseleave(function(){
+            setTimeout(function() {//两秒后跳转
+                if ($("#nav1").css("display") == "none") {
+                    $(".nav_active").removeClass("nav_active");
+                }
+            },1000);
+        });
+        $("#nav1").hover(function () {
+            $("#nav1").stop(true, false).slideToggle();
+            if($("#nav1").css("display")=="none") {
+                $(".nav_active").removeClass("nav_active");
+            }
+        })
+
+    }
+</script>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("campus_map",{minZoom:10,maxZoom:25});
+    var point = new BMap.Point(114.101551,22.553871);
+    map.centerAndZoom(point, 22);
+    map.enableScrollWheelZoom(true);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    marker.addEventListener("click",getAttr);
+    function getAttr(){
+        var p = marker.getPosition();       //获取marker的位置
+        alert("marker的位置是" + p.lng + "," + p.lat);
+    }
+
+    function myFun(result){
+        var cityName = result.name;
+        map.setCenter(cityName);
+        //alert("当前定位城市:"+cityName);
+        $("#map_location").text(cityName)
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
+</script>
+
+
+</body>
+</html>
