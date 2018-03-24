@@ -1,6 +1,7 @@
 em,
 i,
-strong {
+strong,
+b {
   font-style: normal;
 }
 .kechengzx-body {
@@ -19,6 +20,7 @@ strong {
 /* 轮播的左右按钮的样式控制 */
 /*行内块级元素，图标与文字对齐*/
 /*线段*/
+/*课程中心样式*/
 .kechengzx-body .crumbs-wrapper {
   padding-top: 39px;
   height: 261px;
@@ -148,14 +150,14 @@ strong {
 .kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .active a .inline-block-span {
   color: #ef3333;
 }
-.kechengzx-body .gl-kczx-content .content_left {
+.kczx-content .content_left {
   width: 776px;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item {
+.kczx-content .content_left .guanli-kecheng-container .item {
   padding-bottom: 40px;
   border-bottom: 1px solid #dcdddd;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-top .course-name {
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .course-name {
   width: 596px;
   font-size: 24px;
   font-family: "Microsoft YaHei";
@@ -164,25 +166,25 @@ strong {
   text-align: left;
   color: #333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-top .price {
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price {
   width: 180px;
   line-height: 24px;
   text-align: right;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-top .price .icon {
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .icon {
   font-size: 18px;
   color: #ef3333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-top .price .num {
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .num {
   font-size: 30px;
   font-weight: bold;
   color: #ef3333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-top .price .desc {
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .desc {
   font-size: 14px;
   color: #666;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content {
   margin-top: 34px;
   font-size: 14px;
   font-family: "Microsoft YaHei";
@@ -191,53 +193,53 @@ strong {
   text-align: left;
   color: #666;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .intro {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro {
   font-size: 0;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve span,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable span,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .intro span {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve span,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable span,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro span {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .name,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .name,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .name {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .name,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .name,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .name {
   margin-right: 6px;
   width: 70px;
   color: #333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat {
   margin-right: 10px;
   font-size: 0;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat em,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat em,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
   width: 21px;
   height: 25px;
   background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .cat,
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .cat {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .cat,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .cat {
   max-width: 699px;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .more {
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .more {
   color: #ef3333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .btn-group {
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group {
   margin-top: 14px;
   text-align: right;
   font-size: 0;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .btn-group a {
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group a {
   display: inline-block;
   vertical-align: middle;
   margin-left: 20px;
@@ -249,35 +251,35 @@ strong {
   text-indent: 14px;
   text-align: left;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .btn-group a span {
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group a span {
   margin-right: 23px;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .btn-group .sign {
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group .sign {
   width: 100px;
   border-color: #ef3333;
   color: #ef3333;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item .btn-group .kefu {
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group .kefu {
   width: 127px;
   border-color: #666;
   color: #666;
 }
-.kechengzx-body .gl-kczx-content .content_left .guanli-kecheng-container .item + .item {
+.kczx-content .content_left .guanli-kecheng-container .item + .item {
   margin-top: 40px;
 }
-.kechengzx-body .gl-kczx-content .content_right {
+.kczx-content .content_right {
   float: right;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking {
+.kczx-content .content_right .ranking {
   background-color: #f7f7f7;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking_icon {
+.kczx-content .content_right .ranking .ranking_icon {
   background: url("../../assets/images/jixujiaoyu/rbbj.png") no-repeat 20px center;
   border-bottom: 1px solid #d9d9d9;
   line-height: 65px;
   text-indent: 58px;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list {
+.kczx-content .content_right .ranking .ranking-list {
   padding-top: 8px;
   padding-bottom: 21px;
   font-size: 16px;
@@ -287,18 +289,18 @@ strong {
   text-align: left;
   color: #666;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li {
+.kczx-content .content_right .ranking .ranking-list li {
   margin-top: 12px;
   padding-left: 24px;
   font-size: 0;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li i,
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li span {
+.kczx-content .content_right .ranking .ranking-list li i,
+.kczx-content .content_right .ranking .ranking-list li span {
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li i {
+.kczx-content .content_right .ranking .ranking-list li i {
   margin-right: 10px;
   width: 18px;
   height: 18px;
@@ -308,29 +310,29 @@ strong {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li .num-1 {
+.kczx-content .content_right .ranking .ranking-list li .num-1 {
   background-color: #f07f7f;
   color: #fff;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li .num-2 {
+.kczx-content .content_right .ranking .ranking-list li .num-2 {
   background-color: #ec9961;
   color: #fff;
 }
-.kechengzx-body .gl-kczx-content .content_right .ranking .ranking-list li .num-3 {
+.kczx-content .content_right .ranking .ranking-list li .num-3 {
   background-color: #9da3f3;
   color: #fff;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history {
+.kczx-content .content_right .browse-history {
   margin-top: 20px;
   background-color: #f7f7f7;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history_icon {
+.kczx-content .content_right .browse-history .browse-history_icon {
   background: url("../../assets/images/jixujiaoyu/guanli-009.png") no-repeat 20px center;
   border-bottom: 1px solid #d9d9d9;
   line-height: 65px;
   text-indent: 58px;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list {
+.kczx-content .content_right .browse-history .browse-history-list {
   padding-bottom: 21px;
   font-size: 16px;
   font-family: "Microsoft YaHei";
@@ -339,32 +341,80 @@ strong {
   text-align: left;
   color: #666;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li {
+.kczx-content .content_right .browse-history .browse-history-list li {
   margin-top: 20px;
   padding-left: 24px;
   font-size: 0;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li i,
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li p {
+.kczx-content .content_right .browse-history .browse-history-list li i,
+.kczx-content .content_right .browse-history .browse-history-list li p {
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li i {
+.kczx-content .content_right .browse-history .browse-history-list li i {
   margin-right: 22px;
   width: 102px;
   height: 76px;
   overflow: hidden;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li i img {
+.kczx-content .content_right .browse-history .browse-history-list li i img {
   margin-top: -1px;
   margin-left: -1px;
   width: 104px;
   height: 78px;
 }
-.kechengzx-body .gl-kczx-content .content_right .browse-history .browse-history-list li p span {
+.kczx-content .content_right .browse-history .browse-history-list li p span {
   display: block;
 }
-.kechengzx-body .gl-kczx-content .content_right .advertisement {
+.kczx-content .content_right .advertisement {
   margin-top: 20px;
+}
+/*课程介绍页面样式*/
+.gl-kc-intro-body .crumbs-wrapper {
+  padding-top: 39px;
+  height: 438px;
+  background: url("../../assets/images/jixujiaoyu/guanli-kc-01.png") no-repeat center center / cover;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav {
+  margin-top: 0;
+  color: #999;
+  font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav img,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav span,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 15px;
+  text-align: left;
+  color: #999;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav img {
+  margin-right: 12px;
+  width: 15px;
+  height: 15px;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b {
+  font-weight: bold;
+  color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav span {
+  margin-left: 6px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text {
+  margin-top: 39px;
+  width: 100%;
+  height: 341px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .left {
+  width: 455px;
+  height: 341px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .right {
+  width: 708px;
 }

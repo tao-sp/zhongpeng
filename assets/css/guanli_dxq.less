@@ -1,5 +1,5 @@
 @images: "../../assets/images/jixujiaoyu";
-em,i,strong{
+em,i,strong,b{
   font-style: normal;
 }
 .kechengzx-body{
@@ -90,6 +90,9 @@ em,i,strong{
   background-color: @bgc;
 }
 
+
+
+/*课程中心样式*/
 .kechengzx-body{
   .crumbs-wrapper{
     padding-top: 39px;
@@ -114,7 +117,6 @@ em,i,strong{
       }
     }
   }
-
   .gl-kczx-header-wrapper{
     position: relative;
     z-index: 1;
@@ -190,213 +192,254 @@ em,i,strong{
       }
     }
   }
-
-  .gl-kczx-content{
-    .content_left{
-      width: 776px;
-      .guanli-kecheng-container{
-          .item{
-            padding-bottom: 40px;
-            border-bottom:1px solid #dcdddd;
-            .item-top{
-              .course-name{
-                width: 776-180px;
-                .title(@size:24px;@fw:normal;@co:#333;@lh:24px;@al:left;);
-              }
-              .price{
-                width: 180px;
-                line-height: 24px;
-                text-align: right;
-                .icon{
-                  font-size:18px;
-                  color: #ef3333;
-                }
-                .num{
-                  font-size:30px;
-                  font-weight:bold;
-                  color: #ef3333;
-                }
-                .desc{
-                  font-size:14px;
-                  color: #666;
-                }
-              }
+}
+.kczx-content{
+  .content_left{
+    width: 776px;
+    .guanli-kecheng-container{
+      .item{
+        padding-bottom: 40px;
+        border-bottom:1px solid #dcdddd;
+        .item-top{
+          .course-name{
+            width: 776-180px;
+            .title(@size:24px;@fw:normal;@co:#333;@lh:24px;@al:left;);
+          }
+          .price{
+            width: 180px;
+            line-height: 24px;
+            text-align: right;
+            .icon{
+              font-size:18px;
+              color: #ef3333;
             }
-            .item-content{
-              margin-top: 34px;
-              .title(@size:14px;@co:#666;@al:left;);
-              .serve,.suitable,.intro{
-                font-size:0;
-                span{
-                  display: inline-block;
-                  vertical-align: top;
-                  font-size:14px;
-                }
-                .name{
-                  margin-right: 6px;
-                  width: 70px;
-                  color: #333;
-                }
-              }
-              .serve{
-                .cat{
-                  margin-right: 10px;
-                  font-size:0;
-                  em,.icon{
-                    display: inline-block;
-                    vertical-align: middle;
-                    font-size:14px;
-                  }
-                  .icon{
-                    width: 21px;
-                    height: 25px;
-                    background: url('@{images}/guanli-006.png') no-repeat left center;
-                  }
-                }
-              }
-              .suitable,.intro{
-                .cat{
-                  max-width:775-76px;
-                }
-              }
-              .intro{
-                .more{
-                  color: #ef3333;
-                }
-              }
+            .num{
+              font-size:30px;
+              font-weight:bold;
+              color: #ef3333;
             }
-            .btn-group{
-              margin-top: 14px;
-              text-align: right;
+            .desc{
+              font-size:14px;
+              color: #666;
+            }
+          }
+        }
+        .item-content{
+          margin-top: 34px;
+          .title(@size:14px;@co:#666;@al:left;);
+          .serve,.suitable,.intro{
+            font-size:0;
+            span{
+              display: inline-block;
+              vertical-align: top;
+              font-size:14px;
+            }
+            .name{
+              margin-right: 6px;
+              width: 70px;
+              color: #333;
+            }
+          }
+          .serve{
+            .cat{
+              margin-right: 10px;
               font-size:0;
-              a{
+              em,.icon{
                 display: inline-block;
                 vertical-align: middle;
-                margin-left:20px;
-                border-width: 1px;
-                border-style: solid;
-                height: 38px;
                 font-size:14px;
-                line-height:40px;
-                text-indent:14px;
-                text-align: left;
-                span{
-                  margin-right: 23px;
-                }
               }
-              .sign{
-                width: 100px;
-                border-color: #ef3333;
-                color: #ef3333;
-              }
-              .kefu{
-                width: 127px;
-                border-color: #666;
-                color: #666;
+              .icon{
+                width: 21px;
+                height: 25px;
+                background: url('@{images}/guanli-006.png') no-repeat left center;
               }
             }
           }
-          .item+.item{
-            margin-top: 40px;
+          .suitable,.intro{
+            .cat{
+              max-width:775-76px;
+            }
           }
-      }
-    }
-    .content_right{
-      float: right;
-      .ranking{
-        background-color: #f7f7f7;
-        .ranking_icon{
-          background: url("@{images}/rbbj.png") no-repeat 20px center;
-          border-bottom:1px solid #d9d9d9;
-          line-height: 65px;
-          text-indent:58px;
+          .intro{
+            .more{
+              color: #ef3333;
+            }
+          }
         }
-        .ranking-list{
-          padding-top: 8px;
-          padding-bottom: 21px;
-          .title(@size:16px;@co:#666;@lh:18px;@al:left;);
-          li{
-            margin-top: 12px;
-            padding-left:24px;
-            font-size:0;
-            i,span{
-              display: inline-block;
-              vertical-align: middle;
-              font-size:16px;
+        .btn-group{
+          margin-top: 14px;
+          text-align: right;
+          font-size:0;
+          a{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left:20px;
+            border-width: 1px;
+            border-style: solid;
+            height: 38px;
+            font-size:14px;
+            line-height:40px;
+            text-indent:14px;
+            text-align: left;
+            span{
+              margin-right: 23px;
             }
-            i{
-              margin-right:10px;
-              width: 18px;
-              height: 18px;
-              font-style: normal;
-              text-align: center;
-              -webkit-border-radius: 3px;
-              -moz-border-radius: 3px;
-              border-radius: 3px;
-            }
-            .num-1{
-              background-color: #f07f7f;
-              color: #fff;
-            }
-            .num-2{
-              background-color: #ec9961;
-              color: #fff;
-            }
-            .num-3{
-              background-color: #9da3f3;
-              color: #fff;
-            }
+          }
+          .sign{
+            width: 100px;
+            border-color: #ef3333;
+            color: #ef3333;
+          }
+          .kefu{
+            width: 127px;
+            border-color: #666;
+            color: #666;
           }
         }
       }
-      .browse-history{
-        margin-top: 20px;
-        background-color: #f7f7f7;
-        .browse-history_icon{
-          background: url("@{images}/guanli-009.png") no-repeat 20px center;
-          border-bottom:1px solid #d9d9d9;
-          line-height: 65px;
-          text-indent:58px;
-        }
-
-        .browse-history-list{
-          padding-bottom: 21px;
-          .title(@size:16px;@co:#666;@lh:30px;@al:left;);
-          li{
-            margin-top: 20px;
-            padding-left:24px;
-            font-size:0;
-            i,p{
-              display: inline-block;
-              vertical-align: middle;
-              font-size:16px;
-            }
-            i{
-              margin-right: 22px;
-              width: 102px;
-              height: 76px;
-              overflow: hidden;
-              img{
-                margin-top: -1px;
-                margin-left: -1px;
-                width: 104px;
-                height: 78px;
-              }
-            }
-            p{
-              span{
-                display: block;
-              }
-            }
-          }
-        }
-
-      }
-      .advertisement{
-        margin-top: 20px;
+      .item+.item{
+        margin-top: 40px;
       }
     }
   }
+  .content_right{
+    float: right;
+    .ranking{
+      background-color: #f7f7f7;
+      .ranking_icon{
+        background: url("@{images}/rbbj.png") no-repeat 20px center;
+        border-bottom:1px solid #d9d9d9;
+        line-height: 65px;
+        text-indent:58px;
+      }
+      .ranking-list{
+        padding-top: 8px;
+        padding-bottom: 21px;
+        .title(@size:16px;@co:#666;@lh:18px;@al:left;);
+        li{
+          margin-top: 12px;
+          padding-left:24px;
+          font-size:0;
+          i,span{
+            display: inline-block;
+            vertical-align: middle;
+            font-size:16px;
+          }
+          i{
+            margin-right:10px;
+            width: 18px;
+            height: 18px;
+            font-style: normal;
+            text-align: center;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+          }
+          .num-1{
+            background-color: #f07f7f;
+            color: #fff;
+          }
+          .num-2{
+            background-color: #ec9961;
+            color: #fff;
+          }
+          .num-3{
+            background-color: #9da3f3;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .browse-history{
+      margin-top: 20px;
+      background-color: #f7f7f7;
+      .browse-history_icon{
+        background: url("@{images}/guanli-009.png") no-repeat 20px center;
+        border-bottom:1px solid #d9d9d9;
+        line-height: 65px;
+        text-indent:58px;
+      }
 
+      .browse-history-list{
+        padding-bottom: 21px;
+        .title(@size:16px;@co:#666;@lh:30px;@al:left;);
+        li{
+          margin-top: 20px;
+          padding-left:24px;
+          font-size:0;
+          i,p{
+            display: inline-block;
+            vertical-align: middle;
+            font-size:16px;
+          }
+          i{
+            margin-right: 22px;
+            width: 102px;
+            height: 76px;
+            overflow: hidden;
+            img{
+              margin-top: -1px;
+              margin-left: -1px;
+              width: 104px;
+              height: 78px;
+            }
+          }
+          p{
+            span{
+              display: block;
+            }
+          }
+        }
+      }
 
+    }
+    .advertisement{
+      margin-top: 20px;
+    }
+  }
 }
+/*课程介绍页面样式*/
+.gl-kc-intro-body{
+  .crumbs-wrapper{
+    padding-top: 39px;
+    height: 477 - 39px;
+    background: url("@{images}/guanli-kc-01.png") no-repeat center center/cover;
+    .bread-nav{
+      margin-top: 0;
+      color: #999;
+      font-size:0;
+      img,span,b{
+        display: inline-block;
+        vertical-align: middle;
+        .title(@size:15px;@co:#999;@lh:15px;@al:left;);
+      }
+      img{
+        margin-right: 12px;
+        width: 15px;
+        height: 15px;
+      }
+      b{
+        font-weight:bold;
+        color: #fff;
+      }
+      b,span{
+        margin-left:6px;
+      }
+    }
+    .banner-text{
+      margin-top: 39px;
+      width: 100%;
+      height: 341px;
+      .left{
+        width: 455px;
+        height: 341px;
+      }
+      .right{
+        width: 708px;
+
+      }
+    }
+  }
+}
+
