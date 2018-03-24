@@ -7,12 +7,10 @@ $(function() {
         oLine = oInfoCat.find('.info-tabs-bar .line') ;
         oTabCont.eq(0).show().siblings().hide();
 
-        oTabs.children().on('mouseenter',function(){
+        oTabs.children().on('click',function(){
             var index = $(this).index();
+            $(this).addClass('on').siblings().removeClass('on');
             oTabCont.eq(index).show().siblings().hide();
-            oLine.stop().animate({
-                left:(400*index),
-            },400)
         });
 
     })();
