@@ -808,17 +808,11 @@
       z-index: 4;
       background-color: #fff;
       .box-shadow-j(@hoff:0;@voff:10px;@blur:10px;@w:-5px;@col:rgba(0,0,0,0.2));
-      .line{
-        position: absolute;
-        z-index: 5;
-        left: 0;
-        bottom: 0;
-        width: 400px;
-        height: 3px;
-        background: #b5b5b6;
-      }
+
       .info-tabs {
         li{
+          position: relative;
+          z-index:1;
           float: left;
           width: 400px;
           font-size:0;
@@ -847,7 +841,21 @@
             .title(@size:16px;@fw:normal;@lh:60px;@al:left;);
           }
           cursor: pointer;
-
+          .line{
+            display: none;
+            position: absolute;
+            z-index: 5;
+            left: 0;
+            bottom: 0;
+            width: 400px;
+            height: 3px;
+            background: #b5b5b6;
+          }
+        }
+        .on{
+          .line{
+            display: block;
+          }
         }
       }
     }
