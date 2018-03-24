@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>猎聘留言--管理学院</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <meta name="description" content="这里是对网站的描述">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../../assets/css/styleGuanli.css">
+    <link rel="stylesheet" href="../../assets/plugins/jalendar/jalendar.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../assets/js/jquery.validate.js"></script>
+
+</head>
+<body class="font_yahei" style="overflow-x: hidden">
+
+<!--头部1开始-->
+
+<div class="shortcut">
+    <div class="container_1200 shortcut_content">
+        <div class="shortcut_content_left">
+            <a>艺术学院</a>
+            <a>继续教育学员</a>
+            <a>灵蜥学院</a>
+        </div>
+        <div class="shortcut_content_right">
+            <a><img src="../../assets/images/jixujiaoyu/wechat1.png">关注中鹏</a>
+            <a><img src="../../assets/images/jixujiaoyu/consultation1.png">咨询群</a>
+        </div>
+    </div>
+</div>
+
+<!--头部1结束-->
+
+<!--头部2开始-->
+
+<div class="logomore">
+    <div class="container_1200 logomore_content">
+
+        <!--logo开始-->
+        <div class="logomore_content_left">
+            <img class="logomore_content_left_img" src="../../assets/images/jixujiaoyu/blacklogo.png">
+            <div class="names">
+                <div class="collegeName">
+                    管理学院
+                </div>
+                <div class="cityName">
+                    城市：<span id="map_location">深圳市</span>
+                    <img src="../../assets/images/jixujiaoyu/citychoose.png">
+                </div>
+            </div>
+        </div>
+        <div class="logomore_content_right">
+            <div class="search">
+                <input type="text" placeholder="搜索课程、通知、疑问疑答">
+                <img src="../../assets/images/jixujiaoyu/search.png">
+            </div>
+            <div class="hotline">
+                <img src="../../assets/images/jixujiaoyu/redhotline.png">
+                <div class="hotline_content">
+                    <div class="hotline_content_name">
+                        全国统一服务热线
+                    </div>
+                    <div class="hotline_content_number">
+                        400-930-6618
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--logo结束-->
+
+        <!--导航开始-->
+        <ul class="nav">
+            <li><a>首页</a></li>
+            <li><a>课程中心</a></li>
+            <li><a>报考中心</a></li>
+            <li><a>名师介绍</a></li>
+            <li><a>学员天地</a></li>
+            <li><a>问题交流</a></li>
+            <li><a>资料下载</a></li>
+            <li><a>关于中鹏</a></li>
+            <div class="clear"></div>
+        </ul>
+        <!--导航结束-->
+
+    </div>
+</div>
+
+
+<div class="nav_drop_down" id="nav1">
+    <div id="nav_drop_down_lists">
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+            <div>自考</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+            <div>成人高考</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+            <div>远程教育</div>
+        </div>
+        <div class="nav_drop_down_list">
+            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+            <div>本科</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!--头部2结束-->
+
+
+<!--面包屑导航开始-->
+
+<div class="crumbs container_1200 bordernone">
+
+    <img src="../../assets/images/jixujiaoyu/home.png"> 首页 > <b>猎聘留言</b>
+</div>
+
+<!--面包屑导航结束-->
+
+<!--内容开始-->
+<div class="container_1200 content">
+
+    <div class="recruit">
+        <form action="" method="post" class="bl-form bl-formhor" id="jsForm">
+            <ul>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 您的机构名称：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 官网地址：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group" data-toggle="distpicker">
+                    <label>机构所在城市：</label>
+                    <select class="form-control" id="province1"></select>
+                    <select class="form-control" id="city1"></select>
+                    <select class="form-control" id="district1"></select>
+                </li>
+
+
+                <li class="bl-form-group">
+                    <label> </label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 从事行业与主营业务：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 联系人姓名：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 联系电话：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em> 电子邮箱：</label>
+                    <div class="controls">
+                        <input type="text" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label><em>*</em>招聘岗位与要求：</label>
+                    <div class="controls editor">
+                        <textarea name="textarea1" cols="" rows="18" required></textarea>
+                    </div>
+                </li>
+
+                <li class="bl-form-group">
+                    <label>附件上传：</label>
+                    <div class="controls">
+                        <input type="file" value="" name="1" class="fn-tinput" placeholder="必填" required data-msg-required="不能为空" />
+                    </div>
+                </li>
+                <li class="bl-form-group bl-form-btns">
+                    <label class="fn-vhid">提交：</label>
+                    <div class="controls">
+                        <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">提交</button>
+                    </div>
+                </li>
+            </ul>
+        </form>
+
+    </div>
+
+</div>
+
+
+<!--内容结束-->
+
+
+
+
+
+<!--底部开始-->
+
+<div class="g-footer">
+    <div class="container_1200">
+        <div class="footer-top clearfix">
+            <div class="fl left">
+                <p class="footer-nav">
+                    <a href="">关于我们</a>
+                    <span>/</span><a href="">企业文化</a>
+                    <span>/</span><a href="">法律声明</a>
+                    <span>/</span><a href="">申请合作</a>
+                    <span>/</span><a href="">联系我们</a>
+                    <span>/</span><a href="">加入我们</a>
+                </p>
+                <ul class="footer-link clearfix" >
+                    <li class="first">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-1.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">地址</span>
+                            <em class="cont">广东省深圳市龙岗校区吉祥地铁站b出口湖广通大厦4楼</em>
+                        </p>
+                    </li>
+                    <li class="underline">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-2.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">邮编</span>
+                            <em class="cont">100048</em>
+                        </p>
+                    </li>
+                    <li class="underline">
+                        <i class="icon"><img src="../../assets/images/guanwang/f-3.png" alt=""/></i>
+                        <p class="link-item">
+                            <span class="tit">联系号码</span>
+                            <em class="cont">400-930-6618</em>
+                        </p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="fr right">
+                <div class="weixin">
+                    <img src="../../assets/images/guanwang/f-4.png" alt=""/>
+                </div>
+                <p class="weixin-desc">关注中鹏</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">Copyright ©2001-2018 WENDU Corporation All Rights ReservedXXXXX有限公司 版权所有</p>
+            <p class="licensing"><span>XXX出版许可:XXXXXX100085号</span> <em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span></p>
+            <ol class="advantage">
+                <li><a href=""><img src="../../assets/images/guanwang/f-5.png" alt=""/></a></li>
+                <li><a href=""><img src="../../assets/images/guanwang/f-6.png" alt=""/></a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--底部结束-->
+
+
+
+<script src="../../assets/plugins/diskpicker/distpicker.data.js"></script>
+<script src="../../assets/plugins/diskpicker/distpicker.js"></script>
+
+
+<script>
+
+    window.onload = function() {
+
+        var obj = $(".nav_drop_down_list");
+        $("#nav_drop_down_lists").css("width",obj.length*148);
+
+
+        /*鼠标划过导航事件*/
+        $(".logomore .logomore_content .nav li").hover(function () {
+            $("#nav1").stop(true, false).slideToggle("slow");
+            $(".nav_active").removeClass("nav_active");
+            $(this).addClass("nav_active");
+        })
+        $(".logomore .logomore_content .nav li").mouseleave(function(){
+            setTimeout(function() {//两秒后跳转
+                if ($("#nav1").css("display") == "none") {
+                    $(".nav_active").removeClass("nav_active");
+                }
+            },1000);
+        });
+        $("#nav1").hover(function () {
+            $("#nav1").stop(true, false).slideToggle();
+            if($("#nav1").css("display")=="none") {
+                $(".nav_active").removeClass("nav_active");
+            }
+        })
+
+    }
+</script>
+
+
+<script>
+    $(function() {
+        //jquery.validate
+        $("#jsForm").validate({
+            submitHandler: function() {
+                //验证通过后 的js代码写在这里
+            }
+        })
+
+    })
+
+    //下面是一些常用的验证规则扩展
+
+    /*-------------验证插件配置 懒人建站http://www.51xuediannao.com/-------------*/
+
+    //配置错误提示的节点，默认为label，这里配置成 span （errorElement:'span'）
+    $.validator.setDefaults({
+        errorElement: 'span'
+    });
+
+    //配置通用的默认提示语
+    $.extend($.validator.messages, {
+        required: '必填',
+        equalTo: "请再次输入相同的值"
+    });
+
+    /*-------------扩展验证规则 懒人建站http://www.51xuediannao.com/-------------*/
+    //邮箱
+    jQuery.validator.addMethod("mail", function(value, element) {
+        var mail = /^[a-z0-9._%-]+@([a-z0-9-]+\.)+[a-z]{2,4}$/;
+        return this.optional(element) || (mail.test(value));
+    }, "邮箱格式不对");
+
+    //电话验证规则
+    jQuery.validator.addMethod("phone", function(value, element) {
+        var phone = /^0\d{2,3}-\d{7,8}$/;
+        return this.optional(element) || (phone.test(value));
+    }, "电话格式如：0371-68787027");
+
+    //区号验证规则
+    jQuery.validator.addMethod("ac", function(value, element) {
+        var ac = /^0\d{2,3}$/;
+        return this.optional(element) || (ac.test(value));
+    }, "区号如：010或0371");
+
+    //无区号电话验证规则
+    jQuery.validator.addMethod("noactel", function(value, element) {
+        var noactel = /^\d{7,8}$/;
+        return this.optional(element) || (noactel.test(value));
+    }, "电话格式如：68787027");
+
+    //手机验证规则
+    jQuery.validator.addMethod("mobile", function(value, element) {
+        var mobile = /^1[3|4|5|7|8]\d{9}$/;
+        return this.optional(element) || (mobile.test(value));
+    }, "手机格式不对");
+
+    //邮箱或手机验证规则
+    jQuery.validator.addMethod("mm", function(value, element) {
+        var mm = /^[a-z0-9._%-]+@([a-z0-9-]+\.)+[a-z]{2,4}$|^1[3|4|5|7|8]\d{9}$/;
+        return this.optional(element) || (mm.test(value));
+    }, "格式不对");
+
+    //电话或手机验证规则
+    jQuery.validator.addMethod("tm", function(value, element) {
+        var tm = /(^1[3|4|5|7|8]\d{9}$)|(^\d{3,4}-\d{7,8}$)|(^\d{7,8}$)|(^\d{3,4}-\d{7,8}-\d{1,4}$)|(^\d{7,8}-\d{1,4}$)/;
+        return this.optional(element) || (tm.test(value));
+    }, "格式不对");
+
+    //年龄
+    jQuery.validator.addMethod("age", function(value, element) {
+        var age = /^(?:[1-9][0-9]?|1[01][0-9]|120)$/;
+        return this.optional(element) || (age.test(value));
+    }, "不能超过120岁");
+    ///// 20-60   /^([2-5]\d)|60$/
+
+    //传真
+    jQuery.validator.addMethod("fax", function(value, element) {
+        var fax = /^(\d{3,4})?[-]?\d{7,8}$/;
+        return this.optional(element) || (fax.test(value));
+    }, "传真格式如：0371-68787027");
+
+    //验证当前值和目标val的值相等 相等返回为 false
+    jQuery.validator.addMethod("equalTo2", function(value, element) {
+        var returnVal = true;
+        var id = $(element).attr("data-rule-equalto2");
+        var targetVal = $(id).val();
+        if(value === targetVal) {
+            returnVal = false;
+        }
+        return returnVal;
+    }, "不能和原始密码相同");
+
+    //大于指定数
+    jQuery.validator.addMethod("gt", function(value, element) {
+        var returnVal = false;
+        var gt = $(element).data("gt");
+        if(value > gt && value != "") {
+            returnVal = true;
+        }
+        return returnVal;
+    }, "不能小于0 或空");
+
+    //汉字
+    jQuery.validator.addMethod("chinese", function(value, element) {
+        var chinese = /^[\u4E00-\u9FFF]+$/;
+        return this.optional(element) || (chinese.test(value));
+    }, "格式不对");
+
+    //指定数字的整数倍
+    jQuery.validator.addMethod("times", function(value, element) {
+        var returnVal = true;
+        var base = $(element).attr('data-rule-times');
+        if(value % base != 0) {
+            returnVal = false;
+        }
+        return returnVal;
+    }, "必须是发布赏金的整数倍");
+
+    //身份证
+    jQuery.validator.addMethod("idCard", function(value, element) {
+        var isIDCard1 = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/; //(15位)
+        var isIDCard2 = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/; //(18位)
+
+        return this.optional(element) || (isIDCard1.test(value)) || (isIDCard2.test(value));
+    }, "格式不对");
+</script>
+
+</body>
+</html>
