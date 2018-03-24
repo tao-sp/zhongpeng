@@ -410,11 +410,287 @@ b {
   margin-top: 39px;
   width: 100%;
   height: 341px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.gl-kc-intro-body .crumbs-wrapper .banner-text .left {
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-left {
   width: 455px;
   height: 341px;
 }
-.gl-kc-intro-body .crumbs-wrapper .banner-text .right {
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right {
+  margin-top: 40px;
   width: 708px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left {
+  width: 574px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left h3 {
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve {
+  margin-top: 16px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat em,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+  width: 21px;
+  height: 25px;
+  background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price {
+  width: 132px;
+  line-height: 25px;
+  color: #ef3333;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price i {
+  font-size: 18px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price .num {
+  font-size: 30px;
+  font-weight: bold;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details {
+  margin-top: 35px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li {
+  font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li i,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .pattern {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li i {
+  width: 28px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-1 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-003.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-2 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-004.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-3 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-005.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group {
+  margin-top: 50px;
+  font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a {
+  margin-right: 20px;
+  padding: 0 10px 0 15px;
+  border-width: 1px;
+  border-style: solid;
+  height: 40px;
+  line-height: 42px;
+  border-color: #fff;
+  color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a span {
+  margin-right: 22px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+  margin-left: 29px;
+  color: #999;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .sign {
+  border-color: #ef3333;
+  color: #ef3333;
+}
+.gl-kc-intro-body .kczx-content {
+  margin-bottom: 50px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item {
+  border: none;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-top {
+  height: 63px;
+  line-height: 63;
+  background-color: #f2f2f2;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-top .cat-name {
+  width: 120px;
+  font-size: 20px;
+  line-height: 63px;
+  text-align: center;
+  color: #fefefe;
+  background-color: #ef3333;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 36px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #666;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd {
+  position: relative;
+  z-index: 1;
+  margin-left: 29px;
+  width: 718px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li {
+  float: left;
+  margin: 0 17px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .pic {
+  float: left;
+  margin-right: 15px;
+  width: 146px;
+  height: 204px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .pic img {
+  width: 146px;
+  height: 204px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title {
+  float: left;
+  width: 164px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title .name {
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title p em {
+  color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev,
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next {
+  position: absolute;
+  top: 86px;
+  z-index: 99;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  color: #bcbcbc;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev {
+  left: -28px;
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-015.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev:hover {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-016.jpg');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next {
+  right: -28px;
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-015-2.jpg');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next:hover {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-016-2.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li {
+  margin-top: 34px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left {
+  float: left;
+  margin-right: 20px;
+  margin-top: 6px;
+  width: 88px;
+  height: 56px;
+  border: 1px solid #dcdddd;
+  background-color: #f2f2f2;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon,
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left span {
+  display: block;
+  text-align: center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon {
+  margin-top: 4px;
+  height: 20px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-1 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-007.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-2 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-008.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-3 {
+  background-image: url('../../assets/images/jixujiaoyu/guanli-kc-009.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right {
+  float: left;
+  width: 634px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: "";
+  zoom: 1;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same {
+  margin-top: 40px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li {
+  float: left;
+  width: 247px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li a {
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li + li {
+  margin-left: 17px;
 }

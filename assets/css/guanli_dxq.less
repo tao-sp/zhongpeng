@@ -431,13 +431,273 @@ em,i,strong,b{
       margin-top: 39px;
       width: 100%;
       height: 341px;
-      .left{
+      background-color: rgba(255,255,255,0.1);
+      .outer-left{
         width: 455px;
         height: 341px;
       }
-      .right{
+      .outer-right{
+        margin-top: 40px;
         width: 708px;
+        .course-outline-top{
+          .left{
+            width: 574px;
+            h3{
+              .title(@size:24px;@co:#fff;@lh:25px;@al:left;);
+            }
+            .serve{
+              margin-top: 16px;
+              .title(@size:14px;@co:#fff;@lh:25px;@al:left;);
+              .cat{
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size:0;
+                em,.icon{
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size:14px;
+                }
+                .icon{
+                  width: 21px;
+                  height: 25px;
+                  background: url('@{images}/guanli-006.png') no-repeat left center;
+                }
+              }
+            }
 
+          }
+          .price{
+            width: 706 - 574px;
+            line-height: 25px;
+            color: #ef3333;
+            i{
+              font-size:18px;
+            }
+            .num{
+              font-size:30px;
+              font-weight:bold;
+            }
+          }
+        }
+        .details{
+          margin-top:35px;
+          li{
+            font-size:0;
+            i,.pattern{
+              display: inline-block;
+              vertical-align: top;
+              .title(@size:14px;@co:#fff;@lh:25px;@al:left;);
+            }
+            i{
+              width: 28px;
+              height: 25px;
+              background-repeat:no-repeat;
+              background-position: left center;
+            }
+            .icon-1{
+              background-image: url('@{images}/guanli-kc-003.png');
+            }
+            .icon-2{
+              background-image: url('@{images}/guanli-kc-004.png');
+            }
+            .icon-3{
+              background-image: url('@{images}/guanli-kc-005.png');
+            }
+          }
+        }
+        .btn-group{
+          margin-top: 50px;
+          font-size:0;
+          a,.index{
+            display: inline-block;
+            vertical-align: middle;
+            font-size:14px;
+          }
+          a{
+            margin-right: 20px;
+            padding:0 10px 0 15px;
+            border-width:1px;
+            border-style:solid;
+            height: 40px;
+            line-height: 42px;
+            border-color: #fff;
+            color: #fff;
+            span{
+              margin-right:22px;
+            }
+          }
+          .index{
+            margin-left: 29px;
+            color: #999;
+          }
+          .sign{
+            border-color: #ef3333;
+            color: #ef3333;
+          }
+        }
+      }
+    }
+  }
+
+  .kczx-content{
+    margin-bottom:50px;
+  }
+  .content_left{
+    .guanli-kecheng-container{
+      .item{
+        border:none;
+        .item-top{
+          height: 63px;
+          line-height: 63;
+          background-color: #f2f2f2;
+          .cat-name{
+            width: 120px;
+            font-size:20px;
+            line-height: 63px;
+            text-align: center;
+            color: #fefefe;
+            background-color: #ef3333;
+            border-top-right-radius:12px;
+            border-bottom-left-radius:12px;
+          }
+        }
+        .slide-box1{
+          position: relative;
+          z-index: 1;
+          margin-top: 36px;
+          .title(@size:14px;@co:#666;@al:left;);
+          .bd{
+            position: relative;
+            z-index: 1;
+            margin-left:(776-718)/2px;
+            width: 359*2px;
+            ul{
+              li{
+                float: left;
+                margin:0 17px;
+                .pic{
+                  float: left;
+                  margin-right: 15px;
+                  width: 146px;
+                  height: 204px;
+                  img{
+                    width: 146px;
+                    height: 204px;
+                  }
+                }
+                .title{
+                  float: left;
+                  width: 164px;
+                  .name{
+                    margin-bottom:11px;
+                    font-size:18px;
+                    line-height: 18px;
+                    color: #333;
+                  }
+                  p{
+                    em{
+                      color: #333;
+                    }
+                  }
+                }
+              }
+            }
+            .prev,.next{
+              position: absolute;
+              top: 86px;
+              z-index: 99;
+              width: 34px;
+              height: 34px;
+              font-size:16px;
+              line-height: 34px;
+              text-align: center;
+              color: #bcbcbc;
+              background-repeat:no-repeat;
+              background-position: center center;
+            }
+            .prev{
+              left:-28px;
+              background-image: url('@{images}/guanli-kc-015.png');
+              &:hover{
+                background-image: url('@{images}/guanli-kc-016.jpg');
+              }
+            }
+            .next{
+              right: -28px;
+              background-image: url('@{images}/guanli-kc-015-2.jpg');
+              &:hover{
+                background-image: url('@{images}/guanli-kc-016-2.png');
+              }
+            }
+          }
+        }
+        .item-details{
+          .list{
+            li{
+              margin-top: 34px;
+              .title(@al:left;);
+              .item-list-left{
+                float: left;
+                margin-right: 20px;
+                margin-top: 6px;
+                width: 88px;
+                height: 56px;
+                border:1px solid #dcdddd;
+                background-color: #f2f2f2;
+                .icon,span{
+                  display: block;
+                  text-align: center;
+                }
+                .icon{
+                  margin-top:4px;
+                  height: 20px;
+                  width: 100%;
+                  background-repeat:no-repeat;
+                  background-position: center center;
+                }
+                .icon-1{
+                  background-image: url('@{images}/guanli-kc-007.png');
+                }
+                .icon-2{
+                  background-image: url('@{images}/guanli-kc-008.png');
+                }
+                .icon-3{
+                  background-image: url('@{images}/guanli-kc-009.png');
+                }
+              }
+              .item-list-right{
+                float: left;
+                width: 634px;
+
+              }
+              &:after{
+                display: block;
+                visibility: hidden;
+                height: 0;
+                clear: both;
+                content: "";
+                zoom: 1;
+              }
+            }
+          }
+
+        }
+        .item-same{
+          margin-top: 40px;
+          .list{
+            li{
+              float: left;
+              width: 247px;
+              a{
+                .title(@size:18px;@co:#333;@lh:30px;@al:center;);
+              }
+            }
+            li+li{
+              margin-left:17px;
+            }
+          }
+        }
       }
     }
   }
