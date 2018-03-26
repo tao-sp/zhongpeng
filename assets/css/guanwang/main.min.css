@@ -1569,11 +1569,11 @@
   margin-left: -28px;
 }
 .a-main .ab-honour .slideBox .bd ul li {
+  margin-top: 30px;
   margin-left: 28px;
   width: 279px;
 }
 .a-main .ab-honour .slideBox .bd ul li .img {
-  margin-top: 30px;
   width: 279px;
 }
 .a-main .ab-honour .slideBox .hd {
@@ -1635,25 +1635,97 @@
   width: 284px;
   height: 63px;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper {
+  /*.left,.right{
+          width: 563px;
+          li+li{
+            margin-top: 238px;
+          }
+          li{
+            position: relative;
+            z-index: 2;
+            .img{
+              width: 100%;
+            }
+            .desc{
+              position: absolute;
+              right: 0;
+              top: 320px;
+              z-index: 3;
+              padding:20px 0 0 39px;
+              width: 344 - 39px;
+              height: 206 - 20px;
+              .title(@size:14px;@fw:normal;@lh:25px;@al:left;);
+              background-color: #fff;
+              .box-shadow-j(@voff:5px;@w:0;@col:rgba(0,0,0,0.2));
+
+              .desc-tit{
+                font-size: 18px;
+                line-height:18px;
+                text-align: left;
+              }
+              .desc-sub-tit{
+                margin-top: 12px;
+                line-height:14px;
+                color: #999;
+              }
+              .cont-text{
+                margin-top: 34px;
+                p{
+                  .icon,span{
+                    display: inline-block;
+                    vertical-align: middle;
+                  }
+                  .icon{
+                    width: 28px;
+                    height: 25px;
+                    background-repeat:no-repeat;
+                    background-position: left center;
+                  }
+                  .icon-1{
+                    background-image: url('@{images}/about-19.png');
+                  }
+                  .icon-2{
+                    background-image: url('@{images}/about-20.png');
+                  }
+                  .icon-3{
+                    background-image: url('@{images}/about-34.png');
+                  }
+                }
+              }
+              .line{
+                position: absolute;
+                left:-26px;
+                bottom: 20px;
+                z-index: 4;
+                width: 47px;
+                height: 6px;
+                background-color: #ff9324;
+              }
+          }
+            
+          }
+        }
+        .left{
+          margin-top: 143px;
+        }*/
+}
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 1356px;
+}
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li {
+  position: absolute;
+  z-index: 3;
+  float: left;
   width: 563px;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li + li,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li + li {
-  margin-top: 238px;
-}
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li {
-  position: relative;
-  z-index: 2;
-}
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .img,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .img {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .img {
   width: 100%;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc {
   position: absolute;
   right: 0;
   top: 320px;
@@ -1672,50 +1744,40 @@
   -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .desc-tit,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .desc-tit {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .desc-tit {
   font-size: 18px;
   line-height: 18px;
   text-align: left;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .desc-sub-tit,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .desc-sub-tit {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .desc-sub-tit {
   margin-top: 12px;
   line-height: 14px;
   color: #999;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text {
   margin-top: 34px;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p .icon,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p .icon,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p span,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p span {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p .icon,
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p span {
   display: inline-block;
   vertical-align: middle;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p .icon,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p .icon {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p .icon {
   width: 28px;
   height: 25px;
   background-repeat: no-repeat;
   background-position: left center;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p .icon-1,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p .icon-1 {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p .icon-1 {
   background-image: url('../../images/guanwang/about-19.png');
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p .icon-2,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p .icon-2 {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p .icon-2 {
   background-image: url('../../images/guanwang/about-20.png');
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .cont-text p .icon-3,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .cont-text p .icon-3 {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .cont-text p .icon-3 {
   background-image: url('../../images/guanwang/about-34.png');
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left li .desc .line,
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .right li .desc .line {
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul li .desc .line {
   position: absolute;
   left: -26px;
   bottom: 20px;
@@ -1724,11 +1786,22 @@
   height: 6px;
   background-color: #ff9324;
 }
-.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper .left {
-  margin-top: 143px;
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul .coop-1 {
+  left: 0;
+  top: 143px;
+}
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul .coop-2 {
+  right: 0;
+  top: 0;
+}
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul .coop-3 {
+  top: 754px;
+}
+.a-main .ab-apply-cooperation .ab-apply-cooperation-in .coopera-program-wrapper ul .coop-4 {
+  right: 0;
+  top: 611px;
 }
 .a-main .ab-contact-us {
-  margin-top: 232px;
   margin-bottom: 56px;
 }
 .a-main .ab-contact-us .top {
