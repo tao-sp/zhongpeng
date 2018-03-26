@@ -44,6 +44,12 @@
             $.scrollify({
                 section:".panel",
                 easing: "easeOutQuart",
+                sectionName:'section-name'
+            });
+
+            $(".scroll").click(function(e) {
+                e.preventDefault();
+                $.scrollify("move",$(this).attr("href"));
             });
         });
 
@@ -80,16 +86,16 @@
                 <nav class="sj-nav fr" id="sj-nav">
                     <ul class="sj-nav-list">
                         <li class="sj-nav-item on"><a href="">首页</a></li>
-                        <li class="sj-nav-item sj-nav-major"><a href="">专业</a></li>
-                        <li class="sj-nav-item"><a href="">培训资质</a></li>
-                        <li class="sj-nav-item"><a href="">师资团队</a></li>
-                        <li class="sj-nav-item"><a href="">课程体系</a></li>
-                        <li class="sj-nav-item"><a href="">教学模式</a></li>
-                        <li class="sj-nav-item"><a href="">学以致用</a></li>
-                        <li class="sj-nav-item"><a href="">就业服务</a></li>
-                        <li class="sj-nav-item"><a href="">校区规模</a></li>
-                        <li class="sj-nav-item"><a href="">优惠专区</a></li>
-                        <li class="sj-nav-item more"><a href="">更多<p class="label">3</p></a></li>
+                        <li class="sj-nav-item sj-nav-major"><a href="javascript:">专业</a></li>
+                        <li class="sj-nav-item"><a href="#g-footer" class="scroll">培训资质</a></li>
+                        <li class="sj-nav-item"><a href="#Specialists" class="scroll">师资团队</a></li>
+                        <li class="sj-nav-item"><a href="#courses-curriculum" class="scroll">课程体系</a></li>
+                        <li class="sj-nav-item"><a href="#teaching-patterns" class="scroll">教学模式</a></li>
+                        <li class="sj-nav-item"><a href="#serve-in-job" class="scroll">学以致用</a></li>
+                        <li class="sj-nav-item"><a href="#employment" class="scroll">就业服务</a></li>
+                        <li class="sj-nav-item"><a href="#address" class="scroll">校区规模</a></li>
+                        <li class="sj-nav-item"><a href="#discount" class="scroll">优惠专区</a></li>
+                        <li class="sj-nav-item more"><a href="javascript:">更多<p class="label">3</p></a></li>
                     </ul>
                 </nav>
             </div>
@@ -445,7 +451,7 @@
         </div>
         <!-- banner广告结束 -->
         <!--行业专家-->
-        <div class="panel Specialists" id="Specialists">
+        <div class="panel Specialists" id="Specialists" data-section-name="Specialists">
             <div class="mid1200 SpecialistsIn">
                 <div class="header wow rollIn" data-animation-effect="pulse">
                     <h2 class="tit"><span>行业专家</span><em>聚集地</em></h2>
@@ -628,7 +634,7 @@
             </div>
         </div>
         <!--完整的课程体系-->
-        <div class="panel courses-curriculum" id="courses-curriculum">
+        <div class="panel courses-curriculum " id="courses-curriculum" data-section-name="courses-curriculum">
             <div class="mid1200 courses-curriculum-in">
                 <div class="header wow bounceInDown">
                     <h2>完善的课程体系</h2>
@@ -806,7 +812,7 @@
             </div>
         </div>
         <!--教学模式-->
-        <div class="panel teaching-patterns">
+        <div class="panel teaching-patterns" id="teaching-patterns" data-section-name="teaching-patterns">
             <div class="mid1200 teaching-patterns-in">
                 <div class="header wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0">
                     <h2>教学模式</h2>
@@ -847,7 +853,7 @@
             </div>
         </div>
         <!-- 学以致用-->
-        <div class="panel serve-in-job">
+        <div class="panel serve-in-job" id="serve-in-job" data-section-name="serve-in-job">
             <div class="mid1200 serve-in-job-in">
                 <div class="header wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0">
                     <h2>学以致用</h2>
@@ -878,7 +884,7 @@
             </div>
         </div>
         <!--就业服务-->
-        <div class="panel employment">
+        <div class="panel employment" id="employment" data-section-name="employment">
             <div class="mid1200 employment-in">
                 <div class="header wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0">
                     <h2>就业服务</h2>
@@ -983,7 +989,7 @@
             </div>
         </div>
         <!--优惠专区-->
-        <div class="panel discount">
+        <div class="panel discount" id="discount" data-section-name="discount">
             <div class="mid1200 discount-in">
                 <h2 class="tit wow bounceIn" data-wow-duration="0.5s" data-wow-delay="0">
                     <span class="name">优惠<em>专区</em></span>
@@ -1059,7 +1065,7 @@
             </div>
         </div>
         <!--地址-->
-        <div class="panel address" id="address">
+        <div class="panel address" id="address" data-section-name="address" >
             <div class="mid1200 address-in">
                 <div id="slideBox-4" class="slideBox-4">
                     <div class="hd">
@@ -1376,7 +1382,7 @@
             </div>
         </div>
         <!--底部-->
-        <div class="panel g-footer">
+        <div class="panel g-footer" id="g-footer"  data-section-name="g-footer" >
             <div class="mid1200">
                 <div class="footer-top">
                     <ul class="clearfix">
