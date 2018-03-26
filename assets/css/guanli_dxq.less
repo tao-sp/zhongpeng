@@ -310,6 +310,8 @@ em,i,strong,b{
       .ranking_icon{
         background: url("@{images}/rbbj.png") no-repeat 20px center;
         border-bottom:1px solid #d9d9d9;
+        font-size:20px;
+        color: #333;
         line-height: 65px;
         text-indent:58px;
       }
@@ -357,6 +359,8 @@ em,i,strong,b{
       .browse-history_icon{
         background: url("@{images}/guanli-009.png") no-repeat 20px center;
         border-bottom:1px solid #d9d9d9;
+        font-size:20px;
+        color: #333;
         line-height: 65px;
         text-indent:58px;
       }
@@ -703,3 +707,380 @@ em,i,strong,b{
   }
 }
 
+
+/*名师介绍*/
+.teacher-body{
+  .crumbs-wrapper{
+    .kechengzx-body .crumbs-wrapper();
+    background: url("@{images}/guanli-te-001.png") no-repeat center center/cover;
+  }
+  .gl-kczx-header-wrapper{
+    .kechengzx-body  .gl-kczx-header-wrapper();
+  }
+
+
+  .kczx-content{
+    .content_left{
+      .guanli-kecheng-container{
+        .item{
+          .pic{
+            width: 146px;
+            height: 204px;
+            img{
+              width: 146px;
+              height: 204px;
+            }
+          }
+          .teacher-cont{
+            width: 590px;
+            .title(@size:14px;@co:#666;@al:left;);
+            .name{
+              margin-bottom:30px;
+              font-size:24px;
+              line-height: 24px;
+              color: #333;
+            }
+            .job,.major,.experience{
+              font-size:0;
+              span{
+                display: inline-block;
+                vertical-align: top;
+                font-size:14px;
+              }
+              .tit{
+                margin-right: 6px;
+                width: 70px;
+                color: #333;
+              }
+              .ans{
+                width: 512px;
+                .more{
+                  color: #ef3333;
+                }
+              }
+            }
+          }
+          .item-content{
+            margin-top: 34px;
+
+            .serve,.suitable,.intro{
+              font-size:0;
+              span{
+                display: inline-block;
+                vertical-align: top;
+                font-size:14px;
+              }
+              .name{
+                margin-right: 6px;
+                width: 70px;
+                color: #333;
+              }
+            }
+            .serve{
+              .cat{
+                margin-right: 10px;
+                font-size:0;
+                em,.icon{
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size:14px;
+                }
+                .icon{
+                  width: 21px;
+                  height: 25px;
+                  background: url('@{images}/guanli-006.png') no-repeat left center;
+                }
+              }
+            }
+            .suitable,.intro{
+              .cat{
+                max-width:775-76px;
+              }
+            }
+            .intro{
+              .more{
+                color: #ef3333;
+              }
+            }
+          }
+          .btn-group{
+            margin-top: 14px;
+            text-align: right;
+            font-size:0;
+            a{
+              display: inline-block;
+              vertical-align: middle;
+              margin-left:20px;
+              border-width: 1px;
+              border-style: solid;
+              height: 38px;
+              font-size:14px;
+              line-height:40px;
+              text-indent:14px;
+              text-align: left;
+              span{
+                margin-right: 23px;
+              }
+            }
+            .sign{
+              width: 100px;
+              border-color: #ef3333;
+              color: #ef3333;
+            }
+            .kefu{
+              width: 127px;
+              border-color: #666;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+    .content_right{
+      .ranking{
+        .ranking_icon{
+          background: url("@{images}/guanli-te-003.png") no-repeat 20px center;
+        }
+        .ranking-list{
+          li{
+            i,.teacher-outline{
+              display: inline-block;
+              vertical-align: middle;
+
+            }
+            i{
+              margin-right: 20px;
+              font-size:12px;
+              line-height: 18px;
+            }
+            .teacher-outline{
+              font-size:16px;
+              line-height:25px;
+              .teacher-trumb{
+                margin-right: 22px;
+                width: 66px;
+                height: 92px;
+              }
+              .teacher-intro{
+                margin-top: 21px;
+                span{
+                  display:block;
+                }
+                .name{
+                  color: #333;
+                }
+                .major{
+                  color: #666;
+                }
+              }
+            }
+          }
+        }
+      }
+      .browse-history{
+        .browse-history_icon{
+          background: url("@{images}/guanli-009.png") no-repeat 20px center;
+          border-bottom:1px solid #d9d9d9;
+          line-height: 65px;
+          text-indent:58px;
+        }
+
+        .browse-history-list{
+          margin-left:(387-86*3 - 39*2)/2px;
+          li{
+            float: left;
+            padding-left: 0;
+            width: 86px;
+            font-size:16px;
+            line-height:25px;
+            i,p{
+              display: block;
+            }
+            i{
+              margin-right: 0;
+              width: 86px;
+              height: 121px;
+              overflow: hidden;
+              img{
+                margin-top: -1px;
+                margin-left: -1px;
+                width: 87px;
+                height: 122px;
+              }
+            }
+            p{
+              margin-top: 10px;
+              span{
+                display: block;
+                text-align: center;
+              }
+              .name{
+                color: #333;
+              }
+              .major{
+                color: #666;
+              }
+            }
+          }
+          li+li{
+            margin-left: 39px;
+          }
+        }
+
+      }
+      .advertisement{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+/*教师详情*/
+.teacher-info-body{
+  .crumbs-wrapper{
+    .gl-kc-intro-body .crumbs-wrapper();
+    background: url("@{images}/guanli-te-in-001.png") no-repeat center center/cover;
+    .banner-text{
+      .outer-left{
+        width: 240px;
+        height: 341px;
+        img{
+          width: 240px;
+          height: 341px;
+        }
+      }
+      .outer-right{
+        margin-right: 48px;
+        width: 870px;
+        .course-outline-top{
+          .left{
+            width: 574px;
+            h3{
+              .title(@size:24px;@co:#fff;@lh:25px;@al:left;);
+            }
+            .serve{
+              margin-top: 13px;
+              .title(@size:14px;@co:#fff;@lh:25px;@al:left;);
+              .experience{
+                margin-left:24px;
+                i{
+                  font-size:18px;
+                }
+              }
+            }
+          }
+          .price{
+            width: 706 - 574px;
+            line-height: 25px;
+            color: #ef3333;
+            i{
+              font-size:18px;
+            }
+            .num{
+              font-size:30px;
+              font-weight:bold;
+            }
+          }
+        }
+        .details{
+          li{
+            .icon-2{
+              background-image: url('@{images}/guanli-te-in-003.png');
+            }
+            .icon-3{
+              background-image: url('@{images}/guanli-te-in-004.png');
+            }
+            .pattern{
+              width: 840px;
+              strong,em{
+                display: block;
+                float: left;
+              }
+              strong{
+                width: 70px;
+              }
+              em{
+                width:840-70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .kczx-content{
+    .content_left{
+      .guanli-kecheng-container{
+        .item{
+          padding-bottom: 0;
+          border:none;
+          .item-top{
+            height: 63px;
+            line-height: 63;
+            background-color: #f2f2f2;
+            .cat-name{
+              width: 120px;
+              font-size:20px;
+              line-height: 63px;
+              text-align: center;
+              color: #fefefe;
+              background-color: #ef3333;
+              border-top-right-radius:12px;
+              border-bottom-left-radius:12px;
+            }
+          }
+          .video_wrapper{
+            margin-top: 40px;
+            width: 100%;
+            height: 430px;
+          }
+          .item-details{
+            margin-top: 40px;
+            .list{
+              li{
+                margin-top: 20px;
+                .item-list-left{
+                  float: left;
+                  margin-right: 20px;
+                  margin-top: 0;
+                  width: 70px;
+                  height: 70px;
+                }
+                .item-list-right{
+                  float: left;
+                  width: 660px;
+                  span{
+                    display: block;
+                    .title(@co:#666;@al:left;);
+                  }
+                  .name{
+                    margin-top: 12px;
+                    em{
+                      margin-right: 50px;
+                      font-size:18px;
+                      color: #333;
+                    }
+                  }
+                }
+                &:after{
+                  display: block;
+                  visibility: hidden;
+                  height: 0;
+                  clear: both;
+                  content: "";
+                  zoom: 1;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .content_right{
+      .teacher-body .kczx-content .content_right();
+    }
+
+  }
+
+}
