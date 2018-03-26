@@ -129,17 +129,19 @@ li{
 .nav{
     padding-top: 20px;
 }
-.nav li{
+.nav li {
+     float: left;
+     width: 120px;
+     height: 50px;
+}
+.nav li a{
     cursor: pointer;
-    float: left;
     color: #999999;
     list-style-type: none;
     font-size: 15px;
     padding: 6px 18px;
-    margin: 0 13px;
 }
-.nav_active,.nav li:hover{
-    position: relative;
+.nav_active a,.nav li a:hover{
     background: #4c5cd4;
     border-radius: 15px;
     color: #ffffff !important;
@@ -164,6 +166,7 @@ li{
     z-index: 999;
     position: absolute;
     top: 168px;
+    left:  0;
 }
 .nav_drop_down img{
     width:126px;
@@ -179,7 +182,7 @@ li{
     font-size:14px;
     color: #ffffff;
 }
-#nav_drop_down_lists{
+.nav_drop_down_lists{
     padding-top: 11px;
     margin: 0 auto;
 }

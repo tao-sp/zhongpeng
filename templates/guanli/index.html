@@ -30,7 +30,7 @@
             <a>灵蜥学院</a>
         </div>
         <div class="shortcut_content_right">
-            <a><img src="../../assets/images/jixujiaoyu/wechat1.png">关注中鹏</a>
+            <a href="#mao1" ><img src="../../assets/images/jixujiaoyu/wechat1.png">关注中鹏</a>
             <a><img src="../../assets/images/jixujiaoyu/consultation1.png">咨询群</a>
         </div>
     </div>
@@ -79,8 +79,54 @@
         <!--导航开始-->
         <ul class="nav">
             <li><a>首页</a></li>
-            <li><a>课程中心</a></li>
-            <li><a>报考中心</a></li>
+            <li><a>课程中心</a>
+                <div class="nav_drop_down"  >
+                    <div class="nav_drop_down_lists">
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+                            <div>自考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+                            <div>成人高考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+                            <div>远程教育</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+                            <div>本科</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </li>
+            <li><a>报考中心</a>
+
+                <div class="nav_drop_down"  >
+                    <div class="nav_drop_down_lists">
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+                            <div>自考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+                            <div>成人高考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+                            <div>远程教育</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+                            <div>本科</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </li>
             <li><a>名师介绍</a></li>
             <li><a>学员天地</a></li>
             <li><a>问题交流</a></li>
@@ -93,28 +139,6 @@
     </div>
 </div>
 
-
-<div class="nav_drop_down" id="nav1">
-    <div id="nav_drop_down_lists">
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
-            <div>自考</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
-            <div>成人高考</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
-            <div>远程教育</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
-            <div>本科</div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
 
 <!--头部2结束-->
 
@@ -509,7 +533,7 @@
 <!--线上试听开始-->
 <div class="online_audition">
 
-    <div class="education container_1200">
+    <div class="education container_1200 margintopnone">
         <div class="education_head">
             <h2>线上试听<span>ONLINE AUDITION</span></h2>
             <h1 class="clear"></h1>
@@ -1096,7 +1120,7 @@
                 <div class="weixin">
                     <img src="../../assets/images/guanwang/f-4.png" alt=""/>
                 </div>
-                <p class="weixin-desc">关注中鹏</p>
+                <p class="weixin-desc"> <a name="mao1">关注中鹏</a></p>
             </div>
             <div class="clear"></div>
         </div>
@@ -1133,14 +1157,18 @@
 
     window.onload = function() {
 
-        var obj = $(".nav_drop_down_list");
-        $("#nav_drop_down_lists").css("width",obj.length*148);
+        var obj = $(".nav_drop_down_lists");
+        for (var i=0;i<obj.length;i++){
+            var num = $(obj[i]).children().length;
+            console.log(num)
+            $(obj[i]).css("width",(num-1)*148);
+        }
 
-       /* var objs = $(".slideTxtBox2 .bd ul");
-        for (var i = 0;i<objs.length;i++){
-            var len = objs[i].children.length-2;
-            $(objs[i]).css("width",len*470);
-        }*/
+        /* var objs = $(".slideTxtBox2 .bd ul");
+         for (var i = 0;i<objs.length;i++){
+             var len = objs[i].children.length-2;
+             $(objs[i]).css("width",len*470);
+         }*/
 
 
         $(".slideTxtBox2 .hd ul li").hover(function () {
@@ -1156,24 +1184,20 @@
 
 
         /*鼠标划过导航事件*/
+
         $(".logomore .logomore_content .nav li").hover(function () {
-            $("#nav1").stop(true, false).slideToggle("slow");
+            $(this).children(".nav_drop_down").stop(true, false).slideDown();
             $(".nav_active").removeClass("nav_active");
             $(this).addClass("nav_active");
         })
         $(".logomore .logomore_content .nav li").mouseleave(function(){
-            setTimeout(function() {//两秒后跳转
-                if ($("#nav1").css("display") == "none") {
-                    $(".nav_active").removeClass("nav_active");
-                }
-            },1000);
+            $(this).children(".nav_drop_down").hide();
         });
-        $("#nav1").hover(function () {
-            $("#nav1").stop(true, false).slideToggle();
-            if($("#nav1").css("display")=="none") {
-                $(".nav_active").removeClass("nav_active");
-            }
+
+        $(".logomore .logomore_content .nav li .nav_drop_down").hover(function () {
+            $(this).show();
         })
+
 
     }
 </script>

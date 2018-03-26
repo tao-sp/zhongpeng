@@ -179,6 +179,7 @@ a{
     z-index: 999;
     position: absolute;
     top: 168px;
+    left:0;
 }
 .nav_drop_down img{
     width:126px;
@@ -194,7 +195,7 @@ a{
     font-size:14px;
     color: #ffffff;
 }
-#nav_drop_down_lists{
+.nav_drop_down_lists{
     padding-top: 11px;
     margin: 0 auto;
 }
@@ -3174,3 +3175,1437 @@ border-color: #dddddd;
     padding: 12px 32px;
     cursor: pointer;
 }
+.margintopnone{
+    margin-top:0 !important;
+}
+
+
+
+/*
+分割线*/
+em,
+i,
+strong,
+b {
+    font-style: normal;
+}
+.kechengzx-body {
+    width: 100%;
+    overflow-x: hidden;
+}
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: "";
+    zoom: 1;
+}
+/*导航的a链接的样式*/
+/* 轮播的左右按钮的样式控制 */
+/*行内块级元素，图标与文字对齐*/
+/*线段*/
+/*课程中心样式*/
+.kechengzx-body .crumbs-wrapper {
+    padding-top: 39px;
+    height: 261px;
+    background: url("../../assets/images/jixujiaoyu/guanli-001.png") no-repeat center center / cover;
+}
+.kechengzx-body .crumbs-wrapper .crumbs {
+    margin-top: 0;
+    color: #999;
+}
+.kechengzx-body .crumbs-wrapper .crumbs b {
+    font-weight: bold;
+    color: #fff;
+}
+.kechengzx-body .crumbs-wrapper .banner-text .tit {
+    margin-top: 33px;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.kechengzx-body .crumbs-wrapper .banner-text .sub-tit {
+    margin-top: 4px;
+    font-size: 56px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.kechengzx-body .gl-kczx-header-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 68px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header {
+    position: absolute;
+    left: 0;
+    top: -32px;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type,
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range {
+    padding-left: 40px;
+    font-size: 0;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type li,
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type li a,
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range li a {
+    display: block;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item-name,
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item-name {
+    margin-left: 0;
+    width: 104px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: left;
+    color: #333;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type {
+    margin-top: 20px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item {
+    margin-right: 30px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item a {
+    padding: 0 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .on a {
+    color: #fff;
+    background-color: #ef3333;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range {
+    margin-top: 14px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item {
+    margin-right: 47px;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a {
+    font-size: 0;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon,
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .inline-block-span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon {
+    width: 19px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-002.png');
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .inline-block-span {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+}
+.kechengzx-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .active a .inline-block-span {
+    color: #ef3333;
+}
+.kczx-content .content_left {
+    width: 776px;
+}
+.kczx-content .content_left .guanli-kecheng-container .item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dcdddd;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .course-name {
+    width: 596px;
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 24px;
+    text-align: left;
+    color: #333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price {
+    width: 180px;
+    line-height: 24px;
+    text-align: right;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .icon {
+    font-size: 18px;
+    color: #ef3333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .num {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ef3333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-top .price .desc {
+    font-size: 14px;
+    color: #666;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content {
+    margin-top: 34px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #666;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro {
+    font-size: 0;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve span,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable span,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .name,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .name,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .name {
+    margin-right: 6px;
+    width: 70px;
+    color: #333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat {
+    margin-right: 10px;
+    font-size: 0;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat em,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+    width: 21px;
+    height: 25px;
+    background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .cat,
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .cat {
+    max-width: 699px;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .more {
+    color: #ef3333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group {
+    margin-top: 14px;
+    text-align: right;
+    font-size: 0;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    border-width: 1px;
+    border-style: solid;
+    height: 38px;
+    font-size: 14px;
+    line-height: 40px;
+    text-indent: 14px;
+    text-align: left;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group a span {
+    margin-right: 23px;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group .sign {
+    width: 100px;
+    border-color: #ef3333;
+    color: #ef3333;
+}
+.kczx-content .content_left .guanli-kecheng-container .item .btn-group .kefu {
+    width: 127px;
+    border-color: #666;
+    color: #666;
+}
+.kczx-content .content_left .guanli-kecheng-container .item + .item {
+    margin-top: 40px;
+}
+.kczx-content .content_right {
+    float: right;
+}
+.kczx-content .content_right .ranking {
+    background-color: #f7f7f7;
+}
+.kczx-content .content_right .ranking .ranking_icon {
+    background: url("../../assets/images/jixujiaoyu/rbbj.png") no-repeat 20px center;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 20px;
+    color: #333;
+    line-height: 65px;
+    text-indent: 58px;
+}
+.kczx-content .content_right .ranking .ranking-list {
+    padding-top: 8px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    color: #666;
+}
+.kczx-content .content_right .ranking .ranking-list li {
+    margin-top: 12px;
+    padding-left: 24px;
+    font-size: 0;
+}
+.kczx-content .content_right .ranking .ranking-list li i,
+.kczx-content .content_right .ranking .ranking-list li span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.kczx-content .content_right .ranking .ranking-list li i {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    font-style: normal;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.kczx-content .content_right .ranking .ranking-list li .num-1 {
+    background-color: #f07f7f;
+    color: #fff;
+}
+.kczx-content .content_right .ranking .ranking-list li .num-2 {
+    background-color: #ec9961;
+    color: #fff;
+}
+.kczx-content .content_right .ranking .ranking-list li .num-3 {
+    background-color: #9da3f3;
+    color: #fff;
+}
+.browse-history {
+    margin-top: 20px;
+    margin-bottom:  12px;
+    background-color: #f7f7f7;
+}
+.browse-history .browse-history_icon {
+    background: url("../../assets/images/jixujiaoyu/guanli-009.png") no-repeat 20px center;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 20px;
+    color: #333;
+    line-height: 65px;
+    text-indent: 58px;
+}
+.browse-history-list {
+    padding-bottom: 21px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 30px;
+    text-align: left;
+    color: #666;
+}
+.browse-history .browse-history-list li {
+    margin-top: 20px;
+    padding-left: 24px;
+    font-size: 0;
+}
+.browse-history .browse-history-list li i, .browse-history .browse-history-list li p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.browse-history .browse-history-list li i {
+    margin-right: 22px;
+    width: 102px;
+    height: 76px;
+    overflow: hidden;
+}
+.browse-history .browse-history-list li i img {
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 104px;
+    height: 78px;
+}
+.browse-history .browse-history-list li p span {
+    display: block;
+}
+.kczx-content .content_right .advertisement {
+    margin-top: 20px;
+}
+/*课程介绍页面样式*/
+.gl-kc-intro-body .crumbs-wrapper {
+    padding-top: 39px;
+    height: 438px;
+    background: url("../../assets/images/jixujiaoyu/guanli-kc-01.png") no-repeat center center / cover;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav {
+    margin-top: 0;
+    color: #999;
+    font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav img,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav span,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 15px;
+    text-align: left;
+    color: #999;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav img {
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b {
+    font-weight: bold;
+    color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .bread-nav b,
+.gl-kc-intro-body .crumbs-wrapper .bread-nav span {
+    margin-left: 6px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text {
+    margin-top: 39px;
+    width: 100%;
+    height: 341px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-left {
+    width: 455px;
+    height: 341px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right {
+    margin-top: 40px;
+    width: 708px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left {
+    width: 574px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left h3 {
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve {
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat em,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+    width: 21px;
+    height: 25px;
+    background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price {
+    width: 132px;
+    line-height: 25px;
+    color: #ef3333;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price i {
+    font-size: 18px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price .num {
+    font-size: 30px;
+    font-weight: bold;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details {
+    margin-top: 35px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li {
+    font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li i,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .pattern {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li i {
+    width: 28px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-1 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-003.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-2 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-004.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .details li .icon-3 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-005.png');
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group {
+    margin-top: 50px;
+    font-size: 0;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a,
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a {
+    margin-right: 20px;
+    padding: 0 10px 0 15px;
+    border-width: 1px;
+    border-style: solid;
+    height: 40px;
+    line-height: 42px;
+    border-color: #fff;
+    color: #fff;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group a span {
+    margin-right: 22px;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+    margin-left: 29px;
+    color: #999;
+}
+.gl-kc-intro-body .crumbs-wrapper .banner-text .outer-right .btn-group .sign {
+    border-color: #ef3333;
+    color: #ef3333;
+}
+.gl-kc-intro-body .kczx-content {
+    margin-bottom: 50px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item {
+    border: none;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-top {
+    height: 63px;
+    line-height: 63;
+    background-color: #f2f2f2;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-top .cat-name {
+    width: 120px;
+    font-size: 20px;
+    line-height: 63px;
+    text-align: center;
+    color: #fefefe;
+    background-color: #ef3333;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 36px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #666;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd {
+    position: relative;
+    z-index: 1;
+    margin-left: 29px;
+    width: 718px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li {
+    float: left;
+    margin: 0 17px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .pic {
+    float: left;
+    margin-right: 15px;
+    width: 146px;
+    height: 204px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .pic img {
+    width: 146px;
+    height: 204px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title {
+    float: left;
+    width: 164px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title .name {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd ul li .title p em {
+    color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev,
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next {
+    position: absolute;
+    top: 86px;
+    z-index: 99;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
+    color: #bcbcbc;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev {
+    left: -28px;
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-015.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .prev:hover {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-016.jpg');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next {
+    right: -28px;
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-015-2.jpg');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .slide-box1 .bd .next:hover {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-016-2.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li {
+    margin-top: 34px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left {
+    float: left;
+    margin-right: 20px;
+    margin-top: 6px;
+    width: 88px;
+    height: 56px;
+    border: 1px solid #dcdddd;
+    background-color: #f2f2f2;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon,
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left span {
+    display: block;
+    text-align: center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon {
+    margin-top: 4px;
+    height: 20px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-1 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-007.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-2 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-008.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left .icon-3 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-009.png');
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right {
+    float: left;
+    width: 634px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-details .list li:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: "";
+    zoom: 1;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same {
+    margin-top: 40px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li {
+    float: left;
+    width: 247px;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li a {
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+}
+.gl-kc-intro-body .content_left .guanli-kecheng-container .item .item-same .list li + li {
+    margin-left: 17px;
+}
+/*名师介绍*/
+.teacher-body .crumbs-wrapper {
+    padding-top: 39px;
+    height: 261px;
+    background: url("../../assets/images/jixujiaoyu/guanli-001.png") no-repeat center center / cover;
+    background: url("../../assets/images/jixujiaoyu/guanli-te-001.png") no-repeat center center / cover;
+}
+.teacher-body .crumbs-wrapper .crumbs {
+    margin-top: 0;
+    color: #999;
+}
+.teacher-body .crumbs-wrapper .crumbs b {
+    font-weight: bold;
+    color: #fff;
+}
+.teacher-body .crumbs-wrapper .banner-text .tit {
+    margin-top: 33px;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.teacher-body .crumbs-wrapper .banner-text .sub-tit {
+    margin-top: 4px;
+    font-size: 56px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.teacher-body .gl-kczx-header-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 68px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header {
+    position: absolute;
+    left: 0;
+    top: -32px;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type,
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range {
+    padding-left: 40px;
+    font-size: 0;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type li,
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type li a,
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range li a {
+    display: block;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item-name,
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item-name {
+    margin-left: 0;
+    width: 104px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: left;
+    color: #333;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type {
+    margin-top: 20px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item {
+    margin-right: 30px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .item a {
+    padding: 0 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-course-type .on a {
+    color: #fff;
+    background-color: #ef3333;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range {
+    margin-top: 14px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item {
+    margin-right: 47px;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a {
+    font-size: 0;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon,
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .inline-block-span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon {
+    width: 19px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .icon {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-002.png');
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .item a .inline-block-span {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+}
+.teacher-body .gl-kczx-header-wrapper .gl-kc-header .choice-range .active a .inline-block-span {
+    color: #ef3333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .pic {
+    width: 146px;
+    height: 204px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .pic img {
+    width: 146px;
+    height: 204px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont {
+    width: 590px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #666;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .name {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .job,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .major,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .experience {
+    font-size: 0;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .job span,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .major span,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .experience span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .job .tit,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .major .tit,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .experience .tit {
+    margin-right: 6px;
+    width: 70px;
+    color: #333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .job .ans,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .major .ans,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .experience .ans {
+    width: 512px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .job .ans .more,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .major .ans .more,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .teacher-cont .experience .ans .more {
+    color: #ef3333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content {
+    margin-top: 34px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .intro {
+    font-size: 0;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve span,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable span,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .intro span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .name,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .name,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .name {
+    margin-right: 6px;
+    width: 70px;
+    color: #333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat {
+    margin-right: 10px;
+    font-size: 0;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat em,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .serve .cat .icon {
+    width: 21px;
+    height: 25px;
+    background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .suitable .cat,
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .cat {
+    max-width: 699px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .item-content .intro .more {
+    color: #ef3333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .btn-group {
+    margin-top: 14px;
+    text-align: right;
+    font-size: 0;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .btn-group a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    border-width: 1px;
+    border-style: solid;
+    height: 38px;
+    font-size: 14px;
+    line-height: 40px;
+    text-indent: 14px;
+    text-align: left;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .btn-group a span {
+    margin-right: 23px;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .btn-group .sign {
+    width: 100px;
+    border-color: #ef3333;
+    color: #ef3333;
+}
+.teacher-body .kczx-content .content_left .guanli-kecheng-container .item .btn-group .kefu {
+    width: 127px;
+    border-color: #666;
+    color: #666;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking_icon {
+    background: url("../../assets/images/jixujiaoyu/guanli-te-003.png") no-repeat 20px center;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li i,
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li i {
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline {
+    font-size: 16px;
+    line-height: 25px;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-trumb {
+    margin-right: 22px;
+    width: 66px;
+    height: 92px;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro {
+    margin-top: 21px;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro span {
+    display: block;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro .name {
+    color: #333;
+}
+.teacher-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro .major {
+    color: #666;
+}
+.browse-history .browse-history_icon {
+    background: url("../../assets/images/jixujiaoyu/guanli-009.png") no-repeat 20px center;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 65px;
+    text-indent: 58px;
+}
+.browse-history .browse-history-list {
+    margin-left: 25.5px;
+}
+.browse-history .browse-history-list li {
+    float: left;
+    padding-left: 0;
+    width: 86px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.browse-history .browse-history-list li i,  .browse-history .browse-history-list li p {
+    display: block;
+}
+.browse-history .browse-history-list li i {
+    margin-right: 0;
+    width: 86px;
+    height: 121px;
+    overflow: hidden;
+}
+.browse-history .browse-history-list li i img {
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 87px;
+    height: 122px;
+}
+.browse-history .browse-history-list li p {
+    margin-top: 10px;
+}
+.browse-history .browse-history-list li p span {
+    display: block;
+    text-align: center;
+}
+.browse-history .browse-history-list li p .name {
+    color: #333;
+}
+.browse-history .browse-history-list li p .major {
+    color: #666;
+}
+.browse-history .browse-history-list li + li {
+    margin-left: 39px;
+}
+.teacher-body .kczx-content .content_right .advertisement {
+    margin-top: 20px;
+}
+/*教师详情*/
+.teacher-info-body .crumbs-wrapper {
+    padding-top: 39px;
+    height: 438px;
+    background: url("../../assets/images/jixujiaoyu/guanli-kc-01.png") no-repeat center center / cover;
+    background: url("../../assets/images/jixujiaoyu/guanli-te-in-001.png") no-repeat center center / cover;
+}
+.teacher-info-body .crumbs-wrapper .bread-nav {
+    margin-top: 0;
+    color: #999;
+    font-size: 0;
+}
+.teacher-info-body .crumbs-wrapper .bread-nav img,
+.teacher-info-body .crumbs-wrapper .bread-nav span,
+.teacher-info-body .crumbs-wrapper .bread-nav b {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 15px;
+    text-align: left;
+    color: #999;
+}
+.teacher-info-body .crumbs-wrapper .bread-nav img {
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+}
+.teacher-info-body .crumbs-wrapper .bread-nav b {
+    font-weight: bold;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .bread-nav b,
+.teacher-info-body .crumbs-wrapper .bread-nav span {
+    margin-left: 6px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text {
+    margin-top: 39px;
+    width: 100%;
+    height: 341px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-left {
+    width: 455px;
+    height: 341px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right {
+    margin-top: 40px;
+    width: 708px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left {
+    width: 574px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left h3 {
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve {
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    font-size: 0;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat em,
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .cat .icon {
+    width: 21px;
+    height: 25px;
+    background: url('../../assets/images/jixujiaoyu/guanli-006.png') no-repeat left center;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price {
+    width: 132px;
+    line-height: 25px;
+    color: #ef3333;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price i {
+    font-size: 18px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price .num {
+    font-size: 30px;
+    font-weight: bold;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details {
+    margin-top: 35px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li {
+    font-size: 0;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li i,
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li i {
+    width: 28px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .icon-1 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-003.png');
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .icon-2 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-004.png');
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .icon-3 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-kc-005.png');
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group {
+    margin-top: 50px;
+    font-size: 0;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group a,
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group a {
+    margin-right: 20px;
+    padding: 0 10px 0 15px;
+    border-width: 1px;
+    border-style: solid;
+    height: 40px;
+    line-height: 42px;
+    border-color: #fff;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group a span {
+    margin-right: 22px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group .index {
+    margin-left: 29px;
+    color: #999;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .btn-group .sign {
+    border-color: #ef3333;
+    color: #ef3333;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-left {
+    width: 240px;
+    height: 341px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-left img {
+    width: 240px;
+    height: 341px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right {
+    margin-right: 48px;
+    width: 870px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left {
+    width: 574px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left h3 {
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve {
+    margin-top: 13px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .experience {
+    margin-left: 24px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .left .serve .experience i {
+    font-size: 18px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price {
+    width: 132px;
+    line-height: 25px;
+    color: #ef3333;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price i {
+    font-size: 18px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .course-outline-top .price .num {
+    font-size: 30px;
+    font-weight: bold;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .icon-2 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-te-in-003.png');
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .icon-3 {
+    background-image: url('../../assets/images/jixujiaoyu/guanli-te-in-004.png');
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern {
+    width: 840px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern strong,
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern em {
+    display: block;
+    float: left;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern strong {
+    width: 70px;
+}
+.teacher-info-body .crumbs-wrapper .banner-text .outer-right .details li .pattern em {
+    width: 770px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item {
+    padding-bottom: 0;
+    border: none;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-top {
+    height: 63px;
+    line-height: 63;
+    background-color: #f2f2f2;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-top .cat-name {
+    width: 120px;
+    font-size: 20px;
+    line-height: 63px;
+    text-align: center;
+    color: #fefefe;
+    background-color: #ef3333;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .video_wrapper {
+    margin-top: 40px;
+    width: 100%;
+    height: 430px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details {
+    margin-top: 40px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li {
+    margin-top: 20px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li .item-list-left {
+    float: left;
+    margin-right: 20px;
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right {
+    float: left;
+    width: 660px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right span {
+    display: block;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    color: #666;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right .name {
+    margin-top: 12px;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li .item-list-right .name em {
+    margin-right: 50px;
+    font-size: 18px;
+    color: #333;
+}
+.teacher-info-body .kczx-content .content_left .guanli-kecheng-container .item .item-details .list li:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: "";
+    zoom: 1;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking_icon {
+    background: url("../../assets/images/jixujiaoyu/guanli-te-003.png") no-repeat 20px center;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li i,
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li i {
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline {
+    font-size: 16px;
+    line-height: 25px;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-trumb {
+    margin-right: 22px;
+    width: 66px;
+    height: 92px;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro {
+    margin-top: 21px;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro span {
+    display: block;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro .name {
+    color: #333;
+}
+.teacher-info-body .kczx-content .content_right .ranking .ranking-list li .teacher-outline .teacher-intro .major {
+    color: #666;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history_icon {
+    background: url("../../assets/images/jixujiaoyu/guanli-009.png") no-repeat 20px center;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 65px;
+    text-indent: 58px;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list {
+    margin-left: 25.5px;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li {
+    float: left;
+    padding-left: 0;
+    width: 86px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li i,
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li p {
+    display: block;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li i {
+    margin-right: 0;
+    width: 86px;
+    height: 121px;
+    overflow: hidden;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li i img {
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 87px;
+    height: 122px;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li p {
+    margin-top: 10px;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li p span {
+    display: block;
+    text-align: center;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li p .name {
+    color: #333;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li p .major {
+    color: #666;
+}
+.teacher-info-body .kczx-content .content_right .browse-history .browse-history-list li + li {
+    margin-left: 39px;
+}
+.teacher-info-body .kczx-content .content_right .advertisement {
+    margin-top: 20px;
+}
+/*分割线*/

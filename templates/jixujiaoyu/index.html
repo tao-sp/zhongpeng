@@ -79,8 +79,57 @@
         <!--导航开始-->
         <ul class="nav">
             <li><a>首页</a></li>
-            <li><a>课程中心</a></li>
-            <li><a>自学考试</a></li>
+            <li><a>课程中心</a>
+
+                <div class="nav_drop_down"  >
+                    <div class="nav_drop_down_lists">
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+                            <div>自考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+                            <div>成人高考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+                            <div>远程教育</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+                            <div>本科</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </li>
+            <li><a>自学考试</a>
+
+                <div class="nav_drop_down" >
+                    <div class="nav_drop_down_lists">
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
+                            <div>自考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
+                            <div>成人高考</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
+                            <div>远程教育</div>
+                        </div>
+                        <div class="nav_drop_down_list">
+                            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
+                            <div>本科</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+
+            </li>
             <li><a>成人高考</a></li>
             <li><a>网络教育</a></li>
             <li><a>开放教育</a></li>
@@ -96,27 +145,6 @@
 </div>
 
 
-<div class="nav_drop_down" id="nav1">
-    <div id="nav_drop_down_lists">
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_1.png">
-            <div>自考</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_2.png">
-            <div>成人高考</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_3.png">
-            <div>远程教育</div>
-        </div>
-        <div class="nav_drop_down_list">
-            <img src="../../assets/images/jixujiaoyu/nav_list_4.png">
-            <div>本科</div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
 
 <!--头部2结束-->
 
@@ -1516,8 +1544,12 @@
             $(".search input").blur(function () {
                 $(".search").css("border-color", "#999999");
             });
-            var obj = $(".nav_drop_down_list");
-            $("#nav_drop_down_lists").css("width",obj.length*148);
+            var obj = $(".nav_drop_down_lists");
+            for (var i=0;i<obj.length;i++){
+               var num = $(obj[i]).children().length;
+               console.log(num)
+                $(obj[i]).css("width",(num-1)*148);
+            }
 
             var objs = $(".slideTxtBox2 .bd ul");
             for (var i = 0;i<objs.length;i++){
@@ -1580,23 +1612,19 @@
 
 
         /*鼠标划过导航事件*/
+
+
         $(".logomore .logomore_content .nav li").hover(function () {
-            $("#nav1").stop(true, false).slideToggle("slow");
+            $(this).children(".nav_drop_down").stop(true, false).slideDown();
             $(".nav_active").removeClass("nav_active");
             $(this).addClass("nav_active");
         })
         $(".logomore .logomore_content .nav li").mouseleave(function(){
-            setTimeout(function() {//两秒后跳转
-                if ($("#nav1").css("display") == "none") {
-                    $(".nav_active").removeClass("nav_active");
-                }
-            },1000);
+            $(this).children(".nav_drop_down").hide();
         });
-        $("#nav1").hover(function () {
-            $("#nav1").stop(true, false).slideToggle();
-            if($("#nav1").css("display")=="none") {
-                $(".nav_active").removeClass("nav_active");
-            }
+
+        $(".logomore .logomore_content .nav li .nav_drop_down").hover(function () {
+            $(this).show();
         })
 
     }
