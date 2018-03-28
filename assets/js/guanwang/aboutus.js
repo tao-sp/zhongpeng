@@ -19,16 +19,10 @@ $(function() {
     /*关于我们发展历程*/
     (function() {
         var oDevelop = $('#ab-development'),
-            oList = oDevelop.find('.parHd .tab-list li'),
-            oBorder = oDevelop.find('.border'),
-            length = oList.length,
-            perW = 86;
+            oList = oDevelop.find('.parHd .tab-list li');
         oList.on('mouseenter',function() {
-            var index = $(this).index();
-            var rightVal = (length - 1 -index)*86;
-            oBorder.stop().animate({
-            right:rightVal+'px',
-            },400);
+            $(this).addClass('on').siblings().removeClass('on');
         });
+
     })();
 });
