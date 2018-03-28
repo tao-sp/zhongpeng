@@ -1468,19 +1468,10 @@
   cursor: pointer;
 }
 .a-main .ab-development .ab-development-in .slideGroup .parHd ul li.on {
-  color: #ed9336;
-}
-.a-main .ab-development .ab-development-in .slideGroup .parHd .border {
-  position: absolute;
-  right: 688px;
-  top: 0;
-  z-index: 2;
-  width: 72px;
   height: 32px;
   border: 1px solid #ed9336;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   border-radius: 16px;
+  color: #ed9336;
 }
 .a-main .ab-development .ab-development-in .slideGroup .parBd {
   font-size: 14px;
