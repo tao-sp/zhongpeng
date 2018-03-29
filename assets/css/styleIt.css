@@ -1,0 +1,433 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend,
+input, textarea, p, blockquote, th, td,figure {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    cursor: pointer;
+}
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: "";
++ zoom: 1;
+}
+.font_yahei{
+    font-family: "Microsoft YaHei";
+}
+.container_1200{
+    padding-bottom: 62px;
+    width:1344px;
+    margin: 0 auto;
+}
+/*头部一开始*/
+.shortcut{
+    background: #00abbc;
+    height:30px;
+}
+.shortcut_content{
+    height:30px;
+    line-height: 28px;
+    color: #ffffff;
+}
+.shortcut_content a{
+    font-size: 12px;
+    padding: 0 10px;
+    cursor:  pointer;
+}
+.shortcut_content img
+{
+    position: relative;
+    top: 2px;
+    padding-right: 1px;
+}
+.shortcut_content_left{
+    float: left;
+}
+.shortcut_content_right{
+    float: right;
+}
+/*头部一结束*/
+/*导航开始*/
+.nav{
+    height:96px;
+    width:100%;
+    background: #1b1c1d;
+}
+.nav_left{
+    float: left;
+    margin-top:  22px;
+}
+.nav_left_img{
+    float: left;
+}
+.nav_left_info{
+    float: left;
+    margin-left: 18px;
+}
+.nav_left_info h4{
+    color: #fff;
+    font-size:16px;
+    line-height: 26px;
+}
+.nav_left_info p{
+    color: #cbcbcb;
+    font-size:13px;
+}
+.nav_right li{
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+}
+.nav_right li a{
+    padding: 38px 30px;
+    line-height: 95px;
+}
+.nav_right_active,.nav_right li:hover{
+    color: #00abbc;
+}
+.nav_right{
+    float: right;
+}
+/*导航结束*/
+
+/*轮播开始*/
+/* 轮播1 */
+.slideBox{overflow:hidden;position:relative;}
+.slideBox .hd{height: 10px;overflow:hidden;position:absolute;bottom: 60px;z-index:1;position: absolute;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);}
+.slideBox .hd ul{overflow:hidden;zoom:1;float:left;}
+.slideBox .hd ul li:last-child{
+    margin-right:0;
+}
+.slideBox .hd ul li{float:left;margin-right: 16px;width: 20px;height: 10px;line-height:14px;text-align:center;background:#fff;cursor:pointer;}
+.slideBox .hd ul li.on{background:#00abbc;color:#fff;width: 50px;}
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{width: 100%;display:block;}
+
+
+.bannerfont{
+    top: 18%;
+    position:  absolute;
+    left: 50%;
+    width: 865px !important;
+    margin-left:  -432px;
+}
+/*轮播结束*/
+
+/*明星课程开始*/
+.star_course{
+    padding:66px 0;
+}
+.title{
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+}
+.view_more{
+    display: block;
+    font-size:14px;
+    color: #999999;
+    font-weight:bold;
+    text-align: right;
+    margin-bottom: 16px;
+}
+.star_course_lists li{
+    float: left;
+    width: 313px;
+    position: relative;
+    margin-right: 30px;
+}
+.star_course_lists li:nth-child(4n){
+    margin-right: 0;
+}
+.star_course_lists li > img{
+    width:313px;
+    height:229px;
+}
+.star_course_list_title{
+    font-size:48px;
+    color: #fefefe;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    width:313px;
+    height:229px;
+    text-align: center;
+    line-height:229px;
+}
+.star_course_list_infos{
+    height: 117px;
+    position:  relative;
+    padding: 14px;
+    border: 1px solid #d1d1d1;
+    bottom: 5px;
+}
+.star_course_list_info{
+    color: #666666;
+    font-size: 16px;
+    line-height:  25px;
+}
+.star_course_list_info b{
+    color: #333333;
+}
+.star_course_list_price{
+    font-size: 18px;
+    text-align: right;
+    color: #00abbc;
+    position:  absolute;
+    right: 14px;
+    bottom: 11px;
+}
+.star_course_list_price b{
+    font-size: 32px;
+}
+/*明星课程结束*/
+
+/*就业明星开始*/
+.employment_star{
+    padding: 10px 0 78px 0;
+    background: #252a2e url(../images/it/employment_star.png);
+    background-size: 100% 100%;
+}
+.employment_star .title{
+    color: #ffffff;
+    padding: 40px 0;
+}
+.employment_star .title span{
+    color: #ffffff;
+    font-weight:  normal;
+    font-size: 18px;
+    padding-left: 19px;
+}
+.employment_star_lists li{
+    position: relative;
+    float: left;
+    width:214px;
+    height:351px;
+    margin-right:  12px;
+}
+.employment_star_lists li:nth-child(6n){
+   margin-right: 0;
+}
+.employment_star_lists li img{
+    width:214px;
+    height:351px;
+}
+.employment_star_info{
+    position: absolute;
+    padding:  12px;
+    bottom: 0px;
+    width: 190px;
+    height: 44px;
+    background: rgba(255,255,255,0.8);
+}
+.employment_star_info h3{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.employment_star_info span{
+    font-size: 13px;
+    color: #666666;
+}
+.employment_star_salary{
+    font-size: 15px !important;
+    font-weight: bold;
+    position:  absolute;
+    bottom: 6px;
+    right: 14px;
+}
+.employment_star_salary b{
+    font-size: 22px;
+    color: #00abbc;
+    position:  relative;
+    top: 2px;
+    left:  3px;
+}
+/*就业明星结束*/
+/*小班制教学开始*/
+.microteaching{
+    background: url("../images/it/microteaching.png");
+    background-size: 100% 100% ;
+}
+.microteaching_title{
+    font-size:50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 176px;
+}
+.microteaching_title_blue{
+    color: #00abbc;
+}
+.microteaching_title_darkblue{
+    color: #0b274c;
+}
+.microteaching_title_pink{
+    color: #da3174;
+}
+.microteaching_lists{
+    position: relative;
+    padding-bottom: 217px;
+}
+.microteaching_lists li{
+    color: #0c284d;
+    line-height: 38px;
+    font-size: 26px;
+    margin-right: 240px;
+    width: 272px;
+    float: left;
+    background: url("../images/it/microteachingbg.png");
+    height: 190px;
+    text-align:  center;
+    margin-left: 12px;
+    padding-top: 82px;
+}
+.microteaching_lists li:first-child{
+    padding-top:100px ;
+    height:172px;
+}
+.microteaching_lists li:nth-child(2){
+    position: absolute;
+    top: 197px;
+    left: 259px;
+}
+.microteaching_lists li:nth-child(4){
+    position: absolute;
+    top: 197px;
+    left: 787px;
+}
+.microteaching_lists li:nth-child(5){
+    margin-right: 0;
+}
+.microteaching_more{
+    display: block;
+    margin:0 auto;
+    width:259px;
+    height:72px;
+    background: #d90156;
+    font-size: 29px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 72px;
+    border-radius: 26px;
+    -moz-box-shadow: 0px 6px 7px #c7c7c7;
+    -webkit-box-shadow: 0px 6px 7px #c7c7c7;
+    box-shadow: 0px 6px 7px #c7c7c7;
+}
+/*小班制教学结束*/
+
+/*猎聘专区开始*/
+.recruitment{
+    padding: 90px 0 30px 0;
+    background: #eaedee;
+    z-index: -2;
+    position: relative;
+}
+.recruitment_title{
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom:  26px;
+}
+.recruitment_lists li{
+    position: relative;
+    padding-top: 309px;
+    float: left;
+    width: 336px;
+    height:228px;
+}
+.recruitment_lists li div{
+    line-height: 26px;
+    margin: 15px;
+    position: relative;
+    font-size: 14px;
+    border-bottom:  1px solid #a0a0a0;
+    padding-bottom:  2px;
+}
+.recruitment_lists li div:nth-child(4){
+    border-bottom:none;
+}
+.recruitment_lists li div span{
+    position: absolute;
+    right:0;
+}
+.recruitment_lists li div b{
+    font-size: 16px;
+}
+.recruitment_lists li img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:336px;
+    height:537px;
+    z-index: -1;
+}
+/*猎聘专区结束*/
+
+/*明星导师开始*/
+.star_tutor{
+    width:100%;
+    background: url("../images/it/star_tutor.png");
+    background-size: 100% 100%;
+    padding: 80px 0 30px 0;
+}
+.star_tutor_title{
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom:  22px;
+}
+.star_tutor_lists li{
+    float: left;
+    width:446px;
+    height:387px;
+    position: relative;
+}
+.star_tutor_lists li:first-child{
+    width:891px;
+    height:394px;
+}
+.star_tutor_lists li:nth-child(2){
+    width:446px;
+    height:394px;
+}
+.star_tutor_info{
+    position: absolute;
+    bottom: 0;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+.star_tutor_info div{
+    font-size:20px;
+    margin-bottom: 11px;
+}
+.star_tutor_info div b{
+    font-size:22px;
+    margin-right: 12px;
+}
+.star_tutor_info p{
+    line-height:26px;
+    font-size:  15px;
+}
+.blackMask{
+    display: none;
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+.star_tutor_info_active > .blackMask{
+  display: block;
+}
+.star_tutor_info_active > .star_tutor_info{
+    background: none;
+    color: #ffffff;
+}
+/*明星导师结束*/
