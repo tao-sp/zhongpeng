@@ -1494,8 +1494,12 @@
   z-index: 3;
 }
 .a-main .ab-development .ab-development-in .slideGroup .parBd .slideBox ul li {
-  width: 167px;
+  float: left;
   margin: 0 28.5px;
+  width: 167px;
+}
+.a-main .ab-development .ab-development-in .slideGroup .parBd .slideBox ul li a {
+  color: #fffefe;
 }
 .a-main .ab-development .ab-development-in .slideGroup .parBd .slideBox ul li .development-node {
   height: 117px;
