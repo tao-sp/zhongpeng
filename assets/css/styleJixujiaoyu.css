@@ -16,8 +16,140 @@ li{
     width:1200px;
     margin: 0 auto;
 }
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: "";
++ zoom: 1;
+}
 
 /*首页----[继续教育学院]开始*/
+
+/*咨询群开始*/
+.advisory{
+    width: 630px;
+    height:527px;
+    background: url("../images/jixujiaoyu/advisory_jy.png");
+    position: fixed;
+    top:50%;
+    margin-top: -263.5px;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -345px;
+    display: none;
+}
+#advisory_close{
+    position: absolute;
+    right:-45px;
+    cursor: pointer;
+    top:0;
+}
+.advisory_lists{
+    margin-top: 191px;
+    margin-left: 121px;
+}
+.advisory_lists li{
+    float: left;
+    width:113px;
+    height:113px;
+    text-align: center;
+}
+.advisory_lists li{
+    width:113px;
+    height:113px;
+    margin-right: 54px;
+    margin-bottom: 50px;
+}
+.advisory_title{
+    font-size: 36px;
+    position: absolute;
+    left: 0;
+    top: 71px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-left: 27px;
+}
+/*咨询群结束*/
+
+/*报名信息登记*/
+.advisory1{
+    width: 630px;
+    height:527px;
+    background: url("../images/jixujiaoyu/advisory_jy.png");
+    position: fixed;
+    top:50%;
+    margin-top: -263.5px;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -345px;
+    display: none;
+}
+#advisory_close1{
+    position: absolute;
+    right:-45px;
+    cursor: pointer;
+    top:0;
+}
+.advisory_form1{
+
+text-align:  center;
+
+margin-top: 223px;
+
+margin-left: 107px;
+
+margin-right: 40px;
+}
+.advisory_form1 input{
+    
+width: 380px;
+    
+font-size: 17px;
+    
+height: 52px;
+    
+border-radius: 8px;
+    
+border: 1px solid #ddddef;
+    
+margin-bottom: 33px;
+    
+padding-left:  20px;
+}
+
+input[type="text"] {}
+.advisory_form1 button{
+
+width: 142px;
+
+height: 38px;
+
+color: #ffffff;
+
+font-size: 16px;
+
+border-radius: 8px;
+
+background: #4c5cd5;
+
+border: none;
+
+margin-top:  22px;
+}
+.advisory_title1{
+    font-size: 36px;
+    position: absolute;
+    left: 0;
+    top: 71px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-left: 27px;
+}
+/*报名信息登记结束*/
 .shortcut{
     background: #4c5cd4;
     height:30px;
@@ -31,6 +163,8 @@ li{
     font-size: 14px;
     padding-right:  10px;
     cursor:  pointer;
+    position:  relative;
+    z-index: 10000;
 }
 .shortcut_content img
 {

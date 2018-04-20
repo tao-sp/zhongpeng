@@ -15,9 +15,7 @@
     <![endif]-->
     <script src="../../assets/js/jquery-1.11.3.min.js"></script>
     <script src="../../assets/js/jquery.SuperSlide.js"></script>
-    <script src="../../assets/plugins/jalendar/jalendar.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZpXTKGoufXAqiOE1Qbi3y3BPgrY0OVPs"></script>
-</head>
+   </head>
 <body class="font_yahei" style="overflow-x: hidden">
 
 <!--头部1开始-->
@@ -41,9 +39,38 @@
 <!--咨询群开始-->
 <div class="advisory">
 
+    <ul class="advisory_lists clearfix">
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+        <li><img src="../../assets/images/jixujiaoyu/erweima.png">学历</li>
+
+    </ul>
+    <div class="advisory_title">欢迎加入咨询群</div>
+
+<div id="advisory_close"><img src="../../assets/images/jixujiaoyu/close.png"></div>
+
 </div>
 
 <!--咨询群结束-->
+
+<!--报名信息登记开始-->
+<div class="advisory1">
+
+     <form class="advisory_form1">
+        <input type="text" placeholder="请输入您的真实姓名">
+         <input type="text" placeholder="请输入您的真实手机号">
+         <button>提交</button>
+     </form>
+    <div class="advisory_title1">报名信息登记</div>
+
+    <div id="advisory_close1"><img src="../../assets/images/jixujiaoyu/close.png"></div>
+
+</div>
+
+<!--报名信息登记结束-->
 
 <!--头部2开始-->
 
@@ -1515,7 +1542,7 @@
             <p class="copyright">Copyright ©2001-2018 WENDU Corporation All Rights ReservedXXXXX有限公司 版权所有</p>
             <p class="licensing"><span>XXX出版许可:XXXXXX100085号</span> <em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span><em>|</em><span>XXX出版许可:XXXXXX100085号</span></p>
             <ol class="advantage">
-                <li><a href=""><img src="../../assets/images/guanwang/f-5.png" alt=""/></a></li>
+                <li><a target="_blank" href=""><img src="../../assets/images/guanwang/f-5.png" alt=""/></a></li>
                 <li><a href=""><img src="../../assets/images/guanwang/f-6.png" alt=""/></a></li>
             </ol>
         </div>
@@ -1538,17 +1565,30 @@
 
 <!--悬浮结束-->
 
-
+<a target="_blank" href="javascript:void(0)" onclick="return openChat(this) " lim_company="796416">
+11111111111111111</a>
+<script src="../../assets/plugins/jalendar/jalendar.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZpXTKGoufXAqiOE1Qbi3y3BPgrY0OVPs"></script>
+<script src="../../assets/plugins/live800.js"></script>
 
 <script>
-    
-    
-    
+
+
+
     function advisory() {
         
     }
 
     window.onload = function() {
+
+        $("#live800iconlink").remove();
+
+        $("#advisory_close").click(function () {
+            $(".advisory").fadeOut();
+        });
+        $("#advisory_close1").click(function () {
+            $(".advisory1").fadeOut();
+        });
 
         $('#myId5').jalendar({
 
@@ -1617,12 +1657,33 @@
             for (var i = 0;i<objs.length;i++){
                 $(objs[i]).css("marginLeft",0);
             }
-            map.clearOverlays();
-            var point = new BMap.Point(113.302124,23.140507); //将标注点转化成地图上的点
-            var marker = new BMap.Marker(point); //将点转化成标注点
-            map.addOverlay(marker);
-            map.centerAndZoom(new BMap.Point(113.302124,23.140507), 22);  // 设置中心点
-        })
+                console.log($(this).text())
+            var location = $(this).text();
+            var longitude = 114.252481;
+            var latitude = 22.716557;
+                if(location=="深圳"){
+                    longitude=114.252481;
+                    latitude=22.716557;
+
+            }else if(location=="广州"){
+                    longitude=113.346729;
+                    latitude=23.177401;
+
+            }else if(location=="东莞") {
+                    longitude=113.899755
+                    latitude=22.96498;
+            }
+                map.clearOverlays();
+                var point = new BMap.Point(longitude,latitude); //将标注点转化成地图上的点
+                var marker = new BMap.Marker(point); //将点转化成标注点
+                map.addOverlay(marker);
+                map.centerAndZoom(new BMap.Point(longitude,latitude), 22);  // 设置中心点
+
+        },function () {
+            console.log("哟出")
+            }
+        )
+
 
 
 
@@ -1645,21 +1706,24 @@
         })
 
     }
+    
+    function advisory() {
+        $(".advisory").fadeIn();
+    }
+    function advisory1() {
+        $(".advisory").fadeIn();
+    }
 </script>
 
 <script type="text/javascript">
+                   // 将标注添加到地图中
     // 百度地图API功能
     var map = new BMap.Map("campus_map",{minZoom:10,maxZoom:25});
-    var point = new BMap.Point(114.101551,22.553871);
-    map.centerAndZoom(point, 22);
+    var point = new BMap.Point(114.252481,22.716557);
+    map.centerAndZoom(point,15);
     map.enableScrollWheelZoom(true);
     var marker = new BMap.Marker(point);  // 创建标注
     map.addOverlay(marker);              // 将标注添加到地图中
-    marker.addEventListener("click",getAttr);
-    function getAttr(){
-        var p = marker.getPosition();       //获取marker的位置
-        alert("marker的位置是" + p.lng + "," + p.lat);
-    }
 
     function myFun(result){
         var cityName = result.name;
